@@ -1,9 +1,86 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>main</ion-title>
-  </ion-toolbar>
-</ion-header>
+
+<ion-header class="pt-2">
+   
+     
+          <ion-tab-bar slot="top">
+              <ion-tab-button  class="p-2">
+                  <i class="material-icons text-light-primary">
+                      local_hotel
+                      </i>
+                <ion-label>Hotels</ion-label>
+              </ion-tab-button>
+    
+              <ion-tab-button class="p-2">
+                  <i class="material-icons text-light-primary">
+                      restaurant
+                      </i>
+                <ion-label>Restraurant</ion-label>
+              </ion-tab-button>
+    
+    
+              <ion-tab-button class="p-2">
+                  <i class="material-icons text-light-primary">
+                      directions_boat
+                      </i>
+                <ion-label>Experiences</ion-label>
+              </ion-tab-button>
+        
+             
+            </ion-tab-bar>
+      
+            <ion-tab-bar slot="top">
+           
+                <ion-tab-button  class="p-2">
+                    <i class="material-icons text-light-primary">
+                        directions_bus
+                        </i>
+                  <ion-label>Bus</ion-label>
+                </ion-tab-button>
+          
+                <ion-tab-button  class="p-2">
+                    <i class="material-icons text-light-primary">
+                        local_taxi
+                        </i>
+                  <ion-label>Cab</ion-label>
+                </ion-tab-button>
+    
+                <ion-tab-button class="p-2">
+                    <i class="material-icons text-light-primary">
+                        directions_railway
+                        </i>
+                  <ion-label>Trains</ion-label>
+                </ion-tab-button>
+    
+            </ion-tab-bar>
+  </ion-header>
 
 <ion-content>
+
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content
+          pullingIcon="arrow-dropdown"
+          pullingText="Pull to refresh"
+          refreshingSpinner="circles"
+          refreshingText="Refreshing...">
+        </ion-refresher-content>
+      </ion-refresher>
+
+   
+      <ion-slides #mySlider (ionSlidesDidLoad)="slidesDidLoad(mySlider)"  pager="true" [options]="slideOpts" class="mt-1">
+          <ion-slide>
+          <img class="slider-image" src="../../assets/images/misc/3.jpg">
+          </ion-slide>
+          <ion-slide>
+          <img class="slider-image"  src="../../assets/images/misc/3.jpg">
+          </ion-slide>
+          <ion-slide>
+          <img class="slider-image"  src="../../assets/images/misc/3.jpg">
+          </ion-slide>
+        </ion-slides>
+
+
+          
+   
+
 
 </ion-content>
