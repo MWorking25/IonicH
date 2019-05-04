@@ -10,20 +10,20 @@
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import './assets/styles.css';
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.full-width
-{
-    width: 100%;
+.full-width {
+  width: 100%;
 }
 
-.mt-5{
-    margin-top: 4em;
+.mt-5 {
+  margin-top: 4em;
 }
 
 // .searchbar-input.sc-ion-searchbar-md
@@ -31,9 +31,8 @@ input[type=number]::-webkit-outer-spin-button {
 //   border-radius: 25px !important;
 // }
 
-.text-light-primary
-{
-    color: rgb(81, 172, 224);
+.text-light-primary {
+  color: #162a36 !important;
 }
 
 
@@ -42,3 +41,19 @@ ion-header ion-toolbar {
   border-bottom-right-radius: 25px;
 }
 
+.icon {
+  overflow: hidden;
+  font-size: 32px !important;
+}
+.tab-icons{
+  color: #e1e2e4 !important;
+}
+
+.mediumtext
+{
+    font-size: 18px;
+}
+.mediumicon
+{
+    font-size: 24px;
+}

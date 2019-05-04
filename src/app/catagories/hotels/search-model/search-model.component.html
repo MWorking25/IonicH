@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-icon name="arrow-back" (click)="myDismiss()" slot="start" class="mediumicon" ></ion-icon>
+
+      <form class="col-12">
+          <mat-form-field class="col-12">
+            <input type="text" placeholder="Search City/Area/Hotel" aria-label="Search City/Area/Hotel" matInput [formControl]="myControl" [(ngModel)]="serachfilter"  [matAutocomplete]="auto">
+            <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+              <mat-option (onSelectionChange)="getSelectedValue(option)" *ngFor="let option of filteredOptions | async" [value]="option">
+                {{option.name}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </form>
+
+    <!-- <ion-searchbar  autocomplete="on" placeholder="Search City/Area/Hotel"></ion-searchbar> -->
+    <ion-icon name="refresh" (click)="resetFilter()" slot="end" class="mediumicon" ></ion-icon>
+  </ion-toolbar>
+</ion-header>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IonSlides } from '@ionic/angular';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.page.html',
@@ -7,7 +9,7 @@ import { IonSlides } from '@ionic/angular';
 })
 export class MainPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -27,6 +29,15 @@ export class MainPage implements OnInit {
       event.target.complete();
     }, 600);
   }
+
+
+  redirectionToUrl(path, fieldid)
+  {
+    if(fieldid)
+    this.router.navigate([path,fieldid]);
+    else
+    this.router.navigate([path]);
+  } 
 
 
 }

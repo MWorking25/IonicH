@@ -1,19 +1,67 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, RouteReuseStrategy } from '@angular/router';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-
+import { HttpClientModule} from '@angular/common/http';
+import {
+  MatAutocompleteModule, MatBadgeModule, MatBottomSheetModule, MatButtonModule,
+  MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule,
+  MatDialogModule, MatDividerModule, MatExpansionModule, MatFormFieldModule, MatGridListModule,
+  MatIconModule, MatInputModule, MatListModule, MatMenuModule, MatPaginatorModule,
+  MatProgressBarModule, MatProgressSpinnerModule, MatRadioModule, MatRippleModule, MatSelectModule,
+  MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule,
+  MatStepperModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, MatTreeModule
+} from '@angular/material';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+//------- hotels ---------
+import { HotelsComponent } from './catagories/hotels/hotels.component';
+import { AminitiesComponent } from './catagories/hotels/aminities/aminities.component';
+import { BookingComponent } from './catagories/hotels/booking/booking.component';
+import { DesricptionComponent } from './catagories/hotels/desricption/desricption.component';
+import { DirectionComponent } from './catagories/hotels/direction/direction.component';
+import { PhotosComponent } from './catagories/hotels/photos/photos.component';
+import { ReviewsComponent } from './catagories/hotels/reviews/reviews.component';
+import { RoomsComponent } from './catagories/hotels/rooms/rooms.component';
+import { SearchModelComponent } from './catagories/hotels/search-model/search-model.component';
+//------- experiences ---------
+import { ExperiencesComponent } from './catagories/experiences/experiences.component';
+//------- buses ---------
+import { BusesComponent } from './catagories/buses/buses.component';
+//------- cars ---------
+import { CarsComponent } from './catagories/cars/cars.component';
+//------- restraurants ---------
+import { RestraunrantsComponent } from './catagories/restraunrants/restraunrants.component';
+//------- trains ---------
+import { TrainsComponent } from './catagories/trains/trains.component';
 @NgModule({
-  declarations: [AppComponent, ForgotpasswordComponent],
-  entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule],
+  declarations: [AppComponent, ForgotpasswordComponent, HotelsComponent,
+    AminitiesComponent,
+    BookingComponent,
+    DesricptionComponent,
+    DirectionComponent,
+    PhotosComponent,
+    ReviewsComponent,
+    RoomsComponent,
+    SearchModelComponent,
+    ExperiencesComponent,
+    BusesComponent,
+    CarsComponent,
+    RestraunrantsComponent,
+    TrainsComponent],
+  entryComponents: [SearchModelComponent],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule,MatAutocompleteModule, MatBadgeModule, MatBottomSheetModule, MatButtonModule,
+    MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule,
+    MatDialogModule, MatDividerModule, MatExpansionModule, MatFormFieldModule, MatGridListModule,
+    MatIconModule, MatInputModule, MatListModule, MatMenuModule, MatPaginatorModule,
+    MatProgressBarModule, MatProgressSpinnerModule, MatRadioModule, MatRippleModule, MatSelectModule,
+    MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule,
+    MatStepperModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, MatTreeModule,HttpClientModule],
   providers: [
     StatusBar,
     SplashScreen,

@@ -1,26 +1,22 @@
 
-<ion-header class="pt-2">
+<ion-header>
    
      
-          <ion-tab-bar slot="top">
-              <ion-tab-button  class="p-2">
-                  <i class="material-icons text-light-primary">
-                      local_hotel
-                      </i>
+          <ion-tab-bar slot="top" class="p-1">
+              <ion-tab-button (click)="redirectionToUrl('hotels')">
+                  <i class="material-icons icon icon-resort text-light-primary"></i>
                 <ion-label>Hotels</ion-label>
               </ion-tab-button>
     
-              <ion-tab-button class="p-2">
-                  <i class="material-icons text-light-primary">
-                      restaurant
-                      </i>
+              <ion-tab-button (click)="redirectionToUrl('restraunrants')">
+                  <i class="material-icons icon icon-restraurant text-light-primary"></i>
                 <ion-label>Restraurant</ion-label>
               </ion-tab-button>
     
     
-              <ion-tab-button class="p-2">
-                  <i class="material-icons text-light-primary">
-                      directions_boat
+              <ion-tab-button (click)="redirectionToUrl('experiences')">
+                  <i class="material-icons icon icon-amusement-park text-light-primary">
+                    
                       </i>
                 <ion-label>Experiences</ion-label>
               </ion-tab-button>
@@ -28,26 +24,20 @@
              
             </ion-tab-bar>
       
-            <ion-tab-bar slot="top">
+            <ion-tab-bar slot="top"  class="p-1">
            
-                <ion-tab-button  class="p-2">
-                    <i class="material-icons text-light-primary">
-                        directions_bus
-                        </i>
+                <ion-tab-button (click)="redirectionToUrl('buses')">
+                    <i class="material-icons icon icon-bus text-light-primary"></i>
                   <ion-label>Bus</ion-label>
                 </ion-tab-button>
           
-                <ion-tab-button  class="p-2">
-                    <i class="material-icons text-light-primary">
-                        local_taxi
-                        </i>
+                <ion-tab-button (click)="redirectionToUrl('cars')">
+                    <i class="material-icons icon icon-car text-light-primary"></i>
                   <ion-label>Cab</ion-label>
                 </ion-tab-button>
     
-                <ion-tab-button class="p-2">
-                    <i class="material-icons text-light-primary">
-                        directions_railway
-                        </i>
+                <ion-tab-button (click)="redirectionToUrl('trains')">
+                    <i class="material-icons icon icon-train text-light-primary"></i>
                   <ion-label>Trains</ion-label>
                 </ion-tab-button>
     
@@ -55,32 +45,15 @@
   </ion-header>
 
 <ion-content>
-
-    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
-        <ion-refresher-content
-          pullingIcon="arrow-dropdown"
-          pullingText="Pull to refresh"
-          refreshingSpinner="circles"
-          refreshingText="Refreshing...">
-        </ion-refresher-content>
-      </ion-refresher>
-
-   
       <ion-slides #mySlider (ionSlidesDidLoad)="slidesDidLoad(mySlider)"  pager="true" [options]="slideOpts" class="mt-1">
           <ion-slide>
-          <img class="slider-image" src="../../assets/images/misc/3.jpg">
+          <img class="slider-image" src="../../assets/images/misc/slider1.jpg">
           </ion-slide>
           <ion-slide>
-          <img class="slider-image"  src="../../assets/images/misc/3.jpg">
+          <img class="slider-image"  src="../../assets/images/misc/slider2.jpg">
           </ion-slide>
           <ion-slide>
-          <img class="slider-image"  src="../../assets/images/misc/3.jpg">
+          <img class="slider-image"  src="../../assets/images/misc/slider3.jpg">
           </ion-slide>
         </ion-slides>
-
-
-          
-   
-
-
 </ion-content>
