@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-
+import { ProfilePage } from './profile/profile.page';
 import { HomePage } from './home.page';
 
 @NgModule({
@@ -81,6 +81,7 @@ import { HomePage } from './home.page';
     }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [HomePage,HomePage],
+  entryComponents:[HomePage]
 })
 export class HomePageModule {}

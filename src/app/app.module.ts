@@ -39,6 +39,9 @@ import { CarsComponent } from './catagories/cars/cars.component';
 import { RestraunrantsComponent } from './catagories/restraunrants/restraunrants.component';
 //------- trains ---------
 import { TrainsComponent } from './catagories/trains/trains.component';
+
+import { ProfilePage } from './home/profile/profile.page';
+
 @NgModule({
   declarations: [AppComponent, ForgotpasswordComponent, HotelsComponent,
     AminitiesComponent,
@@ -53,8 +56,9 @@ import { TrainsComponent } from './catagories/trains/trains.component';
     BusesComponent,
     CarsComponent,
     RestraunrantsComponent,
+    ProfilePage,
     TrainsComponent],
-  entryComponents: [SearchModelComponent],
+  entryComponents: [SearchModelComponent,ProfilePage],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule,MatAutocompleteModule, MatBadgeModule, MatBottomSheetModule, MatButtonModule,
     MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule,
     MatDialogModule, MatDividerModule, MatExpansionModule, MatFormFieldModule, MatGridListModule,

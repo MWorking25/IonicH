@@ -11,7 +11,11 @@ export class HotelsComponent implements OnInit {
 
   filterString:String;
   constructor(private _location: Location, public modalController: ModalController) { }
-
+  currentDate = new Date();
+  nextdate = new Date();
+  currentYear = this.currentDate.getFullYear();
+  checkoutDate = new Date(this.nextdate.setDate(this.nextdate.getDate() + 1));
+  maxYear = this.currentDate.getFullYear() + 1;
   ngOnInit() {}
 
   backClicked() {
