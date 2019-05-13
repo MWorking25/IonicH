@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { NavParams, ModalController } from '@ionic/angular';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.page.html',
@@ -7,15 +6,13 @@ import { NavParams, ModalController } from '@ionic/angular';
 })
 export class ProfilePage implements OnInit {
 
-  @Input() value: number;
 
-  constructor(navParams: NavParams, public modalController: ModalController,) { }
+
+  constructor() { }
 
   ngOnInit() {
   }
 
-  async myDismiss() {
-    await this.modalController.dismiss();
-  }
+
 
 }

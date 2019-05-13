@@ -7,7 +7,7 @@ import { ProfilePage } from './profile/profile.page';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  clickevent:any;
   constructor(public modalController: ModalController) {}
 
   async OpenProfileModal() {
@@ -16,6 +16,12 @@ export class HomePage {
       componentProps: { value: 123 }
     });
     return await modal.present();
+  }
+
+  clickonionfab()
+  {
+    this.clickevent = 'tab="offers"';
+    console.log(this.clickevent);
   }
 
 }

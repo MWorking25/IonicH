@@ -1,6 +1,11 @@
 ion-fab{
     ion-fab-button{
-            border : 6px solid white !important;
+            border : .5px solid white !important;
             border-radius: 50%;
       }
+      .img-fluid {
+        max-width: 165%;
+        margin-left: -11px;
+        height: auto;
+    }
   }
