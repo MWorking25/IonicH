@@ -1,0 +1,128 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'> <head><title></title> <!--[if gte mso 9]> <xml> <w:WordDocument> <w:View>Print</w:View> <w:Zoom>90</w:Zoom> <w:DoNotOptimizeForBrowser/> </w:WordDocument> </xml> <![endif]--> <style> p.MsoFooter, li.MsoFooter, div.MsoFooter { margin:0in; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 3.0in right 6.0in; font-size:12.0pt; } <style> <!-- /* Style Definitions */ @page Section1 { size:8.5in 11.0in; margin:0.50in 0.50in 0.50in 0.50in; mso-header-margin:.3in; mso-header:h1; mso-footer: f1; mso-footer-margin:.3in; } div.Section1 { page:Section1; } table#hrdftrtbl { margin:0in 0in 0in 9in; } --> </style></head> <body lang=EN-US style='tab-interval:.5in'> <div class=Section1> 
+			<div style="page-break-before:always">&nbsp;</div> 
+	        <div class="row" style="font-size: 14px; text-align: center;">
+	        	<div class="col-md-12 text-center" id="wsDoctorDetails">
+					<!-- ngIf: report.data.patientcomplaints.treatphynamedropdown -->
+	        	</div>
+	        	<!-- <div class="col-md-12 text-center sectionToDelFromDocx">
+					{{existingReportPracticeName | capitalize}}
+	        	</div>  -->
+	        	<div class="col-md-12 text-center sectionToDelFromDocx ng-binding"></div>
+	        	<div class="col-md-12 text-center sectionToDelFromDocx ng-binding"></div>
+	        	<div class="col-md-12 text-center sectionToDelFromDocx ng-binding"></div>
+	        </div>
+	        <div class="row">
+	        	<div class="col-md-12">
+					<span ng-bind="(report.data.patientcomplaints.currentexamdate | date:'MM/d/y')" class="ng-binding">04/10/2019</span>
+	        	</div>
+	        	<div class="col-md-12 ng-binding">
+					 sample&nbsp; P&nbsp;2019
+	        	</div>
+	        </div>
+	        <div class="row">
+	        	<div class="col-md-12">
+	        	<h5><u><b>Work Status</b></u></h5>
+	        	</div>
+	        </div>	        
+	        <div class="row">
+	        	<div class="col-md-12" id="wsPublishSectionRoot">
+					 <!-- ngIf: report.data['workrestriction'].WRreturntofullckbox.length>0 -->
+					<!-- ngIf: report.data['workrestriction'].WRisreturnckcheckTextA -->					
+					<!-- ngIf: report.data.workrestriction.Wrremainoff.length>0 -->
+					<!-- ngIf: report.data.workrestriction.Wrremainoffmodified.length>0 -->
+					<!-- ngIf: report.data.workrestriction.Wrformaljob=='Yes' -->
+					<!-- ngIf: report.data.workrestriction.Wrformaljob=='No' -->
+					<!-- ngIf: report.data['workrestriction'].WRpatientReturnOptions.length>0 --><span ng-if="report.data['workrestriction'].WRpatientReturnOptions.length>0" class="ng-scope">
+						<br><br>
+						<span class="DFRReportSubHeadingFontSize"><strong>Ability to Resume Usual and Customary Occupation</strong>
+						<br>
+						</span>
+						<span class="spanMain">
+							<!-- ngIf: report.data['workrestriction'].WRpatientReturnOptions == 'Yes' --><span ng-if="report.data['workrestriction'].WRpatientReturnOptions == 'Yes' " class="ng-scope ng-binding">The employee can return to his occupation.</span><!-- end ngIf: report.data['workrestriction'].WRpatientReturnOptions == 'Yes' -->
+							<!-- ngIf: report.data['workrestriction'].WRpatientReturnOptions== 'Yes with modifications' -->
+							<!-- ngIf: report.data['workrestriction'].WRpatientReturnOptions == 'No' -->
+							<!-- ngIf: report.data['workrestriction'].WRpatientReturnOptions == 'Deferred' -->
+						</span>
+					</span><!-- end ngIf: report.data['workrestriction'].WRpatientReturnOptions.length>0 -->
+	        	</div>
+	        		        	
+	        	<div class="col-md-12" style="margin-top:20px;margin-bottom:20px" id="wsPublishSectionWorkRestriction">
+					<!-- ngIf: report.data['workrestriction'].WRindicatedRadio.length>0 -->
+	        	</div>
+	       
+	        	<div class="col-md-12" style="margin-bottom:20px" id="wsPublishSectionEnvironmentalRestriction">
+					 <!-- ngIf: report.data['workrestriction'].WRenvRestrictYesNo.length>0 -->
+	        	</div>
+	        	
+	        	<div class="col-md-12" id="wsClinicFollowUpPlan">
+					<!-- ngIf: report.data.workrestriction.WRfollowupckbox!='' --><div ng-if="report.data.workrestriction.WRfollowupckbox!=''" class="ng-scope">
+		                <!-- ngIf: report.data.workrestriction.WRfollowupckbox=='No' -->
+		                <!-- ngIf: report.data.workrestriction.WRfollowupckbox=='Yes' --><div ng-if="report.data.workrestriction.WRfollowupckbox=='Yes'" class="ng-scope ng-binding">
+		                    Return to clinic: Yes. 
+		                 <!-- ngIf: report.data.workrestriction.WRselectdatetype --><span ng-if="report.data.workrestriction.WRselectdatetype" class="ng-scope">
+		                     <!-- ngIf: report.data.workrestriction.WRdateselection --><span ng-if="report.data.workrestriction.WRdateselection" class="ng-scope">
+		                         <!-- ngIf: report.data.workrestriction.WRdateselection==1 -->
+		                         <!-- ngIf: report.data.workrestriction.WRdateselection!=1 && report.data.workrestriction.WRdateselection!='Other' --><span ng-if="report.data.workrestriction.WRdateselection!=1 &amp;&amp; report.data.workrestriction.WRdateselection!='Other'" class="ng-scope ng-binding">3<!-- ngIf: report.data.workrestriction.WRselectdatetype.length>0 --><span ng-if="report.data.workrestriction.WRselectdatetype.length>0" class="ng-scope ng-binding">&nbsp;weeks</span><!-- end ngIf: report.data.workrestriction.WRselectdatetype.length>0 -->.
+		                         </span><!-- end ngIf: report.data.workrestriction.WRdateselection!=1 && report.data.workrestriction.WRdateselection!='Other' -->
+		                         <!-- ngIf: report.data.workrestriction.WRdateselection=='Other' -->
+		                     </span><!-- end ngIf: report.data.workrestriction.WRdateselection -->
+		                 </span><!-- end ngIf: report.data.workrestriction.WRselectdatetype -->
+		                </div><!-- end ngIf: report.data.workrestriction.WRfollowupckbox=='Yes' -->
+		                <span ng-bind-html="appendPeriod(report.data.workrestriction.WRdischargeTextA)" class="ng-binding"></span>
+		            </div><!-- end ngIf: report.data.workrestriction.WRfollowupckbox!='' -->		
+	        	</div>
+	        </div>
+			<br>
+	        <!-- Section to print signature section -->
+	        <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="clear: both;">
+                  <tbody><tr>
+                      <td style="width: 100%;">
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tbody><tr>
+                                  <td style="width: 30%;">
+                                       <table width="100%" cellpadding="0" cellspacing="0" border="0" style="">
+			                              <tbody><tr>
+			                                  <td style="width: 100%; text-align: left">
+			                                 	  <div class="col-md-12 ng-binding" style="text-align: left">
+				                                 	Work status note printed by: Devin Marshall<!-- ngIf: currentDate!='' --><span ng-if="currentDate!=''" class="ng-scope ng-binding"> on 04/10/2019 at 05:18 PM</span><!-- end ngIf: currentDate!='' --> 
+				                                  </div>
+			                                  </td>
+			                              </tr>
+			                              <tr>
+			                                  <td style="width: 100%; text-align: left">
+			                                  		<div class="col-md-12" style="text-align: left">
+			                                  			<!-- ngIf: report.data.patientcomplaints.treatphynamedropdown -->
+									        			Date of exam: <span ng-bind="(report.data.patientcomplaints.currentexamdate | date:'MMMM d, y')" class="ng-binding">April 10, 2019</span>
+									        		</div>
+									         </td>
+			                              </tr>
+										  <tr>
+			                                  <td style="width: 100%; text-align: left">
+			                                  		<div class="col-md-12 text-left ng-binding">
+													Phone: (112) 341-2341
+													<!-- ngIf: report.data.patientcomplaints.subjectivecomplaints_extension --><span ng-if="report.data.patientcomplaints.subjectivecomplaints_extension" class="ng-scope ng-binding"> ext. 1234123</span><!-- end ngIf: report.data.patientcomplaints.subjectivecomplaints_extension -->
+												</div>
+									         </td>
+			                              </tr>
+			                             
+			                          </tbody></table>
+                                  </td>
+                                
+                              </tr>
+                          </tbody></table>
+                      </td>
+                  </tr>
+              </tbody></table>
+	         <!-- <div class="row sectionToDelFromDocx" style="margin-top:50px;">
+	        	<div class="col-md-12 text-right" style="font-size: 18px; text-align: right;">
+	        	Patient name: {{report.data['bginfo'].firstname}}&nbsp;{{report.data['bginfo'].lastname}}{{report.data['bginfo'].middlename?' ' + report.data['bginfo'].middlename : ''}}
+	        	</div>
+	        	<div class="col-md-12 text-right" style="font-size: 18px; text-align: right;">
+	        		<div ng-if="report.data.patientcomplaints.treatphynamedropdown" ><span>Treating physician:   <span id="wstreatingpPysician">{{doctorInfo.firstname}} {{doctorInfo.lastname}} <span ng-bind-html="getProfession(doctorInfo.profession, doctorInfo.otherprofessiontext)"></span></span></span></div>
+
+	        	</div>
+	        	<div class="col-md-12 text-right" style="font-size: 18px; text-align: right;">
+	        	Date of exam: <span ng-bind="(report.data.patientcomplaints.currentexamdate | date:'MMMM d, y')"></span>
+	        	</div>
+	        </div> -->	       
+         <table id='hrdftrtbl' border='1' cellspacing='0' cellpadding='0'> <tr><td> <div style='mso-element:header' id=h1 > <p class=MsoHeader style='text-align:center'><br />RateFast Location 1,  502 Ratefast Street,  Las Vegas,  12345-1234,  CA,  US</p> </div> </td> <td style='text-align:center'> <div style='mso-element:footer' id=f1> <p class=MsoFooter style='text-align:right; font-size:13px;'>Patient: 2019,&nbsp;sample<br/>Date of Exam: April 10, 2019</p><p class=MsoFooter align=center style='text-align:center'><span style=mso-tab-count:2; '></span>Page <span style='mso-field-code:" PAGE "'></span> of <span style='mso-field-code:" NUMPAGES "'></span></p></div></td></tr></table></body></html>

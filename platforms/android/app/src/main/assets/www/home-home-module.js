@@ -97,7 +97,8 @@ var HomePageModule = /** @class */ (function () {
                     }
                 ])
             ],
-            declarations: [_home_page__WEBPACK_IMPORTED_MODULE_6__["HomePage"]]
+            declarations: [_home_page__WEBPACK_IMPORTED_MODULE_6__["HomePage"], _home_page__WEBPACK_IMPORTED_MODULE_6__["HomePage"]],
+            entryComponents: [_home_page__WEBPACK_IMPORTED_MODULE_6__["HomePage"]]
         })
     ], HomePageModule);
     return HomePageModule;
@@ -114,7 +115,7 @@ var HomePageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content>\r\n  <ion-tabs>\r\n\r\n    <ion-tab-bar slot=\"bottom\" color=\"primary\">\r\n      <ion-tab-button tab=\"main\">\r\n        <i class=\"material-icons icon icon-homepage tab-icons\"></i>\r\n        <ion-label>Home</ion-label>\r\n      </ion-tab-button>\r\n\r\n      <ion-tab-button tab=\"tours\">\r\n        <i class=\"material-icons icon icon-backpack tab-icons\"></i>\r\n        <ion-label>Tours</ion-label>\r\n      </ion-tab-button>\r\n\r\n      <ion-tab-button>\r\n      \r\n      </ion-tab-button>\r\n      \r\n\r\n      <ion-tab-button tab=\"offers\">\r\n        <i class=\"material-icons icon icon-tag tab-icons\"></i>\r\n          \r\n        <ion-label>Offers</ion-label>\r\n      </ion-tab-button>\r\n\r\n      <ion-tab-button tab=\"help\">\r\n        <i class=\"material-icons icon icon-question tab-icons\"></i>\r\n          \r\n        <ion-label>Help</ion-label>\r\n      </ion-tab-button>\r\n    </ion-tab-bar>\r\n\r\n\r\n      <ion-fab vertical=\"bottom\" horizontal=\"center\" slot=\"fixed\" class=\"mb-2\">\r\n        <ion-fab-button>\r\n        <img src=\"../../assets/images/icons/travell.png\" class=\"img-fluid\">\r\n        </ion-fab-button>\r\n      </ion-fab>\r\n\r\n  </ion-tabs>\r\n</ion-content>\r\n"
+module.exports = "<ion-content>\r\n  <ion-tabs>\r\n\r\n    <ion-tab-bar slot=\"bottom\" color=\"primary\">\r\n      <ion-tab-button tab=\"main\">\r\n        <i class=\"material-icons icon icon-homepage tab-icons\"></i>\r\n        <ion-label>Home</ion-label>\r\n      </ion-tab-button>\r\n\r\n      <ion-tab-button tab=\"tours\">\r\n        <i class=\"material-icons icon icon-backpack tab-icons\"></i>\r\n        <ion-label>Tours</ion-label>\r\n      </ion-tab-button>\r\n\r\n      <ion-tab-button >\r\n          \r\n        </ion-tab-button>\r\n      \r\n\r\n      <ion-tab-button tab=\"offers\">\r\n        <i class=\"material-icons icon icon-tag tab-icons\"></i>\r\n          \r\n        <ion-label>Offers</ion-label>\r\n      </ion-tab-button>\r\n\r\n      <ion-tab-button tab=\"help\">\r\n        <i class=\"material-icons icon icon-question tab-icons\"></i>\r\n          \r\n        <ion-label>Help</ion-label>\r\n      </ion-tab-button>\r\n    </ion-tab-bar>\r\n\r\n\r\n      <ion-fab vertical=\"bottom\" horizontal=\"center\" slot=\"fixed\" class=\"mb-2\" >\r\n        <ion-fab-button>\r\n            <ion-tab-button  tab=\"profile\" >\r\n                <img src=\"../../assets/images/icons/travell.png\" class=\"\">\r\n              </ion-tab-button>\r\n        </ion-fab-button>\r\n      </ion-fab>\r\n\r\n  </ion-tabs>\r\n</ion-content>\r\n"
 
 /***/ }),
 
@@ -125,7 +126,7 @@ module.exports = "<ion-content>\r\n  <ion-tabs>\r\n\r\n    <ion-tab-bar slot=\"b
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5wYWdlLnNjc3MifQ== */"
+module.exports = "/* ion-fab{\r\n  \r\n      .tab-icon {\r\n        max-width: 130%;\r\n    }\r\n  } */\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9EOlxcTWF5dXIgMjMtNy0xOFxcMjAxOVxcSU9OSUNcXGlvbmljSC9zcmNcXGFwcFxcaG9tZVxcaG9tZS5wYWdlLnNjc3MiLCJzcmMvYXBwL2hvbWUvaG9tZS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7O0tDS0siLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogaW9uLWZhYntcclxuICBcclxuICAgICAgLnRhYi1pY29uIHtcclxuICAgICAgICBtYXgtd2lkdGg6IDEzMCU7XHJcbiAgICB9XHJcbiAgfSAqLyIsIi8qIGlvbi1mYWJ7XHJcbiAgXHJcbiAgICAgIC50YWItaWNvbiB7XHJcbiAgICAgICAgbWF4LXdpZHRoOiAxMzAlO1xyXG4gICAgfVxyXG4gIH0gKi9cbiJdfQ== */"
 
 /***/ }),
 
@@ -141,17 +142,44 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomePage", function() { return HomePage; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _profile_profile_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./profile/profile.page */ "./src/app/home/profile/profile.page.ts");
+
+
 
 
 var HomePage = /** @class */ (function () {
-    function HomePage() {
+    function HomePage(modalController) {
+        this.modalController = modalController;
     }
+    HomePage.prototype.OpenProfileModal = function () {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            var modal;
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.modalController.create({
+                            component: _profile_profile_page__WEBPACK_IMPORTED_MODULE_3__["ProfilePage"],
+                            componentProps: { value: 123 }
+                        })];
+                    case 1:
+                        modal = _a.sent();
+                        return [4 /*yield*/, modal.present()];
+                    case 2: return [2 /*return*/, _a.sent()];
+                }
+            });
+        });
+    };
+    HomePage.prototype.clickonionfab = function () {
+        this.clickevent = 'tab="offers"';
+        console.log(this.clickevent);
+    };
     HomePage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-home',
             template: __webpack_require__(/*! ./home.page.html */ "./src/app/home/home.page.html"),
             styles: [__webpack_require__(/*! ./home.page.scss */ "./src/app/home/home.page.scss")]
-        })
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"]])
     ], HomePage);
     return HomePage;
 }());

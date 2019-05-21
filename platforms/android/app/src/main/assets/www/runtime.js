@@ -63,7 +63,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"common":"common","help-help-module":"help-help-module","home-home-module":"home-home-module","main-main-module":"main-main-module","offers-offers-module":"offers-offers-module","profile-profile-module":"profile-profile-module","signin-signin-module":"signin-signin-module","signup-signup-module":"signup-signup-module","tours-tours-module":"tours-tours-module"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"common":"common","home-home-module":"home-home-module","profile-profile-module":"profile-profile-module","help-help-module":"help-help-module","main-main-module":"main-main-module","offers-offers-module":"offers-offers-module","signin-signin-module":"signin-signin-module","signup-signup-module":"signup-signup-module","tours-tours-module":"tours-tours-module"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function

@@ -7,6 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ProfilePage implements OnInit {
 
 
+  birthday = new Date();
+  anniversary = new Date();
 
   constructor() { }
 

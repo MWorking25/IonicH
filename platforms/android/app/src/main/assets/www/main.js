@@ -843,6 +843,7 @@ var map = {
 	],
 	"./home/home.module": [
 		"./src/app/home/home.module.ts",
+		"common",
 		"home-home-module"
 	],
 	"./home/main/main.module": [
@@ -855,6 +856,7 @@ var map = {
 	],
 	"./home/profile/profile.module": [
 		"./src/app/home/profile/profile.module.ts",
+		"common",
 		"profile-profile-module"
 	],
 	"./home/tours/tours.module": [
@@ -871,6 +873,7 @@ var map = {
 	],
 	"./profile/profile.module": [
 		"./src/app/home/profile/profile.module.ts",
+		"common",
 		"profile-profile-module"
 	],
 	"./signin/signin.module": [
@@ -895,7 +898,7 @@ function webpackAsyncContext(req) {
 			throw e;
 		});
 	}
-	return __webpack_require__.e(ids[1]).then(function() {
+	return Promise.all(ids.slice(1).map(__webpack_require__.e)).then(function() {
 		var id = ids[0];
 		return __webpack_require__(id);
 	});
@@ -922,9 +925,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _forgotpassword_forgotpassword_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./forgotpassword/forgotpassword.component */ "./src/app/forgotpassword/forgotpassword.component.ts");
+/* harmony import */ var _catagories_hotels_hotels_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./catagories/hotels/hotels.component */ "./src/app/catagories/hotels/hotels.component.ts");
+/* harmony import */ var _catagories_hotels_aminities_aminities_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./catagories/hotels/aminities/aminities.component */ "./src/app/catagories/hotels/aminities/aminities.component.ts");
+/* harmony import */ var _catagories_hotels_booking_booking_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./catagories/hotels/booking/booking.component */ "./src/app/catagories/hotels/booking/booking.component.ts");
+/* harmony import */ var _catagories_hotels_desricption_desricption_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./catagories/hotels/desricption/desricption.component */ "./src/app/catagories/hotels/desricption/desricption.component.ts");
+/* harmony import */ var _catagories_hotels_direction_direction_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./catagories/hotels/direction/direction.component */ "./src/app/catagories/hotels/direction/direction.component.ts");
+/* harmony import */ var _catagories_hotels_photos_photos_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./catagories/hotels/photos/photos.component */ "./src/app/catagories/hotels/photos/photos.component.ts");
+/* harmony import */ var _catagories_hotels_reviews_reviews_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./catagories/hotels/reviews/reviews.component */ "./src/app/catagories/hotels/reviews/reviews.component.ts");
+/* harmony import */ var _catagories_hotels_rooms_rooms_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./catagories/hotels/rooms/rooms.component */ "./src/app/catagories/hotels/rooms/rooms.component.ts");
+/* harmony import */ var _catagories_experiences_experiences_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./catagories/experiences/experiences.component */ "./src/app/catagories/experiences/experiences.component.ts");
+/* harmony import */ var _catagories_buses_buses_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./catagories/buses/buses.component */ "./src/app/catagories/buses/buses.component.ts");
+/* harmony import */ var _catagories_cars_cars_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./catagories/cars/cars.component */ "./src/app/catagories/cars/cars.component.ts");
+/* harmony import */ var _catagories_restraunrants_restraunrants_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./catagories/restraunrants/restraunrants.component */ "./src/app/catagories/restraunrants/restraunrants.component.ts");
+/* harmony import */ var _catagories_trains_trains_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./catagories/trains/trains.component */ "./src/app/catagories/trains/trains.component.ts");
 
 
 
+
+//------- hotels ---------
+
+
+
+
+
+
+
+
+//------- experiences ---------
+
+//------- buses ---------
+
+//------- cars ---------
+
+//------- restraurants ---------
+
+//------- trains ---------
 
 var routes = [
     { path: '', redirectTo: 'signin', pathMatch: 'full' },
@@ -937,6 +972,19 @@ var routes = [
     { path: 'profile', loadChildren: './home/profile/profile.module#ProfilePageModule' },
     { path: 'offers', loadChildren: './home/offers/offers.module#OffersPageModule' },
     { path: 'help', loadChildren: './home/help/help.module#HelpPageModule' },
+    { path: 'hotels', component: _catagories_hotels_hotels_component__WEBPACK_IMPORTED_MODULE_4__["HotelsComponent"] },
+    { path: 'hotel_aminities', component: _catagories_hotels_aminities_aminities_component__WEBPACK_IMPORTED_MODULE_5__["AminitiesComponent"] },
+    { path: 'hotel_booking', component: _catagories_hotels_booking_booking_component__WEBPACK_IMPORTED_MODULE_6__["BookingComponent"] },
+    { path: 'hotel_description', component: _catagories_hotels_desricption_desricption_component__WEBPACK_IMPORTED_MODULE_7__["DesricptionComponent"] },
+    { path: 'hotel_direction', component: _catagories_hotels_direction_direction_component__WEBPACK_IMPORTED_MODULE_8__["DirectionComponent"] },
+    { path: 'hotel_photos', component: _catagories_hotels_photos_photos_component__WEBPACK_IMPORTED_MODULE_9__["PhotosComponent"] },
+    { path: 'hotel_reviews', component: _catagories_hotels_reviews_reviews_component__WEBPACK_IMPORTED_MODULE_10__["ReviewsComponent"] },
+    { path: 'hotel_rooms', component: _catagories_hotels_rooms_rooms_component__WEBPACK_IMPORTED_MODULE_11__["RoomsComponent"] },
+    { path: 'experiences', component: _catagories_experiences_experiences_component__WEBPACK_IMPORTED_MODULE_12__["ExperiencesComponent"] },
+    { path: 'buses', component: _catagories_buses_buses_component__WEBPACK_IMPORTED_MODULE_13__["BusesComponent"] },
+    { path: 'cars', component: _catagories_cars_cars_component__WEBPACK_IMPORTED_MODULE_14__["CarsComponent"] },
+    { path: 'restraunrants', component: _catagories_restraunrants_restraunrants_component__WEBPACK_IMPORTED_MODULE_15__["RestraunrantsComponent"] },
+    { path: 'trains', component: _catagories_trains_trains_component__WEBPACK_IMPORTED_MODULE_16__["TrainsComponent"] },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -963,7 +1011,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-app>\r\n  <ion-router-outlet></ion-router-outlet>\r\n</ion-app>\r\n"
+module.exports = "<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-app>\n"
 
 /***/ }),
 
@@ -1031,13 +1079,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
-/* harmony import */ var _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/splash-screen/ngx */ "./node_modules/@ionic-native/splash-screen/ngx/index.js");
-/* harmony import */ var _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/status-bar/ngx */ "./node_modules/@ionic-native/status-bar/ngx/index.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
-/* harmony import */ var _forgotpassword_forgotpassword_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./forgotpassword/forgotpassword.component */ "./src/app/forgotpassword/forgotpassword.component.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/splash-screen/ngx */ "./node_modules/@ionic-native/splash-screen/ngx/index.js");
+/* harmony import */ var _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ionic-native/status-bar/ngx */ "./node_modules/@ionic-native/status-bar/ngx/index.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _forgotpassword_forgotpassword_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./forgotpassword/forgotpassword.component */ "./src/app/forgotpassword/forgotpassword.component.ts");
+/* harmony import */ var _catagories_hotels_hotels_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./catagories/hotels/hotels.component */ "./src/app/catagories/hotels/hotels.component.ts");
+/* harmony import */ var _catagories_hotels_aminities_aminities_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./catagories/hotels/aminities/aminities.component */ "./src/app/catagories/hotels/aminities/aminities.component.ts");
+/* harmony import */ var _catagories_hotels_booking_booking_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./catagories/hotels/booking/booking.component */ "./src/app/catagories/hotels/booking/booking.component.ts");
+/* harmony import */ var _catagories_hotels_desricption_desricption_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./catagories/hotels/desricption/desricption.component */ "./src/app/catagories/hotels/desricption/desricption.component.ts");
+/* harmony import */ var _catagories_hotels_direction_direction_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./catagories/hotels/direction/direction.component */ "./src/app/catagories/hotels/direction/direction.component.ts");
+/* harmony import */ var _catagories_hotels_photos_photos_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./catagories/hotels/photos/photos.component */ "./src/app/catagories/hotels/photos/photos.component.ts");
+/* harmony import */ var _catagories_hotels_reviews_reviews_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./catagories/hotels/reviews/reviews.component */ "./src/app/catagories/hotels/reviews/reviews.component.ts");
+/* harmony import */ var _catagories_hotels_rooms_rooms_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./catagories/hotels/rooms/rooms.component */ "./src/app/catagories/hotels/rooms/rooms.component.ts");
+/* harmony import */ var _catagories_hotels_search_model_search_model_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./catagories/hotels/search-model/search-model.component */ "./src/app/catagories/hotels/search-model/search-model.component.ts");
+/* harmony import */ var _catagories_experiences_experiences_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./catagories/experiences/experiences.component */ "./src/app/catagories/experiences/experiences.component.ts");
+/* harmony import */ var _catagories_buses_buses_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./catagories/buses/buses.component */ "./src/app/catagories/buses/buses.component.ts");
+/* harmony import */ var _catagories_cars_cars_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./catagories/cars/cars.component */ "./src/app/catagories/cars/cars.component.ts");
+/* harmony import */ var _catagories_restraunrants_restraunrants_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./catagories/restraunrants/restraunrants.component */ "./src/app/catagories/restraunrants/restraunrants.component.ts");
+/* harmony import */ var _catagories_trains_trains_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./catagories/trains/trains.component */ "./src/app/catagories/trains/trains.component.ts");
 
 
 
@@ -1048,24 +1113,1000 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+//------- hotels ---------
+
+
+
+
+
+
+
+
+
+//------- experiences ---------
+
+//------- buses ---------
+
+//------- cars ---------
+
+//------- restraurants ---------
+
+//------- trains ---------
 
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-            declarations: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"], _forgotpassword_forgotpassword_component__WEBPACK_IMPORTED_MODULE_10__["ForgotpasswordComponent"]],
-            entryComponents: [],
-            imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"].forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__["BrowserAnimationsModule"]],
+            declarations: [_app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"], _forgotpassword_forgotpassword_component__WEBPACK_IMPORTED_MODULE_13__["ForgotpasswordComponent"], _catagories_hotels_hotels_component__WEBPACK_IMPORTED_MODULE_14__["HotelsComponent"],
+                _catagories_hotels_aminities_aminities_component__WEBPACK_IMPORTED_MODULE_15__["AminitiesComponent"],
+                _catagories_hotels_booking_booking_component__WEBPACK_IMPORTED_MODULE_16__["BookingComponent"],
+                _catagories_hotels_desricption_desricption_component__WEBPACK_IMPORTED_MODULE_17__["DesricptionComponent"],
+                _catagories_hotels_direction_direction_component__WEBPACK_IMPORTED_MODULE_18__["DirectionComponent"],
+                _catagories_hotels_photos_photos_component__WEBPACK_IMPORTED_MODULE_19__["PhotosComponent"],
+                _catagories_hotels_reviews_reviews_component__WEBPACK_IMPORTED_MODULE_20__["ReviewsComponent"],
+                _catagories_hotels_rooms_rooms_component__WEBPACK_IMPORTED_MODULE_21__["RoomsComponent"],
+                _catagories_hotels_search_model_search_model_component__WEBPACK_IMPORTED_MODULE_22__["SearchModelComponent"],
+                _catagories_experiences_experiences_component__WEBPACK_IMPORTED_MODULE_23__["ExperiencesComponent"],
+                _catagories_buses_buses_component__WEBPACK_IMPORTED_MODULE_24__["BusesComponent"],
+                _catagories_cars_cars_component__WEBPACK_IMPORTED_MODULE_25__["CarsComponent"],
+                _catagories_restraunrants_restraunrants_component__WEBPACK_IMPORTED_MODULE_26__["RestraunrantsComponent"],
+                _catagories_trains_trains_component__WEBPACK_IMPORTED_MODULE_27__["TrainsComponent"]],
+            entryComponents: [_catagories_hotels_search_model_search_model_component__WEBPACK_IMPORTED_MODULE_22__["SearchModelComponent"]],
+            imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["IonicModule"].forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_11__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__["BrowserAnimationsModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatAutocompleteModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatBadgeModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatBottomSheetModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatButtonModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatButtonToggleModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatCardModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatCheckboxModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatChipsModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatDatepickerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatDialogModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatDividerModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatExpansionModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatFormFieldModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatGridListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatIconModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatInputModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatListModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatMenuModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatPaginatorModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatProgressBarModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatProgressSpinnerModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatRadioModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatRippleModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatSelectModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatSidenavModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatSliderModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatSlideToggleModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatSnackBarModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatSortModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatStepperModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatTableModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatTabsModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatToolbarModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatTooltipModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatTreeModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"]],
             providers: [
-                _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__["StatusBar"],
-                _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__["SplashScreen"],
-                { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"] }
+                _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_7__["StatusBar"],
+                _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_6__["SplashScreen"],
+                { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["IonicRouteStrategy"] }
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/catagories/buses/buses.component.html":
+/*!*******************************************************!*\
+  !*** ./src/app/catagories/buses/buses.component.html ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\r\n      <ion-title>BUS</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n   \r\n \r\n\r\n</ion-content>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/catagories/buses/buses.component.scss":
+/*!*******************************************************!*\
+  !*** ./src/app/catagories/buses/buses.component.scss ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NhdGFnb3JpZXMvYnVzZXMvYnVzZXMuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/catagories/buses/buses.component.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/catagories/buses/buses.component.ts ***!
+  \*****************************************************/
+/*! exports provided: BusesComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BusesComponent", function() { return BusesComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
+
+
+var BusesComponent = /** @class */ (function () {
+    function BusesComponent(_location) {
+        this._location = _location;
+    }
+    BusesComponent.prototype.ngOnInit = function () { };
+    BusesComponent.prototype.backClicked = function () {
+        this._location.back();
+    };
+    BusesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-buses',
+            template: __webpack_require__(/*! ./buses.component.html */ "./src/app/catagories/buses/buses.component.html"),
+            styles: [__webpack_require__(/*! ./buses.component.scss */ "./src/app/catagories/buses/buses.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"]])
+    ], BusesComponent);
+    return BusesComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/catagories/cars/cars.component.html":
+/*!*****************************************************!*\
+  !*** ./src/app/catagories/cars/cars.component.html ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\r\n      <ion-title>CABS</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n   \r\n \r\n\r\n</ion-content>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/catagories/cars/cars.component.scss":
+/*!*****************************************************!*\
+  !*** ./src/app/catagories/cars/cars.component.scss ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NhdGFnb3JpZXMvY2Fycy9jYXJzLmNvbXBvbmVudC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/catagories/cars/cars.component.ts":
+/*!***************************************************!*\
+  !*** ./src/app/catagories/cars/cars.component.ts ***!
+  \***************************************************/
+/*! exports provided: CarsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CarsComponent", function() { return CarsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
+
+
+var CarsComponent = /** @class */ (function () {
+    function CarsComponent(_location) {
+        this._location = _location;
+    }
+    CarsComponent.prototype.ngOnInit = function () { };
+    CarsComponent.prototype.backClicked = function () {
+        this._location.back();
+    };
+    CarsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-cars',
+            template: __webpack_require__(/*! ./cars.component.html */ "./src/app/catagories/cars/cars.component.html"),
+            styles: [__webpack_require__(/*! ./cars.component.scss */ "./src/app/catagories/cars/cars.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"]])
+    ], CarsComponent);
+    return CarsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/catagories/experiences/experiences.component.html":
+/*!*******************************************************************!*\
+  !*** ./src/app/catagories/experiences/experiences.component.html ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\r\n      <ion-title>EXPERIENCES</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n   \r\n \r\n\r\n</ion-content>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/catagories/experiences/experiences.component.scss":
+/*!*******************************************************************!*\
+  !*** ./src/app/catagories/experiences/experiences.component.scss ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NhdGFnb3JpZXMvZXhwZXJpZW5jZXMvZXhwZXJpZW5jZXMuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/catagories/experiences/experiences.component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/catagories/experiences/experiences.component.ts ***!
+  \*****************************************************************/
+/*! exports provided: ExperiencesComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExperiencesComponent", function() { return ExperiencesComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
+
+
+var ExperiencesComponent = /** @class */ (function () {
+    function ExperiencesComponent(_location) {
+        this._location = _location;
+    }
+    ExperiencesComponent.prototype.ngOnInit = function () { };
+    ExperiencesComponent.prototype.backClicked = function () {
+        this._location.back();
+    };
+    ExperiencesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-experiences',
+            template: __webpack_require__(/*! ./experiences.component.html */ "./src/app/catagories/experiences/experiences.component.html"),
+            styles: [__webpack_require__(/*! ./experiences.component.scss */ "./src/app/catagories/experiences/experiences.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"]])
+    ], ExperiencesComponent);
+    return ExperiencesComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/aminities/aminities.component.html":
+/*!**********************************************************************!*\
+  !*** ./src/app/catagories/hotels/aminities/aminities.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  aminities works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/aminities/aminities.component.scss":
+/*!**********************************************************************!*\
+  !*** ./src/app/catagories/hotels/aminities/aminities.component.scss ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NhdGFnb3JpZXMvaG90ZWxzL2FtaW5pdGllcy9hbWluaXRpZXMuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/aminities/aminities.component.ts":
+/*!********************************************************************!*\
+  !*** ./src/app/catagories/hotels/aminities/aminities.component.ts ***!
+  \********************************************************************/
+/*! exports provided: AminitiesComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AminitiesComponent", function() { return AminitiesComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var AminitiesComponent = /** @class */ (function () {
+    function AminitiesComponent() {
+    }
+    AminitiesComponent.prototype.ngOnInit = function () { };
+    AminitiesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-aminities',
+            template: __webpack_require__(/*! ./aminities.component.html */ "./src/app/catagories/hotels/aminities/aminities.component.html"),
+            styles: [__webpack_require__(/*! ./aminities.component.scss */ "./src/app/catagories/hotels/aminities/aminities.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], AminitiesComponent);
+    return AminitiesComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/booking/booking.component.html":
+/*!******************************************************************!*\
+  !*** ./src/app/catagories/hotels/booking/booking.component.html ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  booking works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/booking/booking.component.scss":
+/*!******************************************************************!*\
+  !*** ./src/app/catagories/hotels/booking/booking.component.scss ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NhdGFnb3JpZXMvaG90ZWxzL2Jvb2tpbmcvYm9va2luZy5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/booking/booking.component.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/catagories/hotels/booking/booking.component.ts ***!
+  \****************************************************************/
+/*! exports provided: BookingComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BookingComponent", function() { return BookingComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var BookingComponent = /** @class */ (function () {
+    function BookingComponent() {
+    }
+    BookingComponent.prototype.ngOnInit = function () { };
+    BookingComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-booking',
+            template: __webpack_require__(/*! ./booking.component.html */ "./src/app/catagories/hotels/booking/booking.component.html"),
+            styles: [__webpack_require__(/*! ./booking.component.scss */ "./src/app/catagories/hotels/booking/booking.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], BookingComponent);
+    return BookingComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/desricption/desricption.component.html":
+/*!**************************************************************************!*\
+  !*** ./src/app/catagories/hotels/desricption/desricption.component.html ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  desricption works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/desricption/desricption.component.scss":
+/*!**************************************************************************!*\
+  !*** ./src/app/catagories/hotels/desricption/desricption.component.scss ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NhdGFnb3JpZXMvaG90ZWxzL2Rlc3JpY3B0aW9uL2Rlc3JpY3B0aW9uLmNvbXBvbmVudC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/desricption/desricption.component.ts":
+/*!************************************************************************!*\
+  !*** ./src/app/catagories/hotels/desricption/desricption.component.ts ***!
+  \************************************************************************/
+/*! exports provided: DesricptionComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DesricptionComponent", function() { return DesricptionComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var DesricptionComponent = /** @class */ (function () {
+    function DesricptionComponent() {
+    }
+    DesricptionComponent.prototype.ngOnInit = function () { };
+    DesricptionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-desricption',
+            template: __webpack_require__(/*! ./desricption.component.html */ "./src/app/catagories/hotels/desricption/desricption.component.html"),
+            styles: [__webpack_require__(/*! ./desricption.component.scss */ "./src/app/catagories/hotels/desricption/desricption.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], DesricptionComponent);
+    return DesricptionComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/direction/direction.component.html":
+/*!**********************************************************************!*\
+  !*** ./src/app/catagories/hotels/direction/direction.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  direction works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/direction/direction.component.scss":
+/*!**********************************************************************!*\
+  !*** ./src/app/catagories/hotels/direction/direction.component.scss ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NhdGFnb3JpZXMvaG90ZWxzL2RpcmVjdGlvbi9kaXJlY3Rpb24uY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/direction/direction.component.ts":
+/*!********************************************************************!*\
+  !*** ./src/app/catagories/hotels/direction/direction.component.ts ***!
+  \********************************************************************/
+/*! exports provided: DirectionComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DirectionComponent", function() { return DirectionComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var DirectionComponent = /** @class */ (function () {
+    function DirectionComponent() {
+    }
+    DirectionComponent.prototype.ngOnInit = function () { };
+    DirectionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-direction',
+            template: __webpack_require__(/*! ./direction.component.html */ "./src/app/catagories/hotels/direction/direction.component.html"),
+            styles: [__webpack_require__(/*! ./direction.component.scss */ "./src/app/catagories/hotels/direction/direction.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], DirectionComponent);
+    return DirectionComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/hotels.component.html":
+/*!*********************************************************!*\
+  !*** ./src/app/catagories/hotels/hotels.component.html ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\r\n      <ion-title>HOTELS</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n<ion-content>\r\n \r\n  <ion-grid class=\"mt-4\">\r\n    <ion-row>\r\n      <ion-col size=\"12\" class=\"text-center\" (click)=\"presentModal()\">\r\n          <ion-text class=\"text-muted\">City/Area/Hotel</ion-text>\r\n          <ion-text><h3>{{filterString}}</h3></ion-text>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row class=\"mt-4\">\r\n      <ion-col size=\"6\" class=\"text-center border\">\r\n          <ion-label class=\"text-muted\">CHECK IN</ion-label>\r\n        <ion-datetime class=\"text-muted font-weight-bold\" display-format=\"DD/MM/YYYY\" picker-format=\"DD MMMM YYYY\"  min=\"{{currentYear}}\" max=\"{{maxYear}}\" value=\"{{currentDate}}\"></ion-datetime>\r\n      </ion-col>\r\n      <ion-col size=\"6\" class=\"text-center border\">\r\n          <ion-label class=\"text-muted\">CHECK OUT</ion-label>\r\n        <ion-datetime class=\"text-muted font-weight-bold mr-3\" display-format=\"DD/MM/YYYY\" picker-format=\"DD MMMM YYYY\"  min=\"{{currentYear}}\" max=\"{{maxYear}}\" value=\"{{checkoutDate}}\"></ion-datetime>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n \r\n\r\n</ion-content>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/hotels.component.scss":
+/*!*********************************************************!*\
+  !*** ./src/app/catagories/hotels/hotels.component.scss ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".text-grey {\n  color: rgba(155, 153, 153, 0.678);\n  font-size: 18px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2F0YWdvcmllcy9ob3RlbHMvRDpcXE1heXVyIDIzLTctMThcXDIwMTlcXElPTklDXFxpb25pY0gvc3JjXFxhcHBcXGNhdGFnb3JpZXNcXGhvdGVsc1xcaG90ZWxzLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBRUksaUNBQWlDO0VBQ2pDLGVBQWUsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2NhdGFnb3JpZXMvaG90ZWxzL2hvdGVscy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi50ZXh0LWdyZXlcclxue1xyXG4gICAgY29sb3I6IHJnYmEoMTU1LCAxNTMsIDE1MywgMC42NzgpO1xyXG4gICAgZm9udC1zaXplOiAxOHB4O1xyXG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/hotels.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/catagories/hotels/hotels.component.ts ***!
+  \*******************************************************/
+/*! exports provided: HotelsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HotelsComponent", function() { return HotelsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _search_model_search_model_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./search-model/search-model.component */ "./src/app/catagories/hotels/search-model/search-model.component.ts");
+
+
+
+
+
+var HotelsComponent = /** @class */ (function () {
+    function HotelsComponent(_location, modalController) {
+        this._location = _location;
+        this.modalController = modalController;
+        this.currentDate = new Date();
+        this.nextdate = new Date();
+        this.currentYear = this.currentDate.getFullYear();
+        this.checkoutDate = new Date(this.nextdate.setDate(this.nextdate.getDate() + 1));
+        this.maxYear = this.currentDate.getFullYear() + 1;
+    }
+    HotelsComponent.prototype.ngOnInit = function () { };
+    HotelsComponent.prototype.backClicked = function () {
+        this._location.back();
+    };
+    HotelsComponent.prototype.presentModal = function () {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            var modal;
+            var _this = this;
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.modalController.create({
+                            component: _search_model_search_model_component__WEBPACK_IMPORTED_MODULE_4__["SearchModelComponent"],
+                            componentProps: { value: "" }
+                        })];
+                    case 1:
+                        modal = _a.sent();
+                        modal.onDidDismiss().then(function (detail) {
+                            if (detail !== null) {
+                                _this.filterString = detail.data.name;
+                            }
+                        });
+                        return [4 /*yield*/, modal.present()];
+                    case 2: return [2 /*return*/, _a.sent()];
+                }
+            });
+        });
+    };
+    HotelsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-hotels',
+            template: __webpack_require__(/*! ./hotels.component.html */ "./src/app/catagories/hotels/hotels.component.html"),
+            styles: [__webpack_require__(/*! ./hotels.component.scss */ "./src/app/catagories/hotels/hotels.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"], _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ModalController"]])
+    ], HotelsComponent);
+    return HotelsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/hotels.service.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/catagories/hotels/hotels.service.ts ***!
+  \*****************************************************/
+/*! exports provided: HotelsService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HotelsService", function() { return HotelsService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+
+
+
+
+var HotelsService = /** @class */ (function () {
+    function HotelsService(http) {
+        this.http = http;
+    }
+    HotelsService.prototype.getExistingLocationsList = function () {
+        return this.http.get('http://103.252.7.5:3800/api/unity/getExistingLocations/').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (data) {
+            return data;
+        }));
+    };
+    ;
+    HotelsService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+    ], HotelsService);
+    return HotelsService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/photos/photos.component.html":
+/*!****************************************************************!*\
+  !*** ./src/app/catagories/hotels/photos/photos.component.html ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  photos works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/photos/photos.component.scss":
+/*!****************************************************************!*\
+  !*** ./src/app/catagories/hotels/photos/photos.component.scss ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NhdGFnb3JpZXMvaG90ZWxzL3Bob3Rvcy9waG90b3MuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/photos/photos.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/catagories/hotels/photos/photos.component.ts ***!
+  \**************************************************************/
+/*! exports provided: PhotosComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PhotosComponent", function() { return PhotosComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var PhotosComponent = /** @class */ (function () {
+    function PhotosComponent() {
+    }
+    PhotosComponent.prototype.ngOnInit = function () { };
+    PhotosComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-photos',
+            template: __webpack_require__(/*! ./photos.component.html */ "./src/app/catagories/hotels/photos/photos.component.html"),
+            styles: [__webpack_require__(/*! ./photos.component.scss */ "./src/app/catagories/hotels/photos/photos.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], PhotosComponent);
+    return PhotosComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/reviews/reviews.component.html":
+/*!******************************************************************!*\
+  !*** ./src/app/catagories/hotels/reviews/reviews.component.html ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  reviews works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/reviews/reviews.component.scss":
+/*!******************************************************************!*\
+  !*** ./src/app/catagories/hotels/reviews/reviews.component.scss ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NhdGFnb3JpZXMvaG90ZWxzL3Jldmlld3MvcmV2aWV3cy5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/reviews/reviews.component.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/catagories/hotels/reviews/reviews.component.ts ***!
+  \****************************************************************/
+/*! exports provided: ReviewsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReviewsComponent", function() { return ReviewsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var ReviewsComponent = /** @class */ (function () {
+    function ReviewsComponent() {
+    }
+    ReviewsComponent.prototype.ngOnInit = function () { };
+    ReviewsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-reviews',
+            template: __webpack_require__(/*! ./reviews.component.html */ "./src/app/catagories/hotels/reviews/reviews.component.html"),
+            styles: [__webpack_require__(/*! ./reviews.component.scss */ "./src/app/catagories/hotels/reviews/reviews.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], ReviewsComponent);
+    return ReviewsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/rooms/rooms.component.html":
+/*!**************************************************************!*\
+  !*** ./src/app/catagories/hotels/rooms/rooms.component.html ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  rooms works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/rooms/rooms.component.scss":
+/*!**************************************************************!*\
+  !*** ./src/app/catagories/hotels/rooms/rooms.component.scss ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NhdGFnb3JpZXMvaG90ZWxzL3Jvb21zL3Jvb21zLmNvbXBvbmVudC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/rooms/rooms.component.ts":
+/*!************************************************************!*\
+  !*** ./src/app/catagories/hotels/rooms/rooms.component.ts ***!
+  \************************************************************/
+/*! exports provided: RoomsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RoomsComponent", function() { return RoomsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var RoomsComponent = /** @class */ (function () {
+    function RoomsComponent() {
+    }
+    RoomsComponent.prototype.ngOnInit = function () { };
+    RoomsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-rooms',
+            template: __webpack_require__(/*! ./rooms.component.html */ "./src/app/catagories/hotels/rooms/rooms.component.html"),
+            styles: [__webpack_require__(/*! ./rooms.component.scss */ "./src/app/catagories/hotels/rooms/rooms.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], RoomsComponent);
+    return RoomsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/search-model/search-model.component.html":
+/*!****************************************************************************!*\
+  !*** ./src/app/catagories/hotels/search-model/search-model.component.html ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"arrow-back\" (click)=\"myDismiss()\" slot=\"start\" class=\"mediumicon\" ></ion-icon>\r\n\r\n      <form class=\"col-12\">\r\n          <mat-form-field class=\"col-12\">\r\n            <input type=\"text\" placeholder=\"Search City/Area/Hotel\" aria-label=\"Search City/Area/Hotel\" matInput [formControl]=\"myControl\" [(ngModel)]=\"serachfilter\"  [matAutocomplete]=\"auto\">\r\n            <mat-autocomplete #auto=\"matAutocomplete\" [displayWith]=\"displayFn\">\r\n              <mat-option (onSelectionChange)=\"getSelectedValue(option)\" *ngFor=\"let option of filteredOptions | async\" [value]=\"option\">\r\n                {{option.name}}\r\n              </mat-option>\r\n            </mat-autocomplete>\r\n          </mat-form-field>\r\n        </form>\r\n\r\n    <!-- <ion-searchbar  autocomplete=\"on\" placeholder=\"Search City/Area/Hotel\"></ion-searchbar> -->\r\n    <ion-icon name=\"refresh\" (click)=\"resetFilter()\" slot=\"end\" class=\"mediumicon\" ></ion-icon>\r\n  </ion-toolbar>\r\n</ion-header>"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/search-model/search-model.component.scss":
+/*!****************************************************************************!*\
+  !*** ./src/app/catagories/hotels/search-model/search-model.component.scss ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NhdGFnb3JpZXMvaG90ZWxzL3NlYXJjaC1tb2RlbC9zZWFyY2gtbW9kZWwuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/search-model/search-model.component.ts":
+/*!**************************************************************************!*\
+  !*** ./src/app/catagories/hotels/search-model/search-model.component.ts ***!
+  \**************************************************************************/
+/*! exports provided: SearchModelComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchModelComponent", function() { return SearchModelComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _hotels_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../hotels.service */ "./src/app/catagories/hotels/hotels.service.ts");
+
+
+
+
+
+
+var SearchModelComponent = /** @class */ (function () {
+    function SearchModelComponent(navParams, modalController, _HotelsService) {
+        this.modalController = modalController;
+        this._HotelsService = _HotelsService;
+        this.myControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]();
+        this.Filters = [];
+        // componentProps can also be accessed at construction time using NavParams
+    }
+    SearchModelComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.getExistingLocations();
+        this.filteredOptions = this.myControl.valueChanges
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["startWith"])(''), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (value) { return typeof value === 'string' ? value : value.name; }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (name) { return name ? _this._filter(name) : _this.Filters.slice(); }));
+    };
+    SearchModelComponent.prototype.displayFn = function (user) {
+        return user ? user.name : undefined;
+    };
+    SearchModelComponent.prototype._filter = function (name) {
+        var filterValue = name.toLowerCase();
+        return this.Filters.filter(function (option) { return option.name.toLowerCase().indexOf(filterValue) === 0; });
+    };
+    SearchModelComponent.prototype.myDismiss = function (selectedvalue) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            var result;
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        result = selectedvalue;
+                        return [4 /*yield*/, this.modalController.dismiss(result)];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    SearchModelComponent.prototype.getSelectedValue = function (selectedvalue) {
+        this.myDismiss(selectedvalue);
+    };
+    SearchModelComponent.prototype.getExistingLocations = function () {
+        var _this = this;
+        this._HotelsService.getExistingLocationsList().subscribe(function (res) {
+            _this.Filters = res;
+        });
+    };
+    ;
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Number)
+    ], SearchModelComponent.prototype, "value", void 0);
+    SearchModelComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-search-model',
+            template: __webpack_require__(/*! ./search-model.component.html */ "./src/app/catagories/hotels/search-model/search-model.component.html"),
+            styles: [__webpack_require__(/*! ./search-model.component.scss */ "./src/app/catagories/hotels/search-model/search-model.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavParams"], _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"], _hotels_service__WEBPACK_IMPORTED_MODULE_5__["HotelsService"]])
+    ], SearchModelComponent);
+    return SearchModelComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/catagories/restraunrants/restraunrants.component.html":
+/*!***********************************************************************!*\
+  !*** ./src/app/catagories/restraunrants/restraunrants.component.html ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\r\n      <ion-title>RESTAURANTS</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n   \r\n \r\n\r\n</ion-content>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/catagories/restraunrants/restraunrants.component.scss":
+/*!***********************************************************************!*\
+  !*** ./src/app/catagories/restraunrants/restraunrants.component.scss ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NhdGFnb3JpZXMvcmVzdHJhdW5yYW50cy9yZXN0cmF1bnJhbnRzLmNvbXBvbmVudC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/catagories/restraunrants/restraunrants.component.ts":
+/*!*********************************************************************!*\
+  !*** ./src/app/catagories/restraunrants/restraunrants.component.ts ***!
+  \*********************************************************************/
+/*! exports provided: RestraunrantsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RestraunrantsComponent", function() { return RestraunrantsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
+
+
+var RestraunrantsComponent = /** @class */ (function () {
+    function RestraunrantsComponent(_location) {
+        this._location = _location;
+    }
+    RestraunrantsComponent.prototype.ngOnInit = function () { };
+    RestraunrantsComponent.prototype.backClicked = function () {
+        this._location.back();
+    };
+    RestraunrantsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-restraunrants',
+            template: __webpack_require__(/*! ./restraunrants.component.html */ "./src/app/catagories/restraunrants/restraunrants.component.html"),
+            styles: [__webpack_require__(/*! ./restraunrants.component.scss */ "./src/app/catagories/restraunrants/restraunrants.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"]])
+    ], RestraunrantsComponent);
+    return RestraunrantsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/catagories/trains/trains.component.html":
+/*!*********************************************************!*\
+  !*** ./src/app/catagories/trains/trains.component.html ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\r\n      <ion-title>TRAINS</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n \r\n\r\n</ion-content>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/catagories/trains/trains.component.scss":
+/*!*********************************************************!*\
+  !*** ./src/app/catagories/trains/trains.component.scss ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NhdGFnb3JpZXMvdHJhaW5zL3RyYWlucy5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/catagories/trains/trains.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/catagories/trains/trains.component.ts ***!
+  \*******************************************************/
+/*! exports provided: TrainsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TrainsComponent", function() { return TrainsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
+
+
+var TrainsComponent = /** @class */ (function () {
+    function TrainsComponent(_location) {
+        this._location = _location;
+    }
+    TrainsComponent.prototype.ngOnInit = function () { };
+    TrainsComponent.prototype.backClicked = function () {
+        this._location.back();
+    };
+    TrainsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-trains',
+            template: __webpack_require__(/*! ./trains.component.html */ "./src/app/catagories/trains/trains.component.html"),
+            styles: [__webpack_require__(/*! ./trains.component.scss */ "./src/app/catagories/trains/trains.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"]])
+    ], TrainsComponent);
+    return TrainsComponent;
 }());
 
 
@@ -1079,7 +2120,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  forgotpassword works!\r\n</p>\r\n"
+module.exports = "<p>\n  forgotpassword works!\n</p>\n"
 
 /***/ }),
 
@@ -1191,7 +2232,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\IONIC\2019\IonicH\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\Mayur 23-7-18\2019\IONIC\ionicH\src\main.ts */"./src/main.ts");
 
 
 /***/ })

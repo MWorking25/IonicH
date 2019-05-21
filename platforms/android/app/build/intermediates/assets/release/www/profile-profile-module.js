@@ -49,62 +49,6 @@ var ProfilePageModule = /** @class */ (function () {
 
 
 
-/***/ }),
-
-/***/ "./src/app/home/profile/profile.page.html":
-/*!************************************************!*\
-  !*** ./src/app/home/profile/profile.page.html ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title>profile</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n\r\n</ion-content>\r\n"
-
-/***/ }),
-
-/***/ "./src/app/home/profile/profile.page.scss":
-/*!************************************************!*\
-  !*** ./src/app/home/profile/profile.page.scss ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvcHJvZmlsZS9wcm9maWxlLnBhZ2Uuc2NzcyJ9 */"
-
-/***/ }),
-
-/***/ "./src/app/home/profile/profile.page.ts":
-/*!**********************************************!*\
-  !*** ./src/app/home/profile/profile.page.ts ***!
-  \**********************************************/
-/*! exports provided: ProfilePage */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfilePage", function() { return ProfilePage; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-
-
-var ProfilePage = /** @class */ (function () {
-    function ProfilePage() {
-    }
-    ProfilePage.prototype.ngOnInit = function () {
-    };
-    ProfilePage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-profile',
-            template: __webpack_require__(/*! ./profile.page.html */ "./src/app/home/profile/profile.page.html"),
-            styles: [__webpack_require__(/*! ./profile.page.scss */ "./src/app/home/profile/profile.page.scss")]
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], ProfilePage);
-    return ProfilePage;
-}());
-
-
-
 /***/ })
 
 }]);

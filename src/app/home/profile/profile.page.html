@@ -1,10 +1,83 @@
 <ion-header>
-  <ion-toolbar>
-      <ion-title>User Name</ion-title>
-  </ion-toolbar>
-</ion-header>
+    <ion-toolbar>
+        <ion-icon color="success" name="checkmark" slot="end" class="mr-3 mediumicon save-profile" ></ion-icon>
+    </ion-toolbar>
+    <div class="row hero-bkg-animated">
+      <ion-avatar class="ml-auto mr-auto item-avatar p-2">
+        <img src="../../../assets/images/misc/man.png">
+      </ion-avatar>
+    </div>
+  </ion-header>
 <ion-content>
-
- 
+  <ion-grid class="mb-4 mt-1">
+    <ion-row>
+      <ion-col size="6">
+          <ion-item>
+              <ion-label position="floating">First Name</ion-label>
+              <ion-input value="Mayur"></ion-input>
+            </ion-item>
+      </ion-col>
+      <ion-col size="6">
+          <ion-item>
+              <ion-label position="floating">Last Name</ion-label>
+              <ion-input value="Mhatre"></ion-input>
+            </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+          <ion-item>
+              <ion-label  position="floating">Gender</ion-label>
+              <ion-select placeholder="Select One" interface="popover">
+                <ion-select-option value="female">Female</ion-select-option>
+                <ion-select-option value="male">Male</ion-select-option>
+              </ion-select>
+            </ion-item>
+      </ion-col>
+      <ion-col size="6">
+          <ion-item>
+              <ion-label  position="floating">Marital Status</ion-label>
+              <ion-select interface="popover"  placeholder="Select One">
+                <ion-select-option value="single">Single</ion-select-option>
+                <ion-select-option value="married">Married</ion-select-option>
+              </ion-select>
+            </ion-item>
+      </ion-col>
+      <ion-col size="12">
+              <ion-label color="medium">
+                <h5>Contact / Login Details</h5>
+              </ion-label>
+      </ion-col>
+      <ion-col size="12">
+          <ion-item>
+              <ion-label  position="floating">Mobile Number</ion-label>
+              <ion-input type="number" value="9768241151"></ion-input>
+            </ion-item>
+      </ion-col>
+      <ion-col size="12">
+          <ion-item>
+              <ion-label  position="floating">Email</ion-label>
+              <ion-input type="email" value="Mhatremayur2520@gmail.com"></ion-input>
+            </ion-item>
+      </ion-col>
+      <ion-col size="12">
+          <ion-label color="medium">
+            <h5>Special Dates</h5>
+          </ion-label>
+      </ion-col>
+      <ion-col size="6">
+          <ion-item>
+              <ion-label position="floating">Birthday</ion-label>
+              <ion-datetime display-format="DD MMMM YYYY" picker-format="DD MMMM YYYY" value="{{birthday}}"></ion-datetime>
+            </ion-item>
+      </ion-col>
+      <ion-col size="6">
+          <ion-item>
+              <ion-label position="floating">Anniversary</ion-label>
+              <ion-datetime display-format="DD MMMM YYYY" picker-format="DD MMMM YYYY" value="{{anniversary}}"></ion-datetime>
+            </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
