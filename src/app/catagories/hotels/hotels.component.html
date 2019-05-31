@@ -1,30 +1,72 @@
 <ion-header>
   <ion-toolbar>
-      <ion-icon name="close" (click)="backClicked()" slot="start" class="ml-3 mediumicon" ></ion-icon>
-      <ion-title>HOTELS</ion-title>
+    <ion-icon name="close" (click)="backClicked()" slot="start" class="ml-3 mediumicon"></ion-icon>
+    <ion-title>HOTELS</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
- 
+
   <ion-grid class="mt-4">
     <ion-row>
       <ion-col size="12" class="text-center" (click)="presentModal()">
-          <ion-text class="text-muted">City/Area/Hotel</ion-text>
-          <ion-text><h3>{{filterString}}</h3></ion-text>
+        <ion-text class="text-muted">City/Area/Hotel</ion-text>
+        <ion-text>
+          <h3>{{filterString}}</h3>
+        </ion-text>
       </ion-col>
     </ion-row>
 
     <ion-row class="mt-4">
       <ion-col size="6" class="text-center border">
-          <ion-label class="text-muted">CHECK IN</ion-label>
-        <ion-datetime class="text-muted font-weight-bold" display-format="DD/MM/YYYY" picker-format="DD MMMM YYYY"  min="{{currentYear}}" max="{{maxYear}}" value="{{currentDate}}"></ion-datetime>
+        <ion-label class="text-muted">CHECK IN</ion-label>
+        <ion-datetime class="text-muted font-weight-bold" display-format="DD/MM/YYYY" picker-format="DD MMMM YYYY"
+          min="{{currentYear}}" max="{{maxYear}}" value="{{currentDate}}"></ion-datetime>
       </ion-col>
       <ion-col size="6" class="text-center border">
-          <ion-label class="text-muted">CHECK OUT</ion-label>
-        <ion-datetime class="text-muted font-weight-bold mr-3" display-format="DD/MM/YYYY" picker-format="DD MMMM YYYY"  min="{{currentYear}}" max="{{maxYear}}" value="{{checkoutDate}}"></ion-datetime>
+        <ion-label class="text-muted">CHECK OUT</ion-label>
+        <ion-datetime class="text-muted font-weight-bold mr-3" display-format="DD/MM/YYYY" picker-format="DD MMMM YYYY"
+          min="{{currentYear}}" max="{{maxYear}}" value="{{checkoutDate}}"></ion-datetime>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="mt-2">
+      <ion-col size="6" class="text-center border">
+        <div class="col-12 text-center">
+          <ion-label class="text-muted">GUESTS</ion-label>
+        </div>
+        <ion-text class="text-muted font-weight-bold mt-2"><strong class="headerfont">06</strong></ion-text>
+      </ion-col>
+      <ion-col size="6" class="text-center border">
+        <div class="col-12 text-center">
+          <ion-label class="text-muted">ROOMS</ion-label>
+        </div>
+        <ion-text class="text-muted font-weight-bold mt-2"><strong class="headerfont">02</strong></ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="mt-2">
+      <ion-col size="12" class="text-left">
+        <div class="col-12 text-left">
+          <ion-label class="text-muted">TRIP TYPE:</ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-grid>
+          <ion-row class="text-center">
+            <ion-col size="4" class="text-center">
+              <ion-label><i class="material-icons icon icon-business-trip"></i>&nbsp;Business</ion-label>
+            </ion-col>
+            <ion-col size="4" class="text-center">
+              <ion-label><i class="material-icons icon icon-family"></i>&nbsp;Family</ion-label>
+            </ion-col>
+            <ion-col size="4" class="text-center">
+              <ion-label><i class="material-icons icon icon-relationship"></i>&nbsp;Couple</ion-label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
       </ion-col>
     </ion-row>
   </ion-grid>
- 
+
 
 </ion-content>

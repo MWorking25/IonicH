@@ -22,7 +22,7 @@ import { RestraunrantsComponent } from './catagories/restraunrants/restraunrants
 import { TrainsComponent } from './catagories/trains/trains.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'signin', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
   { path: 'signup', loadChildren: './signup/signup.module#SignupPageModule' },
   { path: 'signin', loadChildren: './signin/signin.module#SigninPageModule' },
