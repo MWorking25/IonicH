@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\Mayur 23-7-18\2019\IONIC\ionicH\platforms\android\app\src\main\jniLibs"/></dataSet><dataSet config="release"><source path="D:\Mayur 23-7-18\2019\IONIC\ionicH\platforms\android\app\src\release\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\IONIC\2019\IonicH\platforms\android\app\src\main\jniLibs"/></dataSet><dataSet config="release"><source path="D:\IONIC\2019\IonicH\platforms\android\app\src\release\jniLibs"/></dataSet></merger>

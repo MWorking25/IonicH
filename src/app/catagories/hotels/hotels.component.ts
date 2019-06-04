@@ -16,6 +16,9 @@ export class HotelsComponent implements OnInit {
   currentYear = this.currentDate.getFullYear();
   checkoutDate = new Date(this.nextdate.setDate(this.nextdate.getDate() + 1));
   maxYear = this.currentDate.getFullYear() + 1;
+
+  tripTypes = [{type:'Business',icon:'icon-business-trip',iconcolor:''},{type:'Family',icon:'icon-family',iconcolor:''},{type:'Romatic',icon:'icon-relationship',iconcolor:''}]
+
   ngOnInit() {}
 
   backClicked() {
@@ -30,11 +33,21 @@ export class HotelsComponent implements OnInit {
 
     modal.onDidDismiss().then((detail) => {
       if (detail !== null) {
-        this.filterString = detail.data.name;
+        this.filterString = '<div class="col-12"><h3>'+detail.data.serachresult+'</h3></div><div class="col-12"><ion-text>'+detail.data.address+'</ion-text></div>';
       }
    });
 
     return await modal.present();
+  }
+
+
+  selectType(triptype)
+  {
+    this.tripTypes.map((value)=>{
+        value.iconcolor = '';
+    });
+
+    triptype.iconcolor = 'text-primary';
   }
 
 }

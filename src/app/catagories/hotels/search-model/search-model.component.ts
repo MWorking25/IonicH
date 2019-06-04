@@ -5,8 +5,9 @@ import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 
 import { HotelsService } from '../hotels.service';
-export interface User {
-  name: string;
+export interface SerachResult {
+  serachresult: string;
+  address: string;
 }
 
 
@@ -22,9 +23,9 @@ export class SearchModelComponent implements OnInit{
   Filters = [];
   
 
-  serachfilter:Observable<User>  ;
+  serachfilter:Observable<SerachResult>  ;
 
-  filteredOptions: Observable<User[]> 
+  filteredOptions: Observable<SerachResult[]> 
 
  // "value" passed in componentProps
  @Input() value: number;
@@ -34,26 +35,36 @@ export class SearchModelComponent implements OnInit{
  }
 
 
- ngOnInit() {
-
-  this.getExistingLocations();
-   
-  this.filteredOptions = this.myControl.valueChanges
+ ngOnInit() {   
+ /*  this.filteredOptions = this.myControl.valueChanges
     .pipe(
-      startWith<string | User>(''),
-      map(value => typeof value === 'string' ? value : value.name),
+      startWith<string | SerachResult>(''),
+      map(value => typeof value === 'string' ? value : value.serachresult),
       map(name => name ? this._filter(name) : this.Filters.slice())
-    );
+    ); */
+
+
+    this.myControl.valueChanges.subscribe(
+      term => {
+        if (term != '') {
+          this._HotelsService.getRelaventSearch(term).subscribe(
+            data => {
+              this.filteredOptions = data;
+              //console.log(data[0].BookName);
+          })
+        }
+    })
+
 }
 
-displayFn(user?: User): string | undefined {
-  return user ? user.name : undefined;
+displayFn(_serResult?: SerachResult): string | undefined {
+  return _serResult ? _serResult.serachresult+'\n'+_serResult.address : undefined;
 }
 
-private _filter(name: string): User[] {
+private _filter(name: string): SerachResult[] {
   const filterValue = name.toLowerCase();
 
-  return this.Filters.filter(option => option.name.toLowerCase().indexOf(filterValue) === 0);
+  return this.Filters.filter(option => option.serachresult.indexOf(filterValue) === 0);
 }
 
 
@@ -63,20 +74,8 @@ private _filter(name: string): User[] {
   await this.modalController.dismiss(result);
 }
 
-
-
 getSelectedValue(selectedvalue)
 {
   this.myDismiss(selectedvalue);
 }
-
-
-getExistingLocations()
-{
-  this._HotelsService.getExistingLocationsList().subscribe((res:any)=>{
-    this.Filters = res;
-  });	
-};
-
-
 }

@@ -962,7 +962,7 @@ __webpack_require__.r(__webpack_exports__);
 //------- trains ---------
 
 var routes = [
-    { path: '', redirectTo: 'signin', pathMatch: 'full' },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', loadChildren: './home/home.module#HomePageModule' },
     { path: 'signup', loadChildren: './signup/signup.module#SignupPageModule' },
     { path: 'signin', loadChildren: './signin/signin.module#SigninPageModule' },
@@ -1011,7 +1011,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-app>\n"
+module.exports = "<ion-app>\r\n  <ion-router-outlet></ion-router-outlet>\r\n</ion-app>\r\n"
 
 /***/ }),
 
@@ -1186,7 +1186,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\r\n      <ion-title>BUS</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n   \r\n \r\n\r\n</ion-content>\r\n"
+module.exports = "<ion-header>\n  <ion-toolbar>\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\n      <ion-title>BUS</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n   \n \n\n</ion-content>\n"
 
 /***/ }),
 
@@ -1247,7 +1247,7 @@ var BusesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\r\n      <ion-title>CABS</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n   \r\n \r\n\r\n</ion-content>\r\n"
+module.exports = "<ion-header>\n  <ion-toolbar>\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\n      <ion-title>CABS</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n   \n \n\n</ion-content>\n"
 
 /***/ }),
 
@@ -1308,7 +1308,7 @@ var CarsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\r\n      <ion-title>EXPERIENCES</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n   \r\n \r\n\r\n</ion-content>\r\n"
+module.exports = "<ion-header>\n  <ion-toolbar>\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\n      <ion-title>EXPERIENCES</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n   \n \n\n</ion-content>\n"
 
 /***/ }),
 
@@ -1369,7 +1369,7 @@ var ExperiencesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  aminities works!\r\n</p>\r\n"
+module.exports = "<p>\n  aminities works!\n</p>\n"
 
 /***/ }),
 
@@ -1424,7 +1424,7 @@ var AminitiesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  booking works!\r\n</p>\r\n"
+module.exports = "<p>\n  booking works!\n</p>\n"
 
 /***/ }),
 
@@ -1479,7 +1479,7 @@ var BookingComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  desricption works!\r\n</p>\r\n"
+module.exports = "<p>\n  desricption works!\n</p>\n"
 
 /***/ }),
 
@@ -1534,7 +1534,7 @@ var DesricptionComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  direction works!\r\n</p>\r\n"
+module.exports = "<p>\n  direction works!\n</p>\n"
 
 /***/ }),
 
@@ -1589,7 +1589,7 @@ var DirectionComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\r\n      <ion-title>HOTELS</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n<ion-content>\r\n \r\n  <ion-grid class=\"mt-4\">\r\n    <ion-row>\r\n      <ion-col size=\"12\" class=\"text-center\" (click)=\"presentModal()\">\r\n          <ion-text class=\"text-muted\">City/Area/Hotel</ion-text>\r\n          <ion-text><h3>{{filterString}}</h3></ion-text>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row class=\"mt-4\">\r\n      <ion-col size=\"6\" class=\"text-center border\">\r\n          <ion-label class=\"text-muted\">CHECK IN</ion-label>\r\n        <ion-datetime class=\"text-muted font-weight-bold\" display-format=\"DD/MM/YYYY\" picker-format=\"DD MMMM YYYY\"  min=\"{{currentYear}}\" max=\"{{maxYear}}\" value=\"{{currentDate}}\"></ion-datetime>\r\n      </ion-col>\r\n      <ion-col size=\"6\" class=\"text-center border\">\r\n          <ion-label class=\"text-muted\">CHECK OUT</ion-label>\r\n        <ion-datetime class=\"text-muted font-weight-bold mr-3\" display-format=\"DD/MM/YYYY\" picker-format=\"DD MMMM YYYY\"  min=\"{{currentYear}}\" max=\"{{maxYear}}\" value=\"{{checkoutDate}}\"></ion-datetime>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n \r\n\r\n</ion-content>\r\n"
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\"></ion-icon>\r\n    <ion-title>HOTELS</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n<ion-content>\r\n\r\n  <ion-grid class=\"mt-4\">\r\n    <ion-row>\r\n      <ion-col size=\"12\" class=\"text-center\" (click)=\"presentModal()\">\r\n        <ion-text class=\"text-muted\">City/Area/Hotel</ion-text>\r\n        <ion-text>\r\n          <span [innerHTML]=\"filterString || ''\"></span>\r\n        </ion-text>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row class=\"mt-4\">\r\n      <ion-col size=\"6\" class=\"text-center border\">\r\n        <ion-label class=\"text-muted\">CHECK IN</ion-label>\r\n        <ion-datetime class=\"text-muted font-weight-bold\" display-format=\"DD/MM/YYYY\" picker-format=\"DD MMMM YYYY\"\r\n          min=\"{{currentYear}}\" max=\"{{maxYear}}\" value=\"{{currentDate}}\"></ion-datetime>\r\n      </ion-col>\r\n      <ion-col size=\"6\" class=\"text-center border\">\r\n        <ion-label class=\"text-muted\">CHECK OUT</ion-label>\r\n        <ion-datetime class=\"text-muted font-weight-bold mr-3\" display-format=\"DD/MM/YYYY\" picker-format=\"DD MMMM YYYY\"\r\n          min=\"{{currentYear}}\" max=\"{{maxYear}}\" value=\"{{checkoutDate}}\"></ion-datetime>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row class=\"mt-2\">\r\n      <ion-col size=\"6\" class=\"text-center border\">\r\n        <div class=\"col-12 text-center\">\r\n          <ion-label class=\"text-muted\">GUESTS</ion-label>\r\n        </div>\r\n        <ion-text class=\"text-muted font-weight-bold mt-2\"><strong class=\"headerfont\">06</strong></ion-text>\r\n      </ion-col>\r\n      <ion-col size=\"6\" class=\"text-center border\">\r\n        <div class=\"col-12 text-center\">\r\n          <ion-label class=\"text-muted\">ROOMS</ion-label>\r\n        </div>\r\n        <ion-text class=\"text-muted font-weight-bold mt-2\"><strong class=\"headerfont\">02</strong></ion-text>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row class=\"mt-2\">\r\n      <ion-col size=\"12\" class=\"text-left\">\r\n        <div class=\"col-12 text-left\">\r\n          <ion-label class=\"text-muted\">TRIP TYPE:</ion-label>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col size=\"12\">\r\n        <ion-grid>\r\n          <ion-row class=\"text-center\">\r\n            <ion-col size=\"4\" class=\"text-center\" *ngFor=\"let _tripTypes of tripTypes\" (click)=\"selectType(_tripTypes)\">\r\n              <div class=\"col-12 text-center {{_tripTypes.iconcolor}}\">\r\n                  <i class=\"material-icons icon {{_tripTypes.icon}}\"></i>\r\n              </div>\r\n              <div class=\"col-12 text-center\">\r\n                  <ion-label>{{_tripTypes.type}}</ion-label>\r\n              </div>\r\n             \r\n            </ion-col>\r\n            <!-- <ion-col size=\"4\" class=\"text-center\">\r\n\r\n                <div class=\"col-12 text-center\">\r\n                    <i class=\"material-icons icon icon-family\"></i>\r\n                </div>\r\n                <div class=\"col-12 text-center\">\r\n                    <ion-label>Family</ion-label>\r\n                </div>\r\n            </ion-col>\r\n            <ion-col size=\"4\" class=\"text-center\">\r\n\r\n                <div class=\"col-12 text-center\">\r\n                    <i class=\"material-icons icon icon-relationship\"></i>\r\n                </div>\r\n                <div class=\"col-12 text-center\">\r\n                    <ion-label>Romatic</ion-label>\r\n                </div>\r\n            </ion-col> -->\r\n          </ion-row>\r\n          <ion-row class=\"mt-4\">\r\n            <ion-col size=\"12\" class=\"mt-4 text-center\">\r\n              <ion-button class=\"ion-btn\" shape=\"round\" mode=\"ios\"><ion-icon name=\"search\"></ion-icon>Search</ion-button>\r\n            </ion-col>\r\n          </ion-row>\r\n        </ion-grid>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n\r\n</ion-content>"
 
 /***/ }),
 
@@ -1600,7 +1600,7 @@ module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"clos
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".text-grey {\n  color: rgba(155, 153, 153, 0.678);\n  font-size: 18px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2F0YWdvcmllcy9ob3RlbHMvRDpcXE1heXVyIDIzLTctMThcXDIwMTlcXElPTklDXFxpb25pY0gvc3JjXFxhcHBcXGNhdGFnb3JpZXNcXGhvdGVsc1xcaG90ZWxzLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBRUksaUNBQWlDO0VBQ2pDLGVBQWUsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2NhdGFnb3JpZXMvaG90ZWxzL2hvdGVscy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi50ZXh0LWdyZXlcclxue1xyXG4gICAgY29sb3I6IHJnYmEoMTU1LCAxNTMsIDE1MywgMC42NzgpO1xyXG4gICAgZm9udC1zaXplOiAxOHB4O1xyXG59Il19 */"
+module.exports = ".text-grey {\n  color: rgba(155, 153, 153, 0.678);\n  font-size: 18px; }\n\n.headerfont {\n  font-size: 26px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2F0YWdvcmllcy9ob3RlbHMvRDpcXElPTklDXFwyMDE5XFxJb25pY0gvc3JjXFxhcHBcXGNhdGFnb3JpZXNcXGhvdGVsc1xcaG90ZWxzLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBRUksaUNBQWlDO0VBQ2pDLGVBQWUsRUFBQTs7QUFFbkI7RUFDSSxlQUFlLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9jYXRhZ29yaWVzL2hvdGVscy9ob3RlbHMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudGV4dC1ncmV5XHJcbntcclxuICAgIGNvbG9yOiByZ2JhKDE1NSwgMTUzLCAxNTMsIDAuNjc4KTtcclxuICAgIGZvbnQtc2l6ZTogMThweDtcclxufVxyXG4uaGVhZGVyZm9udHtcclxuICAgIGZvbnQtc2l6ZTogMjZweDtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -1633,6 +1633,7 @@ var HotelsComponent = /** @class */ (function () {
         this.currentYear = this.currentDate.getFullYear();
         this.checkoutDate = new Date(this.nextdate.setDate(this.nextdate.getDate() + 1));
         this.maxYear = this.currentDate.getFullYear() + 1;
+        this.tripTypes = [{ type: 'Business', icon: 'icon-business-trip', iconcolor: '' }, { type: 'Family', icon: 'icon-family', iconcolor: '' }, { type: 'Romatic', icon: 'icon-relationship', iconcolor: '' }];
     }
     HotelsComponent.prototype.ngOnInit = function () { };
     HotelsComponent.prototype.backClicked = function () {
@@ -1652,7 +1653,7 @@ var HotelsComponent = /** @class */ (function () {
                         modal = _a.sent();
                         modal.onDidDismiss().then(function (detail) {
                             if (detail !== null) {
-                                _this.filterString = detail.data.name;
+                                _this.filterString = '<div class="col-12"><h3>' + detail.data.serachresult + '</h3></div><div class="col-12"><ion-text>' + detail.data.address + '</ion-text></div>';
                             }
                         });
                         return [4 /*yield*/, modal.present()];
@@ -1660,6 +1661,12 @@ var HotelsComponent = /** @class */ (function () {
                 }
             });
         });
+    };
+    HotelsComponent.prototype.selectType = function (triptype) {
+        this.tripTypes.map(function (value) {
+            value.iconcolor = '';
+        });
+        triptype.iconcolor = 'text-primary';
     };
     HotelsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1704,6 +1711,19 @@ var HotelsService = /** @class */ (function () {
         }));
     };
     ;
+    HotelsService.prototype.getRelaventSearch = function (filteredkey) {
+        /* return this.http.get<any>('http://103.252.7.5:3800/api/unity/getRelaventSearch/'+filteredkey).pipe(map(data => {
+                                return data;
+        })); */
+        var searchResult = this.http.get('http://103.252.7.5:3800/api/unity/getRelaventSearch/' + filteredkey)
+            .pipe(
+        //debounceTime(500),  // WAIT FOR 500 MILISECONDS ATER EACH KEY STROKE.
+        Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (data) {
+            return (data.length != 0 ? data : [{ "BookName": "No Record Found" }]);
+        }));
+        return searchResult;
+    };
+    ;
     HotelsService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
             providedIn: 'root'
@@ -1724,7 +1744,7 @@ var HotelsService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  photos works!\r\n</p>\r\n"
+module.exports = "<p>\n  photos works!\n</p>\n"
 
 /***/ }),
 
@@ -1779,7 +1799,7 @@ var PhotosComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  reviews works!\r\n</p>\r\n"
+module.exports = "<p>\n  reviews works!\n</p>\n"
 
 /***/ }),
 
@@ -1834,7 +1854,7 @@ var ReviewsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  rooms works!\r\n</p>\r\n"
+module.exports = "<p>\n  rooms works!\n</p>\n"
 
 /***/ }),
 
@@ -1889,7 +1909,7 @@ var RoomsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"arrow-back\" (click)=\"myDismiss()\" slot=\"start\" class=\"mediumicon\" ></ion-icon>\r\n\r\n      <form class=\"col-12\">\r\n          <mat-form-field class=\"col-12\">\r\n            <input type=\"text\" placeholder=\"Search City/Area/Hotel\" aria-label=\"Search City/Area/Hotel\" matInput [formControl]=\"myControl\" [(ngModel)]=\"serachfilter\"  [matAutocomplete]=\"auto\">\r\n            <mat-autocomplete #auto=\"matAutocomplete\" [displayWith]=\"displayFn\">\r\n              <mat-option (onSelectionChange)=\"getSelectedValue(option)\" *ngFor=\"let option of filteredOptions | async\" [value]=\"option\">\r\n                {{option.name}}\r\n              </mat-option>\r\n            </mat-autocomplete>\r\n          </mat-form-field>\r\n        </form>\r\n\r\n    <!-- <ion-searchbar  autocomplete=\"on\" placeholder=\"Search City/Area/Hotel\"></ion-searchbar> -->\r\n    <ion-icon name=\"refresh\" (click)=\"resetFilter()\" slot=\"end\" class=\"mediumicon\" ></ion-icon>\r\n  </ion-toolbar>\r\n</ion-header>"
+module.exports = "<ion-header>\n  <ion-toolbar>\n      <ion-icon name=\"arrow-back\" (click)=\"myDismiss()\" slot=\"start\" class=\"mediumicon\" ></ion-icon>\n\n      <form class=\"col-12\">\n          <mat-form-field class=\"col-12\">\n            <input type=\"text\" placeholder=\"Search City/Area/Hotel\" aria-label=\"Search City/Area/Hotel\"  matInput [formControl]=\"myControl\" [(ngModel)]=\"serachfilter\"  [matAutocomplete]=\"auto\">\n            <mat-autocomplete #auto=\"matAutocomplete\" [displayWith]=\"displayFn\">\n              <mat-option (onSelectionChange)=\"getSelectedValue(option)\" *ngFor=\"let option of filteredOptions\" [value]=\"option\">\n                <div class=\"col-12\">{{option.serachresult}}</div>\n                <!-- <div class=\"col-12\"> <small>{{option.address}}</small></div> -->\n              </mat-option>\n            </mat-autocomplete>\n          </mat-form-field>\n        </form>\n\n    <!-- <ion-searchbar  autocomplete=\"on\" placeholder=\"Search City/Area/Hotel\"></ion-searchbar> -->\n    <ion-icon name=\"refresh\" (click)=\"resetFilter()\" slot=\"end\" class=\"mediumicon\" ></ion-icon>\n  </ion-toolbar>\n</ion-header>"
 
 /***/ }),
 
@@ -1918,9 +1938,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-/* harmony import */ var _hotels_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../hotels.service */ "./src/app/catagories/hotels/hotels.service.ts");
-
+/* harmony import */ var _hotels_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../hotels.service */ "./src/app/catagories/hotels/hotels.service.ts");
 
 
 
@@ -1935,17 +1953,28 @@ var SearchModelComponent = /** @class */ (function () {
         // componentProps can also be accessed at construction time using NavParams
     }
     SearchModelComponent.prototype.ngOnInit = function () {
+        /*  this.filteredOptions = this.myControl.valueChanges
+           .pipe(
+             startWith<string | SerachResult>(''),
+             map(value => typeof value === 'string' ? value : value.serachresult),
+             map(name => name ? this._filter(name) : this.Filters.slice())
+           ); */
         var _this = this;
-        this.getExistingLocations();
-        this.filteredOptions = this.myControl.valueChanges
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["startWith"])(''), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (value) { return typeof value === 'string' ? value : value.name; }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (name) { return name ? _this._filter(name) : _this.Filters.slice(); }));
+        this.myControl.valueChanges.subscribe(function (term) {
+            if (term != '') {
+                _this._HotelsService.getRelaventSearch(term).subscribe(function (data) {
+                    _this.filteredOptions = data;
+                    //console.log(data[0].BookName);
+                });
+            }
+        });
     };
-    SearchModelComponent.prototype.displayFn = function (user) {
-        return user ? user.name : undefined;
+    SearchModelComponent.prototype.displayFn = function (_serResult) {
+        return _serResult ? _serResult.serachresult + '\n' + _serResult.address : undefined;
     };
     SearchModelComponent.prototype._filter = function (name) {
         var filterValue = name.toLowerCase();
-        return this.Filters.filter(function (option) { return option.name.toLowerCase().indexOf(filterValue) === 0; });
+        return this.Filters.filter(function (option) { return option.serachresult.indexOf(filterValue) === 0; });
     };
     SearchModelComponent.prototype.myDismiss = function (selectedvalue) {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
@@ -1965,13 +1994,6 @@ var SearchModelComponent = /** @class */ (function () {
     SearchModelComponent.prototype.getSelectedValue = function (selectedvalue) {
         this.myDismiss(selectedvalue);
     };
-    SearchModelComponent.prototype.getExistingLocations = function () {
-        var _this = this;
-        this._HotelsService.getExistingLocationsList().subscribe(function (res) {
-            _this.Filters = res;
-        });
-    };
-    ;
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Number)
@@ -1982,7 +2004,7 @@ var SearchModelComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./search-model.component.html */ "./src/app/catagories/hotels/search-model/search-model.component.html"),
             styles: [__webpack_require__(/*! ./search-model.component.scss */ "./src/app/catagories/hotels/search-model/search-model.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavParams"], _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"], _hotels_service__WEBPACK_IMPORTED_MODULE_5__["HotelsService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavParams"], _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"], _hotels_service__WEBPACK_IMPORTED_MODULE_4__["HotelsService"]])
     ], SearchModelComponent);
     return SearchModelComponent;
 }());
@@ -1998,7 +2020,7 @@ var SearchModelComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\r\n      <ion-title>RESTAURANTS</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n   \r\n \r\n\r\n</ion-content>\r\n"
+module.exports = "<ion-header>\n  <ion-toolbar>\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\n      <ion-title>RESTAURANTS</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n   \n \n\n</ion-content>\n"
 
 /***/ }),
 
@@ -2059,7 +2081,7 @@ var RestraunrantsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\r\n      <ion-title>TRAINS</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n \r\n\r\n</ion-content>\r\n"
+module.exports = "<ion-header>\n  <ion-toolbar>\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\n      <ion-title>TRAINS</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n \n\n</ion-content>\n"
 
 /***/ }),
 
@@ -2120,7 +2142,7 @@ var TrainsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  forgotpassword works!\n</p>\n"
+module.exports = "<p>\r\n  forgotpassword works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -2232,7 +2254,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Mayur 23-7-18\2019\IONIC\ionicH\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\IONIC\2019\IonicH\src\main.ts */"./src/main.ts");
 
 
 /***/ })

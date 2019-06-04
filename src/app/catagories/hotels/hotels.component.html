@@ -11,7 +11,7 @@
       <ion-col size="12" class="text-center" (click)="presentModal()">
         <ion-text class="text-muted">City/Area/Hotel</ion-text>
         <ion-text>
-          <h3>{{filterString}}</h3>
+          <span [innerHTML]="filterString || ''"></span>
         </ion-text>
       </ion-col>
     </ion-row>
@@ -53,20 +53,42 @@
       <ion-col size="12">
         <ion-grid>
           <ion-row class="text-center">
-            <ion-col size="4" class="text-center">
-              <ion-label><i class="material-icons icon icon-business-trip"></i>&nbsp;Business</ion-label>
+            <ion-col size="4" class="text-center" *ngFor="let _tripTypes of tripTypes" (click)="selectType(_tripTypes)">
+              <div class="col-12 text-center {{_tripTypes.iconcolor}}">
+                  <i class="material-icons icon {{_tripTypes.icon}}"></i>
+              </div>
+              <div class="col-12 text-center">
+                  <ion-label>{{_tripTypes.type}}</ion-label>
+              </div>
+             
+            </ion-col>
+            <!-- <ion-col size="4" class="text-center">
+
+                <div class="col-12 text-center">
+                    <i class="material-icons icon icon-family"></i>
+                </div>
+                <div class="col-12 text-center">
+                    <ion-label>Family</ion-label>
+                </div>
             </ion-col>
             <ion-col size="4" class="text-center">
-              <ion-label><i class="material-icons icon icon-family"></i>&nbsp;Family</ion-label>
-            </ion-col>
-            <ion-col size="4" class="text-center">
-              <ion-label><i class="material-icons icon icon-relationship"></i>&nbsp;Couple</ion-label>
+
+                <div class="col-12 text-center">
+                    <i class="material-icons icon icon-relationship"></i>
+                </div>
+                <div class="col-12 text-center">
+                    <ion-label>Romatic</ion-label>
+                </div>
+            </ion-col> -->
+          </ion-row>
+          <ion-row class="mt-4">
+            <ion-col size="12" class="mt-4 text-center">
+              <ion-button class="ion-btn" shape="round" mode="ios"><ion-icon name="search"></ion-icon>Search</ion-button>
             </ion-col>
           </ion-row>
         </ion-grid>
       </ion-col>
     </ion-row>
   </ion-grid>
-
 
 </ion-content>

@@ -77,3 +77,12 @@
 .icon-funnel:before {
   content: "\6d";
 }
+.icon-family:before {
+  content: "\6e";
+}
+.icon-relationship:before {
+  content: "\6f";
+}
+.icon-business-trip:before {
+  content: "\70";
+}
