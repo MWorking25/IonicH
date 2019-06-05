@@ -31,9 +31,12 @@ export class HotelsComponent implements OnInit {
       componentProps: { value: "" }
     });
 
-    modal.onDidDismiss().then((detail) => {
-      if (detail !== null) {
-        this.filterString = '<div class="col-12"><h3>'+detail.data.serachresult+'</h3></div><div class="col-12"><ion-text>'+detail.data.address+'</ion-text></div>';
+    modal.onDidDismiss().then((details) => {
+      if (details !== null) {
+        if(details.data != undefined)
+        {
+          this.filterString = '<div class="col-12"><h3>'+details.data.serachresult+'</h3></div><div class="col-12"><ion-text>'+details.data.address+'</ion-text></div>';
+        }
       }
    });
 

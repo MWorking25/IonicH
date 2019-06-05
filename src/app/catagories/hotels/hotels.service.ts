@@ -18,18 +18,13 @@ export class HotelsService {
   };
 
   getRelaventSearch(filteredkey): Observable<any>{
-    /* return this.http.get<any>('http://103.252.7.5:3800/api/unity/getRelaventSearch/'+filteredkey).pipe(map(data => {
-			 				return data;
-    })); */
-    
-
-    var searchResult = this.http.get<any>('http://103.252.7.5:3800/api/unity/getRelaventSearch/'+filteredkey)
+    var searchResult = this.http.get<any>('http://103.252.7.5:3800/api/mobile/unity/getRelaventSearch/'+filteredkey)
     .pipe(
         //debounceTime(500),  // WAIT FOR 500 MILISECONDS ATER EACH KEY STROKE.
         map(
             (data: any) => {
                 return (
-                    data.length != 0 ? data as any[] : [{"BookName": "No Record Found"} as any]
+                    data.length != 0 ? data as any[] : [{"serachresult": "No Record Found"} as any]
                 );
             }
     ));
