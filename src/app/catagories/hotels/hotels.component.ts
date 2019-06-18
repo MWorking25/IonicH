@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Location} from '@angular/common';
 import { ModalController } from '@ionic/angular';
-import { SearchModelComponent } from './search-model/search-model.component'
+import { SearchModelComponent } from './search-model/search-model.component';
+import { GuestsComponent } from './guests/guests.component';
 @Component({
   selector: 'app-hotels',
   templateUrl: './hotels.component.html',
@@ -10,6 +11,8 @@ import { SearchModelComponent } from './search-model/search-model.component'
 export class HotelsComponent implements OnInit {
 
   filterString:String;
+  totalguest:Number = 2;
+  totalRooms:Number = 1;
   constructor(private _location: Location, public modalController: ModalController) { }
   currentDate = new Date();
   nextdate = new Date();
@@ -36,6 +39,26 @@ export class HotelsComponent implements OnInit {
         if(details.data != undefined)
         {
           this.filterString = '<div class="col-12"><h3>'+details.data.serachresult+'</h3></div><div class="col-12"><ion-text>'+details.data.address+'</ion-text></div>';
+        }
+      }
+   });
+
+    return await modal.present();
+  }
+
+  async presentGeustModal() {
+    const modal = await this.modalController.create({
+      component: GuestsComponent,
+      componentProps: { guests:this.totalguest, rooms:this.totalRooms }
+    });
+
+    modal.onDidDismiss().then((details) => {
+      if (details !== null) {
+        if(details.data != undefined)
+        {
+          // this.totalguest = 
+          // this.totalRooms = 
+          // this.filterString = '<div class="col-12"><h3>'+details.data.serachresult+'</h3></div><div class="col-12"><ion-text>'+details.data.address+'</ion-text></div>';
         }
       }
    });

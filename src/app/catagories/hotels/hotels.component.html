@@ -30,17 +30,17 @@
     </ion-row>
 
     <ion-row class="mt-2">
-      <ion-col size="6" class="text-center border">
+      <ion-col size="6" class="text-center border"  (click)="presentGeustModal()">
         <div class="col-12 text-center">
           <ion-label class="text-muted">GUESTS</ion-label>
         </div>
-        <ion-text class="text-muted font-weight-bold mt-2"><strong class="headerfont">06</strong></ion-text>
+        <ion-text class="text-muted font-weight-bold mt-2"><strong class="headerfont">{{totalguest}}</strong></ion-text>
       </ion-col>
-      <ion-col size="6" class="text-center border">
+      <ion-col size="6" class="text-center border"  (click)="presentGeustModal()">
         <div class="col-12 text-center">
           <ion-label class="text-muted">ROOMS</ion-label>
         </div>
-        <ion-text class="text-muted font-weight-bold mt-2"><strong class="headerfont">02</strong></ion-text>
+        <ion-text class="text-muted font-weight-bold mt-2"><strong class="headerfont">{{totalRooms}}</strong></ion-text>
       </ion-col>
     </ion-row>
 
