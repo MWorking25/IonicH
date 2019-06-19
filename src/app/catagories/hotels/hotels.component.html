@@ -20,7 +20,7 @@
       <ion-col size="6" class="text-center border">
         <ion-label class="text-muted">CHECK IN</ion-label>
         <ion-datetime class="text-muted font-weight-bold" display-format="DD/MM/YYYY" picker-format="DD MMMM YYYY"
-          min="{{currentYear}}" max="{{maxYear}}" value="{{currentDate}}"></ion-datetime>
+          min="{{currentYear}}" max="{{maxYear}}" value="{{checkinDate}}"></ion-datetime>
       </ion-col>
       <ion-col size="6" class="text-center border">
         <ion-label class="text-muted">CHECK OUT</ion-label>
@@ -81,11 +81,17 @@
                 </div>
             </ion-col> -->
           </ion-row>
-          <ion-row class="mt-4">
+          <ion-card class="btn-prim mt-4">
+              <div  (click)="SearchWithFilters()">
+                <ion-ripple-effect></ion-ripple-effect>
+                <ion-title class="text-center p-2">Search</ion-title>
+              </div>
+            </ion-card>
+          <!-- <ion-row class="mt-4">
             <ion-col size="12" class="mt-4 text-center">
               <ion-button class="ion-btn" shape="round" mode="ios"><ion-icon name="search"></ion-icon>Search</ion-button>
-            </ion-col>
-          </ion-row>
+            </ion-col> 
+          </ion-row>-->
         </ion-grid>
       </ion-col>
     </ion-row>

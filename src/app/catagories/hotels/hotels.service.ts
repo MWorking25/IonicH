@@ -8,17 +8,19 @@ import { debounceTime } from 'rxjs/internal/operators/debounceTime';
 })
 export class HotelsService {
 
+  // apiUrl = 'http://103.252.7.5:3800';
+  apiUrl = 'http://localhost:3800';
   constructor(private http: HttpClient) { }
 
 
   getExistingLocationsList(): Observable<any>{
-    return this.http.get<any>('http://103.252.7.5:3800/api/unity/getExistingLocations/').pipe(map(data => {
+    return this.http.get<any>(this.apiUrl+'/api/unity/getExistingLocations/').pipe(map(data => {
 			 				return data;
 		}));
   };
 
   getRelaventSearch(filteredkey): Observable<any>{
-    var searchResult = this.http.get<any>('http://103.252.7.5:3800/api/mobile/unity/getRelaventSearch/'+filteredkey)
+    var searchResult = this.http.get<any>(this.apiUrl+'/api/mobile/unity/getRelaventSearch/'+filteredkey)
     .pipe(
         //debounceTime(500),  // WAIT FOR 500 MILISECONDS ATER EACH KEY STROKE.
         map(
@@ -28,8 +30,15 @@ export class HotelsService {
                 );
             }
     ));
-
     return searchResult; 
-
   };
+
+
+  
+  getHotelsList(filterquery): Observable<any>{
+    return this.http.post(this.apiUrl+'/api/mobile/unity/getHotelsList/',filterquery).pipe(map(data => {
+			 				return data;
+		}));
+  };
+
 }

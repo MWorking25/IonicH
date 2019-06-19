@@ -20,6 +20,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 //------- hotels ---------
+import { ListComponent } from './catagories/hotels/list/list.component';
 import { HotelsComponent } from './catagories/hotels/hotels.component';
 import { AminitiesComponent } from './catagories/hotels/aminities/aminities.component';
 import { BookingComponent } from './catagories/hotels/booking/booking.component';
@@ -46,6 +47,7 @@ import { TrainsComponent } from './catagories/trains/trains.component';
   declarations: [AppComponent, ForgotpasswordComponent, HotelsComponent,
     AminitiesComponent,
     BookingComponent,
+    ListComponent,
     DesricptionComponent,
     DirectionComponent,
     PhotosComponent,
@@ -58,7 +60,18 @@ import { TrainsComponent } from './catagories/trains/trains.component';
     CarsComponent,
     RestraunrantsComponent,
     TrainsComponent],
-  entryComponents: [SearchModelComponent, GuestsComponent],
+  entryComponents: [
+    SearchModelComponent,
+    GuestsComponent,
+    AminitiesComponent,
+    BookingComponent,
+    ListComponent,
+    DesricptionComponent,
+    DirectionComponent,
+    PhotosComponent,
+    ReviewsComponent,
+    RoomsComponent
+  ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule,MatAutocompleteModule, MatBadgeModule, MatBottomSheetModule, MatButtonModule,
     MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule,
     MatDialogModule, MatDividerModule, MatExpansionModule, MatFormFieldModule, MatGridListModule,

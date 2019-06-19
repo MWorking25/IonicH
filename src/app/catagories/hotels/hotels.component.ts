@@ -3,6 +3,7 @@ import {Location} from '@angular/common';
 import { ModalController } from '@ionic/angular';
 import { SearchModelComponent } from './search-model/search-model.component';
 import { GuestsComponent } from './guests/guests.component';
+import { ListComponent } from './list/list.component';
 @Component({
   selector: 'app-hotels',
   templateUrl: './hotels.component.html',
@@ -11,9 +12,12 @@ import { GuestsComponent } from './guests/guests.component';
 export class HotelsComponent implements OnInit {
 
   filterString:String;
+  selectedTripType:String;
+  filteredResult:String;
   totalguest:Number = 2;
   totalRooms:Number = 1;
   constructor(private _location: Location, public modalController: ModalController) { }
+  checkinDate = new Date();
   currentDate = new Date();
   nextdate = new Date();
   currentYear = this.currentDate.getFullYear();
@@ -38,6 +42,7 @@ export class HotelsComponent implements OnInit {
       if (details !== null) {
         if(details.data != undefined)
         {
+          this.filteredResult = details.data;
           this.filterString = '<div class="col-12"><h3>'+details.data.serachresult+'</h3></div><div class="col-12"><ion-text>'+details.data.address+'</ion-text></div>';
         }
       }
@@ -53,15 +58,27 @@ export class HotelsComponent implements OnInit {
     });
 
     modal.onDidDismiss().then((details) => {
+      console.log(details);
       if (details !== null) {
         if(details.data != undefined)
         {
-          // this.totalguest = 
-          // this.totalRooms = 
-          // this.filterString = '<div class="col-12"><h3>'+details.data.serachresult+'</h3></div><div class="col-12"><ion-text>'+details.data.address+'</ion-text></div>';
+           this.totalguest = details.data.guests;
+           this.totalRooms = details.data.rooms;
         }
       }
    });
+
+    return await modal.present();
+  }
+  
+  async SearchWithFilters() {
+    const modal = await this.modalController.create({
+      component: ListComponent,
+      componentProps: {searchFilter:{guests:this.totalguest, rooms:this.totalRooms,checkin: this.checkinDate,checkout:this.checkoutDate,location:this.filteredResult,tripTypes:this.selectedTripType}}
+    });
+
+    modal.onDidDismiss().then((details) => {
+    });
 
     return await modal.present();
   }
@@ -74,6 +91,7 @@ export class HotelsComponent implements OnInit {
     });
 
     triptype.iconcolor = 'text-primary';
+    this.selectedTripType = triptype.type
   }
 
 }

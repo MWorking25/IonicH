@@ -14,7 +14,7 @@ export class GuestsComponent implements OnInit {
 
   adults:number = 2;
   children:number = 0;
-  titalguest = 0;
+  totalguest = 0;
 
   ngOnInit() {
   }
@@ -29,7 +29,7 @@ export class GuestsComponent implements OnInit {
 
   increaseEntry(key)
   {
-    if(this.titalguest < 12 * this.rooms)
+    if(this.totalguest < 12 * this.rooms)
     {
       if(key == 'adults')
       {
@@ -39,7 +39,7 @@ export class GuestsComponent implements OnInit {
       {
         this.children = this.children +1;
       }
-      this.titalguest =  this.adults + this.children;
+      this.totalguest =  this.adults + this.children;
     }
     else{
           this.presentToast('Upto 12 guests are allowed in one room.');
@@ -50,7 +50,7 @@ export class GuestsComponent implements OnInit {
   {
     if(eval('this.'+key) > 0)
     {
-      this.titalguest = this.titalguest - this.adults + this.children;
+      this.totalguest = this.totalguest - this.adults + this.children;
 
       if(key == 'adults')
       {
@@ -75,6 +75,10 @@ export class GuestsComponent implements OnInit {
       this.rooms = this.rooms + 1;
       else
       this.presentToast('Cannot add more thane 10 rooms.');
+  }
+
+  async myDismissWithChanges() {
+    await this.modalController.dismiss({guests:this.totalguest > 0 ?this.totalguest : this.guests,rooms:this.rooms});
   }
 
   async myDismiss() {
