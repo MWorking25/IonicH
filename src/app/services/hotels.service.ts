@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'; 
 import { Observable } from 'rxjs';
+import { AppGlobals } from './credencials';
 import { map } from 'rxjs/operators';
 import { debounceTime } from 'rxjs/internal/operators/debounceTime';
 @Injectable({
@@ -8,10 +9,9 @@ import { debounceTime } from 'rxjs/internal/operators/debounceTime';
 })
 export class HotelsService {
 
-  // apiUrl = 'http://103.252.7.5:3800';
-  apiUrl = 'http://localhost:3800';
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,private _global: AppGlobals) { }
 
+  apiUrl = this._global.ApiLink;
 
   getExistingLocationsList(): Observable<any>{
     return this.http.get<any>(this.apiUrl+'/api/unity/getExistingLocations/').pipe(map(data => {

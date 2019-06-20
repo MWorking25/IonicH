@@ -20,7 +20,7 @@ import {
 
 import {
   HotelsService
-} from '../hotels.service';
+} from '../../../services/hotels.service';
 export interface SerachResult {
   serachresult: string;
   address: string;

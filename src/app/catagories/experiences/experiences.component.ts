@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Location} from '@angular/common';
+import { Location } from '@angular/common';
+import { ExperiencesService } from '../../services/experiences.service';
 @Component({
   selector: 'app-experiences',
   templateUrl: './experiences.component.html',
@@ -7,11 +8,21 @@ import {Location} from '@angular/common';
 })
 export class ExperiencesComponent implements OnInit {
 
-  constructor(private _location: Location) { }
+  experienceResult :any;
+  searchFilter:any = [];
 
-  ngOnInit() {}
+  constructor(private _location: Location, private _ExperiencesService : ExperiencesService) { }
 
-  backClicked() {
-    this._location.back();
+  ngOnInit() {
+    this.getExperiencesList();
   }
+
+  getExperiencesList()
+  {
+    this._ExperiencesService.getExperiencesList(this.searchFilter).subscribe(
+      data => {
+        this.experienceResult = data;
+      })
+  }
+
 }

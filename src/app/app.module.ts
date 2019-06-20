@@ -19,6 +19,9 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+
+import { AppGlobals } from './services/credencials';
+
 //------- hotels ---------
 import { ListComponent } from './catagories/hotels/list/list.component';
 import { HotelsComponent } from './catagories/hotels/hotels.component';
@@ -80,6 +83,7 @@ import { TrainsComponent } from './catagories/trains/trains.component';
     MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule,
     MatStepperModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, MatTreeModule,HttpClientModule],
   providers: [
+    AppGlobals,
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }

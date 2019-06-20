@@ -66,3 +66,8 @@ button
   background-image: linear-gradient(to right, #0081AB , #00CCCC); 
   color: #ffffff;
 }
+.card-desripction { 
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  height: 190px !important; 
+}
