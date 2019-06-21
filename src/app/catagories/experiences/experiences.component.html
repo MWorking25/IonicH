@@ -15,12 +15,12 @@
     
   <ion-item>
     <ion-label>{{obj.name}}</ion-label>
-    <ion-label slot="end" class="text-right"><span *ngFor="let stars of [1,2,3,4,5]"><i class="fa fa-star" *ngIf="stars <= 3" style="color:goldenrod" aria-hidden="true"></i><i class="fa fa-star-o" *ngIf="stars > 3" aria-hidden="true"></i></span></ion-label>
+    <ion-label slot="end" class="text-right"><span *ngFor="let stars of [1,2,3,4,5]"><i class="fa fa-star"  style="color:goldenrod" aria-hidden="true"></i></span></ion-label>
   </ion-item>
  
   <ion-card-content>
       <ion-fab horizontal="end" slot="fixed" style="margin-top: -97px">
-          <ion-fab-button color="light" size="small" >
+          <ion-fab-button color="light" size="small" (click)="hitLike(obj)" >
               <ion-icon *ngIf="i % 2 == 1" name="heart" style="color:rgb(250, 48, 48)"></ion-icon>
               <ion-icon *ngIf="i % 2 == 0" name="heart-empty"></ion-icon>
           </ion-fab-button>

@@ -18,4 +18,11 @@ export class ExperiencesService {
       return data;
     }));
   }
+
+  HtLikeForExp(expdetails): Observable<any>
+  {
+    return this.http.post(this.apiUrl+'/api/mobile/unity/HtLikeForExp/',expdetails).pipe(map(data => {
+      return data;
+    }));
+  }
 }

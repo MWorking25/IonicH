@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter, pairwise } from 'rxjs/operators';
+import { Location } from '@angular/common';
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-signin',
   templateUrl: './signin.page.html',
@@ -7,10 +10,12 @@ import { Router } from '@angular/router';
 })
 export class SigninPage implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,public location: Location) {}
 
   ngOnInit() {
+        
   }
+
 
   redirectionToUrl(path, fieldid)
   {
@@ -18,6 +23,11 @@ export class SigninPage implements OnInit {
     this.router.navigate([path,fieldid]);
     else
     this.router.navigate([path]);
+  } 
+  
+  userAuthentication()
+  {
+    this.location.back();
   } 
 
 }

@@ -6,6 +6,7 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { HttpClientModule} from '@angular/common/http';
+import { IonicStorageModule } from '@ionic/storage';
 import {
   MatAutocompleteModule, MatBadgeModule, MatBottomSheetModule, MatButtonModule,
   MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule,
@@ -81,7 +82,7 @@ import { TrainsComponent } from './catagories/trains/trains.component';
     MatIconModule, MatInputModule, MatListModule, MatMenuModule, MatPaginatorModule,
     MatProgressBarModule, MatProgressSpinnerModule, MatRadioModule, MatRippleModule, MatSelectModule,
     MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule,
-    MatStepperModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, MatTreeModule,HttpClientModule],
+    MatStepperModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, MatTreeModule,HttpClientModule, IonicStorageModule.forRoot()],
   providers: [
     AppGlobals,
     StatusBar,
