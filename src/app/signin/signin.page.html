@@ -1,58 +1,42 @@
 <ion-content class="ion-container">
 
-  
-
-  <div class="waveWrapper waveAnimation">
-
-<div id="Clouds">
-    <div class="Cloud Foreground"></div>
-    <div class="Cloud Background"></div>
-    <div class="Cloud Foreground"></div>
-    <div class="Cloud Background"></div>
-    <div class="Cloud Foreground"></div>
-    <div class="Cloud Background"></div>
-    <div class="Cloud Background"></div>
-    <div class="Cloud Foreground"></div>
-    <div class="Cloud Background"></div>
-    <div class="Cloud Background"></div>
-  
-  </div>
-  
-  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     width="40px" height="24px" viewBox="0 0 40 24" enable- xml:space="preserve">
-    <defs>
-      <path id="Cloud" d="M33.85,14.388c-0.176,0-0.343,0.034-0.513,0.054c0.184-0.587,0.279-1.208,0.279-1.853c0-3.463-2.809-6.271-6.272-6.271
-    c-0.38,0-0.752,0.039-1.113,0.104C24.874,2.677,21.293,0,17.083,0c-5.379,0-9.739,4.361-9.739,9.738
-    c0,0.418,0.035,0.826,0.084,1.229c-0.375-0.069-0.761-0.11-1.155-0.11C2.811,10.856,0,13.665,0,17.126
-    c0,3.467,2.811,6.275,6.272,6.275c0.214,0,27.156,0.109,27.577,0.109c2.519,0,4.56-2.043,4.56-4.562
-    C38.409,16.43,36.368,14.388,33.85,14.388z"/>
-    </defs>
-  </svg>
 
   <div class="container-fluid" >
       <div class="row">
-        <div class="col-12 col-md-12 col-sm-12" style="z-index: 99 !important;margin-top: -70px;">
+        <div class="col-12 col-md-12 col-sm-12 mt-4">
           <ion-grid>
             <ion-row>
-          <ion-col size="12" class="text-center" size-lg>
+          <ion-col size="12" class="text-center">
             <h3>Application</h3>
           </ion-col>
-          <ion-col size="12" size-lg>
-          <form class="example-form">
+          <ion-col size="12" size-lg class="mt-4">
+          <form class="example-form mt-4">
               <mat-form-field class="full-width">
-              <input matInput placeholder="Username">
-              <mat-icon id="passwordvisibility" matSuffix></mat-icon>
+              <input matInput placeholder="Mobile / Email id">
               </mat-form-field>
       
               <mat-form-field class="full-width mt-3">
-                <input type="password" matInput placeholder="Password">
-                <mat-icon id="passwordvisibility" class="showhidepassword" matSuffix>visibility</mat-icon>
+                  <input type="{{inputtype}}" matInput placeholder="Password">
+                  <mat-icon id="passwordvisibility" class="showhidepassword anchoreffect" (click)="showHidePassword()"  matSuffix>{{visibilityicon}}</mat-icon>
               </mat-form-field>
       
               <div class="row p-2">
-                <button mat-raised-button class="full-width p-1 signin-btn" (click)="redirectionToUrl()" color="primary">Sign In</button>
+                <button mat-raised-button class="full-width p-1 btn-prim" (click)="redirectionToUrl()" color="primary">Sign In <ion-icon name="arrow-round-forward"></ion-icon></button>
               </div>
-              <ion-grid class="p-1">
+              <div class="row">
+                <div class="col-12">
+                  <ion-label color="medium">Or sign in with,</ion-label>
+                </div>
+              </div>
+              <div class="row p-2">
+                <div class="col-6 text-center">
+                    <ion-text color="danger"><h4><ion-icon name="logo-google"></ion-icon> Google</h4></ion-text>
+                </div>
+                <div class="col-6 text-center">
+                    <ion-text color="primary"><h4><ion-icon name="logo-facebook"></ion-icon> Facebook</h4></ion-text>
+                </div>
+              </div>
+              <!-- <ion-grid class="p-1">
                   <ion-row>
                     <ion-col size="6" class="text-center">
                           <ion-button fill="outline"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;Facebook</ion-button>
@@ -61,7 +45,7 @@
                         <ion-button fill="outline"  color="danger" (click)="doGoogleLogin()"><i class="fa fa-google-plus" aria-hidden="true"></i>&nbsp;Google</ion-button>
                       </ion-col>
               </ion-row>
-          </ion-grid>  
+          </ion-grid>   -->
                           
               <ion-grid class="p-1">
                   <ion-row>
@@ -82,15 +66,4 @@
       </div>
     </div>
 
-
-      <div class="waveWrapperInner bgTop">
-        <div class="wave waveTop" style="background-image: url('../../assets/images/home/wave-top.png')"></div>
-      </div>
-      <div class="waveWrapperInner bgMiddle">
-        <div class="wave waveMiddle" style="background-image: url('../../assets/images/home/wave-mid.png')"></div>
-      </div>
-      <div class="waveWrapperInner bgBottom">
-        <div class="wave waveBottom" style="background-image: url('../../assets/images/home/wave-bot.png')"></div>
-      </div>
-    </div> 
 </ion-content>

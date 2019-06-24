@@ -1,9 +1,97 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>signup</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
 
+  <ion-grid class="mt-4">
+    <ion-row>
+      <ion-col class="mt-4 text-center">
+        <ion-text><h3>Application</h3></ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <form [formGroup]="signupForm">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+            <mat-form-field class="full-width">
+                <input matInput placeholder="First name" formControlName="firstName" required>
+                </mat-form-field>
+        </ion-col>
+        <ion-col size="6">
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Last name" formControlName="lastName">
+                </mat-form-field>
+        </ion-col>
+
+        <ion-col size="12">
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Email" formControlName="email" required>
+                </mat-form-field>
+        </ion-col>
+
+        <ion-col size="12">
+            <mat-form-field class="full-width">
+                <input type="number" matInput placeholder="Mobile" formControlName="mobile" required>
+                </mat-form-field>
+        </ion-col>
+
+        <ion-col size="12">
+            <mat-form-field class="full-width">
+                <input type="{{inputtype}}" matInput placeholder="Password" formControlName="password" name="password" (keydown)="VerifyPasswordStariength(signupForm.value.password)" required>
+                <mat-icon id="passwordvisibility" class="showhidepassword anchoreffect" (click)="showHidePassword()" matSuffix>{{visibilityicon}}</mat-icon>
+                </mat-form-field>
+        </ion-col>
+        <ion-col size="12">
+                <strong [ngStyle]="{'color': prgcol}">{{passstrenth}}</strong>
+        </ion-col>
+        <ion-col  size="12" size-lg class="text-nowrap">
+            <button mat-raised-button class="full-width p-1 btn-prim"  [disabled]="!signupForm.valid" (click)="MemberDetails(signupForm)" color="primary">Sign Up <ion-icon name="arrow-round-forward"></ion-icon></button>
+        </ion-col>
+        <ion-col  size="12" size-lg class="text-nowrap text-center" (click)='backToSignin()'>
+            <label class="anchoreffect">Already have an account ? Sign in</label>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+
+<!-- 
+  <div class="container-fluid" >
+      <div class="row">
+        <div class="col-12 col-md-12 col-sm-12 mt-4">
+          <ion-grid>
+            <ion-row>
+          <ion-col size="12" class="text-center">
+            <h3>Application</h3>
+          </ion-col>
+          <ion-col size="12" size-lg class="mt-4">
+          <form class="example-form mt-4">
+              <mat-form-field class="full-width">
+              <input matInput placeholder="Username">
+              <mat-icon id="passwordvisibility" matSuffix></mat-icon>
+              </mat-form-field>
+      
+              <mat-form-field class="full-width mt-3">
+                <input type="password" matInput placeholder="Password">
+                <mat-icon id="passwordvisibility" class="showhidepassword" matSuffix>visibility</mat-icon>
+              </mat-form-field>
+      
+              <div class="row p-2">
+                <button mat-raised-button class="full-width p-1 signin-btn" (click)="redirectionToUrl()" color="primary">Sign In</button>
+              </div>
+                          
+              <ion-grid class="p-1">
+                  <ion-row>
+                    <ion-col  size="12" size-lg class="text-nowrap text-center" (click)='backToSignin()'>
+                        <label class="anchoreffect">Already have an account ? Sign in</label>
+                    </ion-col>
+              </ion-row>
+          </ion-grid>                
+            </form>
+          </ion-col>
+          </ion-row>
+        </ion-grid>
+  
+        </div>
+      </div>
+    </div>
+ -->
 </ion-content>
