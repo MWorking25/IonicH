@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-      <ion-icon name="close" (click)="backClicked()" slot="start" class="ml-3 mediumicon" ></ion-icon>
+      <ion-icon name="close" (click)="redirectionToUrl('/home/main')" slot="start" class="ml-3 mediumicon" ></ion-icon>
       <ion-title>EXPERIENCES</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -15,14 +15,14 @@
     
   <ion-item>
     <ion-label>{{obj.name}}</ion-label>
-    <ion-label slot="end" class="text-right"><span *ngFor="let stars of [1,2,3,4,5]"><i class="fa fa-star"  style="color:goldenrod" aria-hidden="true"></i></span></ion-label>
+    <label slot="end" class="text-right mt-2" style="font-size: .8em;"><span *ngFor="let stars of [1,2,3,4,5]"><i class="fa fa-star"  style="color:goldenrod" aria-hidden="true"></i></span></label>
   </ion-item>
  
   <ion-card-content>
       <ion-fab horizontal="end" slot="fixed" style="margin-top: -97px">
           <ion-fab-button color="light" size="small" (click)="hitLike(obj)" >
-              <ion-icon *ngIf="i % 2 == 1" name="heart" style="color:rgb(250, 48, 48)"></ion-icon>
-              <ion-icon *ngIf="i % 2 == 0" name="heart-empty"></ion-icon>
+              <ion-icon *ngIf="obj.explikebymember == 1" name="heart" style="color:rgb(250, 48, 48)"></ion-icon>
+              <ion-icon *ngIf="obj.explikebymember == 0" name="heart-empty"></ion-icon>
           </ion-fab-button>
         </ion-fab>
    <!-- {{obj.address}}, {{obj.state}} -->

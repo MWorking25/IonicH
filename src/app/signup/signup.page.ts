@@ -2,8 +2,10 @@ import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter, pairwise } from 'rxjs/operators';
 import { Location } from '@angular/common';
+import Swal from 'sweetalert2';
 import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { AuthenticationService } from '../services/authentication.service';
+import { Storage } from '@ionic/storage';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.page.html',
@@ -22,7 +24,7 @@ export class SignupPage implements OnInit {
   inputtype:string = 'password';
   visibilityicon:string = 'visibility';
 
-  constructor(private _AuthenticationService : AuthenticationService, private router: Router,public location: Location, private formBuilder: FormBuilder) { }
+  constructor(private _AuthenticationService : AuthenticationService, private router: Router,public location: Location, private formBuilder: FormBuilder, private storage: Storage) { }
 
   ngOnInit() {
     this.signupForm = new FormGroup({
@@ -132,11 +134,33 @@ ColorPassword(pass) {
     this.location.back();
   } 
 
+  redirectionToUrl(path, fieldid)
+  {
+    if(fieldid || fieldid != null)
+    this.router.navigate([path,fieldid]);
+    else
+    this.router.navigate([path]);
+  } 
+
   MemberDetails(memberdetails)
   {
     this._AuthenticationService.saveMemberDetails(memberdetails.value).subscribe(
       data => {
-        console.log(data);
+        Swal.fire({
+          title: data.title,
+          text: data.message,
+          type: data.type,
+        }).then((result) => {
+          if (data.status === 0) {
+    
+          } else {
+            this.storage.set('memberdetails',data.object)
+            this.storage.get('prevUrl').then((val) => {
+              this.redirectionToUrl(val,null)
+            });
+            
+          }
+        });
       })
   }
 

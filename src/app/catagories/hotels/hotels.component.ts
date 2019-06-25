@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Location} from '@angular/common';
 import { ModalController } from '@ionic/angular';
+import { ActivatedRoute, Router } from '@angular/router';
 import { SearchModelComponent } from './search-model/search-model.component';
 import { GuestsComponent } from './guests/guests.component';
 import { ListComponent } from './list/list.component';
@@ -16,7 +17,7 @@ export class HotelsComponent implements OnInit {
   filteredResult:String;
   totalguest:Number = 2;
   totalRooms:Number = 1;
-  constructor(private _location: Location, public modalController: ModalController) { }
+  constructor(private _location: Location, public modalController: ModalController, private router: Router) { }
   checkinDate = new Date();
   currentDate = new Date();
   nextdate = new Date();
@@ -82,6 +83,15 @@ export class HotelsComponent implements OnInit {
 
     return await modal.present();
   }
+
+  
+  redirectionToUrl(path, fieldid)
+  {
+    if(fieldid || fieldid != null)
+    this.router.navigate([path,fieldid]);
+    else
+    this.router.navigate([path]);
+  } 
 
 
   selectType(triptype)
