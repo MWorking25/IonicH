@@ -1011,7 +1011,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-app>\r\n  <ion-router-outlet></ion-router-outlet>\r\n</ion-app>\r\n"
+module.exports = "<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-app>\n"
 
 /***/ }),
 
@@ -1084,25 +1084,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/splash-screen/ngx */ "./node_modules/@ionic-native/splash-screen/ngx/index.js");
 /* harmony import */ var _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ionic-native/status-bar/ngx */ "./node_modules/@ionic-native/status-bar/ngx/index.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
-/* harmony import */ var _forgotpassword_forgotpassword_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./forgotpassword/forgotpassword.component */ "./src/app/forgotpassword/forgotpassword.component.ts");
-/* harmony import */ var _catagories_hotels_hotels_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./catagories/hotels/hotels.component */ "./src/app/catagories/hotels/hotels.component.ts");
-/* harmony import */ var _catagories_hotels_aminities_aminities_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./catagories/hotels/aminities/aminities.component */ "./src/app/catagories/hotels/aminities/aminities.component.ts");
-/* harmony import */ var _catagories_hotels_booking_booking_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./catagories/hotels/booking/booking.component */ "./src/app/catagories/hotels/booking/booking.component.ts");
-/* harmony import */ var _catagories_hotels_desricption_desricption_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./catagories/hotels/desricption/desricption.component */ "./src/app/catagories/hotels/desricption/desricption.component.ts");
-/* harmony import */ var _catagories_hotels_direction_direction_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./catagories/hotels/direction/direction.component */ "./src/app/catagories/hotels/direction/direction.component.ts");
-/* harmony import */ var _catagories_hotels_photos_photos_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./catagories/hotels/photos/photos.component */ "./src/app/catagories/hotels/photos/photos.component.ts");
-/* harmony import */ var _catagories_hotels_reviews_reviews_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./catagories/hotels/reviews/reviews.component */ "./src/app/catagories/hotels/reviews/reviews.component.ts");
-/* harmony import */ var _catagories_hotels_rooms_rooms_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./catagories/hotels/rooms/rooms.component */ "./src/app/catagories/hotels/rooms/rooms.component.ts");
-/* harmony import */ var _catagories_hotels_search_model_search_model_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./catagories/hotels/search-model/search-model.component */ "./src/app/catagories/hotels/search-model/search-model.component.ts");
-/* harmony import */ var _catagories_experiences_experiences_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./catagories/experiences/experiences.component */ "./src/app/catagories/experiences/experiences.component.ts");
-/* harmony import */ var _catagories_buses_buses_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./catagories/buses/buses.component */ "./src/app/catagories/buses/buses.component.ts");
-/* harmony import */ var _catagories_cars_cars_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./catagories/cars/cars.component */ "./src/app/catagories/cars/cars.component.ts");
-/* harmony import */ var _catagories_restraunrants_restraunrants_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./catagories/restraunrants/restraunrants.component */ "./src/app/catagories/restraunrants/restraunrants.component.ts");
-/* harmony import */ var _catagories_trains_trains_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./catagories/trains/trains.component */ "./src/app/catagories/trains/trains.component.ts");
+/* harmony import */ var _ionic_storage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ionic/storage */ "./node_modules/@ionic/storage/fesm5/ionic-storage.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _forgotpassword_forgotpassword_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./forgotpassword/forgotpassword.component */ "./src/app/forgotpassword/forgotpassword.component.ts");
+/* harmony import */ var _services_credencials__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./services/credencials */ "./src/app/services/credencials.ts");
+/* harmony import */ var _catagories_hotels_list_list_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./catagories/hotels/list/list.component */ "./src/app/catagories/hotels/list/list.component.ts");
+/* harmony import */ var _catagories_hotels_hotels_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./catagories/hotels/hotels.component */ "./src/app/catagories/hotels/hotels.component.ts");
+/* harmony import */ var _catagories_hotels_aminities_aminities_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./catagories/hotels/aminities/aminities.component */ "./src/app/catagories/hotels/aminities/aminities.component.ts");
+/* harmony import */ var _catagories_hotels_booking_booking_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./catagories/hotels/booking/booking.component */ "./src/app/catagories/hotels/booking/booking.component.ts");
+/* harmony import */ var _catagories_hotels_desricption_desricption_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./catagories/hotels/desricption/desricption.component */ "./src/app/catagories/hotels/desricption/desricption.component.ts");
+/* harmony import */ var _catagories_hotels_direction_direction_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./catagories/hotels/direction/direction.component */ "./src/app/catagories/hotels/direction/direction.component.ts");
+/* harmony import */ var _catagories_hotels_photos_photos_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./catagories/hotels/photos/photos.component */ "./src/app/catagories/hotels/photos/photos.component.ts");
+/* harmony import */ var _catagories_hotels_reviews_reviews_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./catagories/hotels/reviews/reviews.component */ "./src/app/catagories/hotels/reviews/reviews.component.ts");
+/* harmony import */ var _catagories_hotels_rooms_rooms_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./catagories/hotels/rooms/rooms.component */ "./src/app/catagories/hotels/rooms/rooms.component.ts");
+/* harmony import */ var _catagories_hotels_search_model_search_model_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./catagories/hotels/search-model/search-model.component */ "./src/app/catagories/hotels/search-model/search-model.component.ts");
+/* harmony import */ var _catagories_hotels_guests_guests_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./catagories/hotels/guests/guests.component */ "./src/app/catagories/hotels/guests/guests.component.ts");
+/* harmony import */ var _catagories_experiences_experiences_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./catagories/experiences/experiences.component */ "./src/app/catagories/experiences/experiences.component.ts");
+/* harmony import */ var _catagories_buses_buses_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./catagories/buses/buses.component */ "./src/app/catagories/buses/buses.component.ts");
+/* harmony import */ var _catagories_cars_cars_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./catagories/cars/cars.component */ "./src/app/catagories/cars/cars.component.ts");
+/* harmony import */ var _catagories_restraunrants_restraunrants_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./catagories/restraunrants/restraunrants.component */ "./src/app/catagories/restraunrants/restraunrants.component.ts");
+/* harmony import */ var _catagories_trains_trains_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./catagories/trains/trains.component */ "./src/app/catagories/trains/trains.component.ts");
+
+
 
 
 
@@ -1127,6 +1133,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 //------- experiences ---------
 
 //------- buses ---------
@@ -1142,34 +1150,48 @@ var AppModule = /** @class */ (function () {
     }
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-            declarations: [_app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"], _forgotpassword_forgotpassword_component__WEBPACK_IMPORTED_MODULE_13__["ForgotpasswordComponent"], _catagories_hotels_hotels_component__WEBPACK_IMPORTED_MODULE_14__["HotelsComponent"],
-                _catagories_hotels_aminities_aminities_component__WEBPACK_IMPORTED_MODULE_15__["AminitiesComponent"],
-                _catagories_hotels_booking_booking_component__WEBPACK_IMPORTED_MODULE_16__["BookingComponent"],
-                _catagories_hotels_desricption_desricption_component__WEBPACK_IMPORTED_MODULE_17__["DesricptionComponent"],
-                _catagories_hotels_direction_direction_component__WEBPACK_IMPORTED_MODULE_18__["DirectionComponent"],
-                _catagories_hotels_photos_photos_component__WEBPACK_IMPORTED_MODULE_19__["PhotosComponent"],
-                _catagories_hotels_reviews_reviews_component__WEBPACK_IMPORTED_MODULE_20__["ReviewsComponent"],
-                _catagories_hotels_rooms_rooms_component__WEBPACK_IMPORTED_MODULE_21__["RoomsComponent"],
-                _catagories_hotels_search_model_search_model_component__WEBPACK_IMPORTED_MODULE_22__["SearchModelComponent"],
-                _catagories_experiences_experiences_component__WEBPACK_IMPORTED_MODULE_23__["ExperiencesComponent"],
-                _catagories_buses_buses_component__WEBPACK_IMPORTED_MODULE_24__["BusesComponent"],
-                _catagories_cars_cars_component__WEBPACK_IMPORTED_MODULE_25__["CarsComponent"],
-                _catagories_restraunrants_restraunrants_component__WEBPACK_IMPORTED_MODULE_26__["RestraunrantsComponent"],
-                _catagories_trains_trains_component__WEBPACK_IMPORTED_MODULE_27__["TrainsComponent"]],
-            entryComponents: [_catagories_hotels_search_model_search_model_component__WEBPACK_IMPORTED_MODULE_22__["SearchModelComponent"]],
-            imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["IonicModule"].forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_11__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__["BrowserAnimationsModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatAutocompleteModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatBadgeModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatBottomSheetModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatButtonModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatButtonToggleModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatCardModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatCheckboxModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatChipsModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatDatepickerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatDialogModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatDividerModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatExpansionModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatFormFieldModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatGridListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatIconModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatInputModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatListModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatMenuModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatPaginatorModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatProgressBarModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatProgressSpinnerModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatRadioModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatRippleModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatSelectModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatSidenavModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatSliderModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatSlideToggleModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatSnackBarModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatSortModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatStepperModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatTableModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatTabsModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatToolbarModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatTooltipModule"], _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatTreeModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"]],
+            declarations: [_app_component__WEBPACK_IMPORTED_MODULE_11__["AppComponent"], _forgotpassword_forgotpassword_component__WEBPACK_IMPORTED_MODULE_14__["ForgotpasswordComponent"], _catagories_hotels_hotels_component__WEBPACK_IMPORTED_MODULE_17__["HotelsComponent"],
+                _catagories_hotels_aminities_aminities_component__WEBPACK_IMPORTED_MODULE_18__["AminitiesComponent"],
+                _catagories_hotels_booking_booking_component__WEBPACK_IMPORTED_MODULE_19__["BookingComponent"],
+                _catagories_hotels_list_list_component__WEBPACK_IMPORTED_MODULE_16__["ListComponent"],
+                _catagories_hotels_desricption_desricption_component__WEBPACK_IMPORTED_MODULE_20__["DesricptionComponent"],
+                _catagories_hotels_direction_direction_component__WEBPACK_IMPORTED_MODULE_21__["DirectionComponent"],
+                _catagories_hotels_photos_photos_component__WEBPACK_IMPORTED_MODULE_22__["PhotosComponent"],
+                _catagories_hotels_reviews_reviews_component__WEBPACK_IMPORTED_MODULE_23__["ReviewsComponent"],
+                _catagories_hotels_rooms_rooms_component__WEBPACK_IMPORTED_MODULE_24__["RoomsComponent"],
+                _catagories_hotels_search_model_search_model_component__WEBPACK_IMPORTED_MODULE_25__["SearchModelComponent"],
+                _catagories_hotels_guests_guests_component__WEBPACK_IMPORTED_MODULE_26__["GuestsComponent"],
+                _catagories_experiences_experiences_component__WEBPACK_IMPORTED_MODULE_27__["ExperiencesComponent"],
+                _catagories_buses_buses_component__WEBPACK_IMPORTED_MODULE_28__["BusesComponent"],
+                _catagories_cars_cars_component__WEBPACK_IMPORTED_MODULE_29__["CarsComponent"],
+                _catagories_restraunrants_restraunrants_component__WEBPACK_IMPORTED_MODULE_30__["RestraunrantsComponent"],
+                _catagories_trains_trains_component__WEBPACK_IMPORTED_MODULE_31__["TrainsComponent"]],
+            entryComponents: [
+                _catagories_hotels_search_model_search_model_component__WEBPACK_IMPORTED_MODULE_25__["SearchModelComponent"],
+                _catagories_hotels_guests_guests_component__WEBPACK_IMPORTED_MODULE_26__["GuestsComponent"],
+                _catagories_hotels_aminities_aminities_component__WEBPACK_IMPORTED_MODULE_18__["AminitiesComponent"],
+                _catagories_hotels_booking_booking_component__WEBPACK_IMPORTED_MODULE_19__["BookingComponent"],
+                _catagories_hotels_list_list_component__WEBPACK_IMPORTED_MODULE_16__["ListComponent"],
+                _catagories_hotels_desricption_desricption_component__WEBPACK_IMPORTED_MODULE_20__["DesricptionComponent"],
+                _catagories_hotels_direction_direction_component__WEBPACK_IMPORTED_MODULE_21__["DirectionComponent"],
+                _catagories_hotels_photos_photos_component__WEBPACK_IMPORTED_MODULE_22__["PhotosComponent"],
+                _catagories_hotels_reviews_reviews_component__WEBPACK_IMPORTED_MODULE_23__["ReviewsComponent"],
+                _catagories_hotels_rooms_rooms_component__WEBPACK_IMPORTED_MODULE_24__["RoomsComponent"]
+            ],
+            imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["IonicModule"].forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_12__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["BrowserAnimationsModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatAutocompleteModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatBadgeModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatBottomSheetModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatButtonModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatButtonToggleModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatCardModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatCheckboxModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatChipsModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatDatepickerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatDialogModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatDividerModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatExpansionModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatFormFieldModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatGridListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatIconModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatInputModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatListModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatMenuModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatPaginatorModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatProgressBarModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatProgressSpinnerModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatRadioModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatRippleModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatSelectModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatSidenavModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatSliderModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatSlideToggleModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatSnackBarModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatSortModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatStepperModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatTableModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatTabsModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatToolbarModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatTooltipModule"], _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatTreeModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"], _ionic_storage__WEBPACK_IMPORTED_MODULE_9__["IonicStorageModule"].forRoot()],
             providers: [
+                _services_credencials__WEBPACK_IMPORTED_MODULE_15__["AppGlobals"],
                 _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_7__["StatusBar"],
                 _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_6__["SplashScreen"],
                 { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["IonicRouteStrategy"] }
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_11__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -1186,7 +1208,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar>\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\n      <ion-title>BUS</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n   \n \n\n</ion-content>\n"
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\r\n      <ion-title>BUS</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n   \r\n \r\n\r\n</ion-content>\r\n"
 
 /***/ }),
 
@@ -1247,7 +1269,7 @@ var BusesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar>\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\n      <ion-title>CABS</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n   \n \n\n</ion-content>\n"
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\r\n      <ion-title>CABS</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n   \r\n \r\n\r\n</ion-content>\r\n"
 
 /***/ }),
 
@@ -1308,7 +1330,7 @@ var CarsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar>\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\n      <ion-title>EXPERIENCES</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n   \n \n\n</ion-content>\n"
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"close\" (click)=\"redirectionToUrl('/home/main')\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\r\n      <ion-title>EXPERIENCES</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n   \r\n  \r\n  <ion-card *ngFor=\"let obj of experienceResult;let i = index;\">\r\n    <div class=\"row\">\r\n        <img [src]=\"obj.bannerinage\" class=\"img-fluid img-thumbnail\" style=\"min-height:150px;max-height:150px;width: 100%;max-width: 100%;min-width: 100%;\">\r\n    </div>\r\n    \r\n  <ion-item>\r\n    <ion-label>{{obj.name}}</ion-label>\r\n    <label slot=\"end\" class=\"text-right mt-2\" style=\"font-size: .8em;\"><span *ngFor=\"let stars of [1,2,3,4,5]\"><i class=\"fa fa-star\"  style=\"color:goldenrod\" aria-hidden=\"true\"></i></span></label>\r\n  </ion-item>\r\n \r\n  <ion-card-content>\r\n      <ion-fab horizontal=\"end\" slot=\"fixed\" style=\"margin-top: -97px\">\r\n          <ion-fab-button color=\"light\" size=\"small\" (click)=\"hitLike(obj)\" >\r\n              <ion-icon *ngIf=\"obj.explikebymember == 1\" name=\"heart\" style=\"color:rgb(250, 48, 48)\"></ion-icon>\r\n              <ion-icon *ngIf=\"obj.explikebymember == 0\" name=\"heart-empty\"></ion-icon>\r\n          </ion-fab-button>\r\n        </ion-fab>\r\n   <!-- {{obj.address}}, {{obj.state}} -->\r\n  </ion-card-content>\r\n  <ion-card-content>\r\n    <ion-grid>\r\n      <ion-row>\r\n        <ion-col size=\"6\">\r\n            <div class=\"card-desripction\">\r\n               <span [innerHTML]=\"obj.description\"></span>\r\n            </div>\r\n        </ion-col>\r\n        <ion-col size=\"6\" style=\"text-align: right\">\r\n            <ion-button fill=\"outline\">{{obj.discounted_price | currency:\"₹\" }}</ion-button>\r\n            <ion-button fill=\"outline\" color=\"danger\" style=\"text-decoration: line-through;\">{{obj.price | currency:\"₹\" }}</ion-button>\r\n        \r\n        </ion-col>\r\n      </ion-row>\r\n    </ion-grid>\r\n     \r\n  </ion-card-content>\r\n    <ion-card-header>\r\n      {{obj.expreviews}} reviews for this.\r\n      <br>\r\n      {{obj.explikes}} Likes for this.\r\n    </ion-card-header>\r\n</ion-card>\r\n\r\n\r\n\r\n \r\n\r\n</ion-content>\r\n"
 
 /***/ }),
 
@@ -1336,16 +1358,88 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _services_experiences_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/experiences.service */ "./src/app/services/experiences.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _ionic_storage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic/storage */ "./node_modules/@ionic/storage/fesm5/ionic-storage.js");
+
+
+
+
 
 
 
 var ExperiencesComponent = /** @class */ (function () {
-    function ExperiencesComponent(_location) {
+    function ExperiencesComponent(_location, _ExperiencesService, storage, router, toastController) {
         this._location = _location;
+        this._ExperiencesService = _ExperiencesService;
+        this.storage = storage;
+        this.router = router;
+        this.toastController = toastController;
+        this.searchFilter = [];
     }
-    ExperiencesComponent.prototype.ngOnInit = function () { };
+    ExperiencesComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        // this.storage.remove('prevUrl');
+        this.storage.get('memberdetails').then(function (val) {
+            if (val != null) {
+                _this.searchFilter.push({ memberdetails: val.id });
+            }
+            else {
+                _this.searchFilter.push({ memberdetails: 0 });
+            }
+            _this.getExperiencesList();
+        });
+    };
+    ExperiencesComponent.prototype.presentToast = function (message) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            var toast;
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.toastController.create({
+                            message: message,
+                            duration: 2000
+                        })];
+                    case 1:
+                        toast = _a.sent();
+                        toast.present();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    ExperiencesComponent.prototype.redirectionToUrl = function (path, fieldid) {
+        if (fieldid || fieldid != null)
+            this.router.navigate([path, fieldid]);
+        else
+            this.router.navigate([path]);
+    };
     ExperiencesComponent.prototype.backClicked = function () {
         this._location.back();
+    };
+    ExperiencesComponent.prototype.getExperiencesList = function () {
+        var _this = this;
+        this._ExperiencesService.getExperiencesList(this.searchFilter).subscribe(function (data) {
+            _this.experienceResult = data;
+        });
+    };
+    ExperiencesComponent.prototype.hitLike = function (expdetails) {
+        var _this = this;
+        expdetails.explikebymember == 1 ? expdetails.explikebymember = 0 : expdetails.explikebymember = 1;
+        this.storage.get('memberdetails').then(function (val) {
+            if (val == null) {
+                _this.storage.set('prevUrl', _this.router.url);
+                _this.router.navigate(['/signin']);
+            }
+            else {
+                _this.storage.get('memberdetails').then(function (val) {
+                    if (val != null) {
+                        _this._ExperiencesService.HtLikeForExp({ exp: expdetails, member: val }).subscribe(function (data) {
+                        });
+                    }
+                });
+            }
+        });
     };
     ExperiencesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1353,7 +1447,7 @@ var ExperiencesComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./experiences.component.html */ "./src/app/catagories/experiences/experiences.component.html"),
             styles: [__webpack_require__(/*! ./experiences.component.scss */ "./src/app/catagories/experiences/experiences.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"], _services_experiences_service__WEBPACK_IMPORTED_MODULE_3__["ExperiencesService"], _ionic_storage__WEBPACK_IMPORTED_MODULE_6__["Storage"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"], _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["ToastController"]])
     ], ExperiencesComponent);
     return ExperiencesComponent;
 }());
@@ -1369,7 +1463,7 @@ var ExperiencesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  aminities works!\n</p>\n"
+module.exports = "<p>\r\n  aminities works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -1424,7 +1518,7 @@ var AminitiesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  booking works!\n</p>\n"
+module.exports = "<p>\r\n  booking works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -1479,7 +1573,7 @@ var BookingComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  desricption works!\n</p>\n"
+module.exports = "<p>\r\n  desricption works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -1534,7 +1628,7 @@ var DesricptionComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  direction works!\n</p>\n"
+module.exports = "<p>\r\n  direction works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -1582,6 +1676,153 @@ var DirectionComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/catagories/hotels/guests/guests.component.html":
+/*!****************************************************************!*\
+  !*** ./src/app/catagories/hotels/guests/guests.component.html ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-icon name=\"arrow-back\" (click)=\"myDismiss()\" slot=\"start\" class=\"mediumicon\"></ion-icon>\n    <ion-title>Select Guests & Rooms</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n \n                  <ion-card class=\"mt-4\">\n\n                      <ion-row class=\"mt-2\">\n                          <ion-col size=\"6\">\n                            <ion-title>Adults</ion-title>\n                            <ion-text><p>Age 13Yrs. and above</p></ion-text>\n                          </ion-col>\n                          <ion-col size=\"6\">\n                            <div class=\"row\">\n                              <ion-col size=\"4\" class=\"text-right\"><ion-title  (click)=\"reduceEntry('adults')\"><ion-icon name=\"remove\"></ion-icon></ion-title></ion-col>\n                              <ion-col size=\"4\" class=\"text-center\"><ion-title>{{adults}}</ion-title></ion-col>\n                              <ion-col size=\"4\" class=\"text-left\"><ion-title (click)=\"increaseEntry('adults')\"><ion-icon name=\"add\"></ion-icon></ion-title></ion-col>\n                            </div>\n                          </ion-col>\n                      </ion-row>\n                      <ion-row>\n                          <ion-col size=\"6\">\n                            <ion-title>Chilrend</ion-title>\n                            <ion-text><p>Age below 13Yrs.</p></ion-text>\n                          </ion-col>\n                          <ion-col size=\"6\">\n                              <div class=\"row\">\n                                  <ion-col size=\"4\" class=\"text-right\"><ion-title  (click)=\"reduceEntry('children')\"><ion-icon name=\"remove\"></ion-icon></ion-title></ion-col>\n                                  <ion-col size=\"4\" class=\"text-center\"><ion-title>{{children}}</ion-title></ion-col>\n                                  <ion-col size=\"4\" class=\"text-left\"><ion-title (click)=\"increaseEntry('children')\"><ion-icon name=\"add\"></ion-icon></ion-title></ion-col>\n                                </div>\n                          </ion-col>\n                      </ion-row>\n                  </ion-card>\n\n                  <ion-card>\n                      <ion-row>\n                          <ion-col size=\"6\">\n                            <ion-title>Rooms</ion-title>\n                          </ion-col>\n                          <ion-col size=\"6\">\n                              <div class=\"row\">\n                                  <ion-col size=\"4\" class=\"text-right\"><ion-title  (click)=\"reduceRoomEntry()\"><ion-icon name=\"remove\"></ion-icon></ion-title></ion-col>\n                                  <ion-col size=\"4\" class=\"text-center\"><ion-title>{{rooms}}</ion-title></ion-col>\n                                  <ion-col size=\"4\" class=\"text-left\"><ion-title (click)=\"increaseRoomEntry()\"><ion-icon name=\"add\"></ion-icon></ion-title></ion-col>\n                                </div>\n                          </ion-col>\n                      </ion-row>\n                  </ion-card>\n                  \n                  <ion-card class=\"btn-prim\">\n                    <div  (click)=\"myDismissWithChanges()\">\n                      <ion-ripple-effect></ion-ripple-effect>\n                      <ion-title class=\"text-center p-2\">Save</ion-title>\n                    </div>\n                  </ion-card>\n              \n</ion-content>"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/guests/guests.component.scss":
+/*!****************************************************************!*\
+  !*** ./src/app/catagories/hotels/guests/guests.component.scss ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NhdGFnb3JpZXMvaG90ZWxzL2d1ZXN0cy9ndWVzdHMuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/guests/guests.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/catagories/hotels/guests/guests.component.ts ***!
+  \**************************************************************/
+/*! exports provided: GuestsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GuestsComponent", function() { return GuestsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+
+
+
+var GuestsComponent = /** @class */ (function () {
+    function GuestsComponent(modalController, toastController) {
+        this.modalController = modalController;
+        this.toastController = toastController;
+        this.adults = 2;
+        this.children = 0;
+        this.totalguest = 0;
+    }
+    GuestsComponent.prototype.ngOnInit = function () {
+    };
+    GuestsComponent.prototype.presentToast = function (message) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            var toast;
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.toastController.create({
+                            message: message,
+                            duration: 2000
+                        })];
+                    case 1:
+                        toast = _a.sent();
+                        toast.present();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    GuestsComponent.prototype.increaseEntry = function (key) {
+        if (this.totalguest < 12 * this.rooms) {
+            if (key == 'adults') {
+                this.adults = this.adults + 1;
+            }
+            if (key == 'children') {
+                this.children = this.children + 1;
+            }
+            this.totalguest = this.adults + this.children;
+        }
+        else {
+            this.presentToast('Upto 12 guests are allowed in one room.');
+        }
+    };
+    GuestsComponent.prototype.reduceEntry = function (key) {
+        if (eval('this.' + key) > 0) {
+            this.totalguest = this.totalguest - this.adults + this.children;
+            if (key == 'adults') {
+                this.adults = this.adults - 1;
+            }
+            if (key == 'children') {
+                this.children = this.children - 1;
+            }
+        }
+    };
+    GuestsComponent.prototype.reduceRoomEntry = function () {
+        if (this.rooms > 1)
+            this.rooms = this.rooms - 1;
+    };
+    GuestsComponent.prototype.increaseRoomEntry = function () {
+        if (this.rooms < 10)
+            this.rooms = this.rooms + 1;
+        else
+            this.presentToast('Cannot add more thane 10 rooms.');
+    };
+    GuestsComponent.prototype.myDismissWithChanges = function () {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.modalController.dismiss({ guests: this.totalguest > 0 ? this.totalguest : this.guests, rooms: this.rooms })];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    GuestsComponent.prototype.myDismiss = function () {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.modalController.dismiss({ guests: this.guests, rooms: this.rooms })];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Number)
+    ], GuestsComponent.prototype, "guests", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Number)
+    ], GuestsComponent.prototype, "rooms", void 0);
+    GuestsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-guests',
+            template: __webpack_require__(/*! ./guests.component.html */ "./src/app/catagories/hotels/guests/guests.component.html"),
+            styles: [__webpack_require__(/*! ./guests.component.scss */ "./src/app/catagories/hotels/guests/guests.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"], _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ToastController"]])
+    ], GuestsComponent);
+    return GuestsComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/catagories/hotels/hotels.component.html":
 /*!*********************************************************!*\
   !*** ./src/app/catagories/hotels/hotels.component.html ***!
@@ -1589,7 +1830,7 @@ var DirectionComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\"></ion-icon>\r\n    <ion-title>HOTELS</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n<ion-content>\r\n\r\n  <ion-grid class=\"mt-4\">\r\n    <ion-row>\r\n      <ion-col size=\"12\" class=\"text-center\" (click)=\"presentModal()\">\r\n        <ion-text class=\"text-muted\">City/Area/Hotel</ion-text>\r\n        <ion-text>\r\n          <span [innerHTML]=\"filterString || ''\"></span>\r\n        </ion-text>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row class=\"mt-4\">\r\n      <ion-col size=\"6\" class=\"text-center border\">\r\n        <ion-label class=\"text-muted\">CHECK IN</ion-label>\r\n        <ion-datetime class=\"text-muted font-weight-bold\" display-format=\"DD/MM/YYYY\" picker-format=\"DD MMMM YYYY\"\r\n          min=\"{{currentYear}}\" max=\"{{maxYear}}\" value=\"{{currentDate}}\"></ion-datetime>\r\n      </ion-col>\r\n      <ion-col size=\"6\" class=\"text-center border\">\r\n        <ion-label class=\"text-muted\">CHECK OUT</ion-label>\r\n        <ion-datetime class=\"text-muted font-weight-bold mr-3\" display-format=\"DD/MM/YYYY\" picker-format=\"DD MMMM YYYY\"\r\n          min=\"{{currentYear}}\" max=\"{{maxYear}}\" value=\"{{checkoutDate}}\"></ion-datetime>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row class=\"mt-2\">\r\n      <ion-col size=\"6\" class=\"text-center border\">\r\n        <div class=\"col-12 text-center\">\r\n          <ion-label class=\"text-muted\">GUESTS</ion-label>\r\n        </div>\r\n        <ion-text class=\"text-muted font-weight-bold mt-2\"><strong class=\"headerfont\">06</strong></ion-text>\r\n      </ion-col>\r\n      <ion-col size=\"6\" class=\"text-center border\">\r\n        <div class=\"col-12 text-center\">\r\n          <ion-label class=\"text-muted\">ROOMS</ion-label>\r\n        </div>\r\n        <ion-text class=\"text-muted font-weight-bold mt-2\"><strong class=\"headerfont\">02</strong></ion-text>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row class=\"mt-2\">\r\n      <ion-col size=\"12\" class=\"text-left\">\r\n        <div class=\"col-12 text-left\">\r\n          <ion-label class=\"text-muted\">TRIP TYPE:</ion-label>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col size=\"12\">\r\n        <ion-grid>\r\n          <ion-row class=\"text-center\">\r\n            <ion-col size=\"4\" class=\"text-center\" *ngFor=\"let _tripTypes of tripTypes\" (click)=\"selectType(_tripTypes)\">\r\n              <div class=\"col-12 text-center {{_tripTypes.iconcolor}}\">\r\n                  <i class=\"material-icons icon {{_tripTypes.icon}}\"></i>\r\n              </div>\r\n              <div class=\"col-12 text-center\">\r\n                  <ion-label>{{_tripTypes.type}}</ion-label>\r\n              </div>\r\n             \r\n            </ion-col>\r\n            <!-- <ion-col size=\"4\" class=\"text-center\">\r\n\r\n                <div class=\"col-12 text-center\">\r\n                    <i class=\"material-icons icon icon-family\"></i>\r\n                </div>\r\n                <div class=\"col-12 text-center\">\r\n                    <ion-label>Family</ion-label>\r\n                </div>\r\n            </ion-col>\r\n            <ion-col size=\"4\" class=\"text-center\">\r\n\r\n                <div class=\"col-12 text-center\">\r\n                    <i class=\"material-icons icon icon-relationship\"></i>\r\n                </div>\r\n                <div class=\"col-12 text-center\">\r\n                    <ion-label>Romatic</ion-label>\r\n                </div>\r\n            </ion-col> -->\r\n          </ion-row>\r\n          <ion-row class=\"mt-4\">\r\n            <ion-col size=\"12\" class=\"mt-4 text-center\">\r\n              <ion-button class=\"ion-btn\" shape=\"round\" mode=\"ios\"><ion-icon name=\"search\"></ion-icon>Search</ion-button>\r\n            </ion-col>\r\n          </ion-row>\r\n        </ion-grid>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n\r\n</ion-content>"
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-icon name=\"close\" (click)=\"redirectionToUrl('/home/main')\" slot=\"start\" class=\"ml-3 mediumicon\"></ion-icon>\r\n    <ion-title>HOTELS</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n<ion-content>\r\n\r\n  <ion-grid class=\"mt-4\">\r\n    <ion-row>\r\n      <ion-col size=\"12\" class=\"text-center\" (click)=\"presentModal()\">\r\n        <ion-text class=\"text-muted\">City/Area/Hotel</ion-text>\r\n        <ion-text>\r\n          <span [innerHTML]=\"filterString || ''\"></span>\r\n        </ion-text>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row class=\"mt-4\">\r\n      <ion-col size=\"6\" class=\"text-center border\">\r\n        <ion-label class=\"text-muted\">CHECK IN</ion-label>\r\n        <ion-datetime class=\"text-muted font-weight-bold\" display-format=\"DD/MM/YYYY\" picker-format=\"DD MMMM YYYY\"\r\n          min=\"{{currentYear}}\" max=\"{{maxYear}}\" value=\"{{checkinDate}}\"></ion-datetime>\r\n      </ion-col>\r\n      <ion-col size=\"6\" class=\"text-center border\">\r\n        <ion-label class=\"text-muted\">CHECK OUT</ion-label>\r\n        <ion-datetime class=\"text-muted font-weight-bold mr-3\" display-format=\"DD/MM/YYYY\" picker-format=\"DD MMMM YYYY\"\r\n          min=\"{{currentYear}}\" max=\"{{maxYear}}\" value=\"{{checkoutDate}}\"></ion-datetime>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row class=\"mt-2\">\r\n      <ion-col size=\"6\" class=\"text-center border\"  (click)=\"presentGeustModal()\">\r\n        <div class=\"col-12 text-center\">\r\n          <ion-label class=\"text-muted\">GUESTS</ion-label>\r\n        </div>\r\n        <ion-text class=\"text-muted font-weight-bold mt-2\"><strong class=\"headerfont\">{{totalguest}}</strong></ion-text>\r\n      </ion-col>\r\n      <ion-col size=\"6\" class=\"text-center border\"  (click)=\"presentGeustModal()\">\r\n        <div class=\"col-12 text-center\">\r\n          <ion-label class=\"text-muted\">ROOMS</ion-label>\r\n        </div>\r\n        <ion-text class=\"text-muted font-weight-bold mt-2\"><strong class=\"headerfont\">{{totalRooms}}</strong></ion-text>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row class=\"mt-2\">\r\n      <ion-col size=\"12\" class=\"text-left\">\r\n        <div class=\"col-12 text-left\">\r\n          <ion-label class=\"text-muted\">TRIP TYPE:</ion-label>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col size=\"12\">\r\n        <ion-grid>\r\n          <ion-row class=\"text-center\">\r\n            <ion-col size=\"4\" class=\"text-center\" *ngFor=\"let _tripTypes of tripTypes\" (click)=\"selectType(_tripTypes)\">\r\n              <div class=\"col-12 text-center {{_tripTypes.iconcolor}}\">\r\n                  <i class=\"material-icons icon {{_tripTypes.icon}}\"></i>\r\n              </div>\r\n              <div class=\"col-12 text-center\">\r\n                  <ion-label>{{_tripTypes.type}}</ion-label>\r\n              </div>\r\n             \r\n            </ion-col>\r\n            <!-- <ion-col size=\"4\" class=\"text-center\">\r\n\r\n                <div class=\"col-12 text-center\">\r\n                    <i class=\"material-icons icon icon-family\"></i>\r\n                </div>\r\n                <div class=\"col-12 text-center\">\r\n                    <ion-label>Family</ion-label>\r\n                </div>\r\n            </ion-col>\r\n            <ion-col size=\"4\" class=\"text-center\">\r\n\r\n                <div class=\"col-12 text-center\">\r\n                    <i class=\"material-icons icon icon-relationship\"></i>\r\n                </div>\r\n                <div class=\"col-12 text-center\">\r\n                    <ion-label>Romatic</ion-label>\r\n                </div>\r\n            </ion-col> -->\r\n          </ion-row>\r\n          <ion-card class=\"btn-prim mt-4\">\r\n              <div  (click)=\"SearchWithFilters()\">\r\n                <ion-ripple-effect></ion-ripple-effect>\r\n                <ion-title class=\"text-center p-2\">Search</ion-title>\r\n              </div>\r\n            </ion-card>\r\n          <!-- <ion-row class=\"mt-4\">\r\n            <ion-col size=\"12\" class=\"mt-4 text-center\">\r\n              <ion-button class=\"ion-btn\" shape=\"round\" mode=\"ios\"><ion-icon name=\"search\"></ion-icon>Search</ion-button>\r\n            </ion-col> \r\n          </ion-row>-->\r\n        </ion-grid>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n\r\n</ion-content>"
 
 /***/ }),
 
@@ -1600,7 +1841,7 @@ module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-icon name=\"close\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".text-grey {\n  color: rgba(155, 153, 153, 0.678);\n  font-size: 18px; }\n\n.headerfont {\n  font-size: 26px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2F0YWdvcmllcy9ob3RlbHMvRDpcXElPTklDXFwyMDE5XFxJb25pY0gvc3JjXFxhcHBcXGNhdGFnb3JpZXNcXGhvdGVsc1xcaG90ZWxzLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBRUksaUNBQWlDO0VBQ2pDLGVBQWUsRUFBQTs7QUFFbkI7RUFDSSxlQUFlLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9jYXRhZ29yaWVzL2hvdGVscy9ob3RlbHMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudGV4dC1ncmV5XHJcbntcclxuICAgIGNvbG9yOiByZ2JhKDE1NSwgMTUzLCAxNTMsIDAuNjc4KTtcclxuICAgIGZvbnQtc2l6ZTogMThweDtcclxufVxyXG4uaGVhZGVyZm9udHtcclxuICAgIGZvbnQtc2l6ZTogMjZweDtcclxufSJdfQ== */"
+module.exports = ".text-grey {\n  color: rgba(155, 153, 153, 0.678);\n  font-size: 18px; }\n\n.headerfont {\n  font-size: 26px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2F0YWdvcmllcy9ob3RlbHMvRDpcXE1heXVyIDIzLTctMThcXDIwMTlcXElPTklDXFxpb25pY0gvc3JjXFxhcHBcXGNhdGFnb3JpZXNcXGhvdGVsc1xcaG90ZWxzLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBRUksaUNBQWlDO0VBQ2pDLGVBQWUsRUFBQTs7QUFFbkI7RUFDSSxlQUFlLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9jYXRhZ29yaWVzL2hvdGVscy9ob3RlbHMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudGV4dC1ncmV5XHJcbntcclxuICAgIGNvbG9yOiByZ2JhKDE1NSwgMTUzLCAxNTMsIDAuNjc4KTtcclxuICAgIGZvbnQtc2l6ZTogMThweDtcclxufVxyXG4uaGVhZGVyZm9udHtcclxuICAgIGZvbnQtc2l6ZTogMjZweDtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -1618,16 +1859,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
-/* harmony import */ var _search_model_search_model_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./search-model/search-model.component */ "./src/app/catagories/hotels/search-model/search-model.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _search_model_search_model_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./search-model/search-model.component */ "./src/app/catagories/hotels/search-model/search-model.component.ts");
+/* harmony import */ var _guests_guests_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./guests/guests.component */ "./src/app/catagories/hotels/guests/guests.component.ts");
+/* harmony import */ var _list_list_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./list/list.component */ "./src/app/catagories/hotels/list/list.component.ts");
+
+
+
 
 
 
 
 
 var HotelsComponent = /** @class */ (function () {
-    function HotelsComponent(_location, modalController) {
+    function HotelsComponent(_location, modalController, router) {
         this._location = _location;
         this.modalController = modalController;
+        this.router = router;
+        this.totalguest = 2;
+        this.totalRooms = 1;
+        this.checkinDate = new Date();
         this.currentDate = new Date();
         this.nextdate = new Date();
         this.currentYear = this.currentDate.getFullYear();
@@ -1646,14 +1897,17 @@ var HotelsComponent = /** @class */ (function () {
             return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, this.modalController.create({
-                            component: _search_model_search_model_component__WEBPACK_IMPORTED_MODULE_4__["SearchModelComponent"],
+                            component: _search_model_search_model_component__WEBPACK_IMPORTED_MODULE_5__["SearchModelComponent"],
                             componentProps: { value: "" }
                         })];
                     case 1:
                         modal = _a.sent();
-                        modal.onDidDismiss().then(function (detail) {
-                            if (detail !== null) {
-                                _this.filterString = '<div class="col-12"><h3>' + detail.data.serachresult + '</h3></div><div class="col-12"><ion-text>' + detail.data.address + '</ion-text></div>';
+                        modal.onDidDismiss().then(function (details) {
+                            if (details !== null) {
+                                if (details.data != undefined) {
+                                    _this.filteredResult = details.data;
+                                    _this.filterString = '<div class="col-12"><h3>' + details.data.serachresult + '</h3></div><div class="col-12"><ion-text>' + details.data.address + '</ion-text></div>';
+                                }
                             }
                         });
                         return [4 /*yield*/, modal.present()];
@@ -1662,11 +1916,64 @@ var HotelsComponent = /** @class */ (function () {
             });
         });
     };
+    HotelsComponent.prototype.presentGeustModal = function () {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            var modal;
+            var _this = this;
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.modalController.create({
+                            component: _guests_guests_component__WEBPACK_IMPORTED_MODULE_6__["GuestsComponent"],
+                            componentProps: { guests: this.totalguest, rooms: this.totalRooms }
+                        })];
+                    case 1:
+                        modal = _a.sent();
+                        modal.onDidDismiss().then(function (details) {
+                            console.log(details);
+                            if (details !== null) {
+                                if (details.data != undefined) {
+                                    _this.totalguest = details.data.guests;
+                                    _this.totalRooms = details.data.rooms;
+                                }
+                            }
+                        });
+                        return [4 /*yield*/, modal.present()];
+                    case 2: return [2 /*return*/, _a.sent()];
+                }
+            });
+        });
+    };
+    HotelsComponent.prototype.SearchWithFilters = function () {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            var modal;
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.modalController.create({
+                            component: _list_list_component__WEBPACK_IMPORTED_MODULE_7__["ListComponent"],
+                            componentProps: { searchFilter: { guests: this.totalguest, rooms: this.totalRooms, checkin: this.checkinDate, checkout: this.checkoutDate, location: this.filteredResult, tripTypes: this.selectedTripType } }
+                        })];
+                    case 1:
+                        modal = _a.sent();
+                        modal.onDidDismiss().then(function (details) {
+                        });
+                        return [4 /*yield*/, modal.present()];
+                    case 2: return [2 /*return*/, _a.sent()];
+                }
+            });
+        });
+    };
+    HotelsComponent.prototype.redirectionToUrl = function (path, fieldid) {
+        if (fieldid || fieldid != null)
+            this.router.navigate([path, fieldid]);
+        else
+            this.router.navigate([path]);
+    };
     HotelsComponent.prototype.selectType = function (triptype) {
         this.tripTypes.map(function (value) {
             value.iconcolor = '';
         });
         triptype.iconcolor = 'text-primary';
+        this.selectedTripType = triptype.type;
     };
     HotelsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1674,7 +1981,7 @@ var HotelsComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./hotels.component.html */ "./src/app/catagories/hotels/hotels.component.html"),
             styles: [__webpack_require__(/*! ./hotels.component.scss */ "./src/app/catagories/hotels/hotels.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"], _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ModalController"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"], _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ModalController"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
     ], HotelsComponent);
     return HotelsComponent;
 }());
@@ -1683,54 +1990,86 @@ var HotelsComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/catagories/hotels/hotels.service.ts":
-/*!*****************************************************!*\
-  !*** ./src/app/catagories/hotels/hotels.service.ts ***!
-  \*****************************************************/
-/*! exports provided: HotelsService */
+/***/ "./src/app/catagories/hotels/list/list.component.html":
+/*!************************************************************!*\
+  !*** ./src/app/catagories/hotels/list/list.component.html ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-header>\r\n    <ion-toolbar>\r\n      <ion-icon name=\"arrow-back\" (click)=\"myDismiss()\" slot=\"start\" class=\"mediumicon\"></ion-icon>\r\n      <ion-title>{{searchFilter.location.serachresult}}</ion-title>\r\n    </ion-toolbar>\r\n    \r\n     <ion-label class=\"ml-4\" color=\"medium\"><ion-icon name=\"calendar\"></ion-icon> {{searchFilter.checkin | date:'MMM dd'}} - {{searchFilter.checkout | date:'MMM dd'}}</ion-label>\r\n     <ion-label class=\"ml-3\" color=\"medium\"><ion-icon name=\"people\"></ion-icon> {{searchFilter.guests}}</ion-label>\r\n     <ion-label class=\"ml-3\" color=\"medium\"><ion-icon name=\"pricetag\"></ion-icon> {{searchFilter.rooms}}</ion-label>\r\n   \r\n  </ion-header>\r\n  <ion-content>\r\n\r\n    \r\n                <ion-card *ngFor=\"let obj of seachResult;let i = index;\">\r\n                      <div class=\"row\">\r\n                          <img [src]=\"obj.bannerinage\" class=\"img-fluid img-thumbnail\" style=\"min-height:150px;max-height:150px;width: 100%;max-width: 100%;min-width: 100%;\">\r\n                      </div>\r\n                      \r\n                    <ion-item>\r\n                      <ion-label>{{obj.name}}</ion-label>\r\n                      <ion-label slot=\"end\" class=\"text-right\"><span *ngFor=\"let stars of [1,2,3,4,5]\"><i class=\"fa fa-star\" *ngIf=\"stars <= 3\" style=\"color:goldenrod\" aria-hidden=\"true\"></i><i class=\"fa fa-star-o\" *ngIf=\"stars > 3\" aria-hidden=\"true\"></i></span></ion-label>\r\n                    </ion-item>\r\n                   \r\n                    <ion-card-content>\r\n                        <ion-fab horizontal=\"end\" slot=\"fixed\" style=\"margin-top: -97px\">\r\n                            <ion-fab-button color=\"light\" size=\"small\" >\r\n                                <ion-icon *ngIf=\"i % 2 == 1\" name=\"heart\" style=\"color:rgb(250, 48, 48)\"></ion-icon>\r\n                                <ion-icon *ngIf=\"i % 2 == 0\" name=\"heart-empty\"></ion-icon>\r\n                            </ion-fab-button>\r\n                          </ion-fab>\r\n                     <!-- {{obj.address}}, {{obj.state}} -->\r\n                    </ion-card-content>\r\n                    <ion-card-content>\r\n                      <ion-grid>\r\n                        <ion-row>\r\n                          <ion-col size=\"6\">\r\n                              <ion-text color=\"dark\">\r\n                                 \r\n                                </ion-text>\r\n                          </ion-col>\r\n                          <ion-col size=\"6\" style=\"text-align: right\">\r\n                              <ion-button fill=\"outline\">{{obj.discounted_price | currency:\"₹\" }}</ion-button>\r\n                              <ion-button fill=\"outline\" color=\"danger\" style=\"text-decoration: line-through;\">{{obj.price | currency:\"₹\" }}</ion-button>\r\n                          \r\n                          </ion-col>\r\n                        </ion-row>\r\n                      </ion-grid>\r\n                       \r\n                    </ion-card-content>\r\n                      <ion-card-header>\r\n                        {{ 30 * (i +12.5)}} reviews for this.\r\n                      </ion-card-header>\r\n                  </ion-card>\r\n         \r\n\r\n\r\n  </ion-content>"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/list/list.component.scss":
+/*!************************************************************!*\
+  !*** ./src/app/catagories/hotels/list/list.component.scss ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NhdGFnb3JpZXMvaG90ZWxzL2xpc3QvbGlzdC5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/catagories/hotels/list/list.component.ts":
+/*!**********************************************************!*\
+  !*** ./src/app/catagories/hotels/list/list.component.ts ***!
+  \**********************************************************/
+/*! exports provided: ListComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HotelsService", function() { return HotelsService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListComponent", function() { return ListComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _services_hotels_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../services/hotels.service */ "./src/app/services/hotels.service.ts");
 
 
 
 
-var HotelsService = /** @class */ (function () {
-    function HotelsService(http) {
-        this.http = http;
+var ListComponent = /** @class */ (function () {
+    function ListComponent(modalController, toastController, _HotelsService) {
+        this.modalController = modalController;
+        this.toastController = toastController;
+        this._HotelsService = _HotelsService;
     }
-    HotelsService.prototype.getExistingLocationsList = function () {
-        return this.http.get('http://103.252.7.5:3800/api/unity/getExistingLocations/').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (data) {
-            return data;
-        }));
+    ListComponent.prototype.ngOnInit = function () {
+        this.getHotelsList();
     };
-    ;
-    HotelsService.prototype.getRelaventSearch = function (filteredkey) {
-        /* return this.http.get<any>('http://103.252.7.5:3800/api/unity/getRelaventSearch/'+filteredkey).pipe(map(data => {
-                                return data;
-        })); */
-        var searchResult = this.http.get('http://103.252.7.5:3800/api/unity/getRelaventSearch/' + filteredkey)
-            .pipe(
-        //debounceTime(500),  // WAIT FOR 500 MILISECONDS ATER EACH KEY STROKE.
-        Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (data) {
-            return (data.length != 0 ? data : [{ "BookName": "No Record Found" }]);
-        }));
-        return searchResult;
+    ListComponent.prototype.myDismiss = function () {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.modalController.dismiss({})];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
     };
-    ;
-    HotelsService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root'
+    ListComponent.prototype.getHotelsList = function () {
+        var _this = this;
+        this._HotelsService.getHotelsList(this.searchFilter).subscribe(function (data) {
+            _this.seachResult = data;
+        });
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], ListComponent.prototype, "searchFilter", void 0);
+    ListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-list',
+            template: __webpack_require__(/*! ./list.component.html */ "./src/app/catagories/hotels/list/list.component.html"),
+            styles: [__webpack_require__(/*! ./list.component.scss */ "./src/app/catagories/hotels/list/list.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
-    ], HotelsService);
-    return HotelsService;
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"], _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ToastController"], _services_hotels_service__WEBPACK_IMPORTED_MODULE_3__["HotelsService"]])
+    ], ListComponent);
+    return ListComponent;
 }());
 
 
@@ -1744,7 +2083,7 @@ var HotelsService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  photos works!\n</p>\n"
+module.exports = "<p>\r\n  photos works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -1799,7 +2138,7 @@ var PhotosComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  reviews works!\n</p>\n"
+module.exports = "<p>\r\n  reviews works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -1854,7 +2193,7 @@ var ReviewsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  rooms works!\n</p>\n"
+module.exports = "<p>\r\n  rooms works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -1909,7 +2248,7 @@ var RoomsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar>\n      <ion-icon name=\"arrow-back\" (click)=\"myDismiss()\" slot=\"start\" class=\"mediumicon\" ></ion-icon>\n\n      <form class=\"col-12\">\n          <mat-form-field class=\"col-12\">\n            <input type=\"text\" placeholder=\"Search City/Area/Hotel\" aria-label=\"Search City/Area/Hotel\"  matInput [formControl]=\"myControl\" [(ngModel)]=\"serachfilter\"  [matAutocomplete]=\"auto\">\n            <mat-autocomplete #auto=\"matAutocomplete\" [displayWith]=\"displayFn\">\n              <mat-option (onSelectionChange)=\"getSelectedValue(option)\" *ngFor=\"let option of filteredOptions\" [value]=\"option\">\n                <div class=\"col-12\">{{option.serachresult}}</div>\n                <!-- <div class=\"col-12\"> <small>{{option.address}}</small></div> -->\n              </mat-option>\n            </mat-autocomplete>\n          </mat-form-field>\n        </form>\n\n    <!-- <ion-searchbar  autocomplete=\"on\" placeholder=\"Search City/Area/Hotel\"></ion-searchbar> -->\n    <ion-icon name=\"refresh\" (click)=\"resetFilter()\" slot=\"end\" class=\"mediumicon\" ></ion-icon>\n  </ion-toolbar>\n</ion-header>"
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-icon name=\"arrow-back\" (click)=\"myDismiss()\" slot=\"start\" class=\"mediumicon\"></ion-icon>\r\n    <form>\r\n      <ion-input [formControl]=\"myControl\" [(ngModel)]=\"serachfilter\" placeholder=\"Search Are/City/Hotel Name\">\r\n      </ion-input>\r\n    </form>\r\n\r\n    <!-- <ion-searchbar  autocomplete=\"on\" placeholder=\"Search City/Area/Hotel\"></ion-searchbar> -->\r\n    <ion-icon name=\"refresh\" (click)=\"serachfilter = ''\" slot=\"end\" class=\"mediumicon\"></ion-icon>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <ion-list *ngIf=\"shownearme\">\r\n    <ion-item>\r\n      <ion-icon color=\"primary\" name=\"locate\"></ion-icon> &nbsp;Near Me\r\n    </ion-item>\r\n  </ion-list>\r\n  <div *ngIf=\"!shownearme\">\r\n    <ion-list *ngFor=\"let option of filteredOptions\">\r\n      <ion-item (click)=\"getSelectedValue(option)\">\r\n        <ion-col>\r\n          <ion-label>{{option.serachresult}}</ion-label>\r\n          <ion-text color=\"medium\"><i>{{option.address}}</i></ion-text>\r\n        </ion-col>\r\n        <ion-text color=\"medium\"><sup>{{option.type}}</sup></ion-text>\r\n      </ion-item>\r\n    </ion-list>\r\n  </div>\r\n</ion-content>"
 
 /***/ }),
 
@@ -1938,7 +2277,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _hotels_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../hotels.service */ "./src/app/catagories/hotels/hotels.service.ts");
+/* harmony import */ var _services_hotels_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../services/hotels.service */ "./src/app/services/hotels.service.ts");
 
 
 
@@ -1950,6 +2289,7 @@ var SearchModelComponent = /** @class */ (function () {
         this._HotelsService = _HotelsService;
         this.myControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]();
         this.Filters = [];
+        this.shownearme = true;
         // componentProps can also be accessed at construction time using NavParams
     }
     SearchModelComponent.prototype.ngOnInit = function () {
@@ -1961,11 +2301,19 @@ var SearchModelComponent = /** @class */ (function () {
            ); */
         var _this = this;
         this.myControl.valueChanges.subscribe(function (term) {
-            if (term != '') {
-                _this._HotelsService.getRelaventSearch(term).subscribe(function (data) {
-                    _this.filteredOptions = data;
-                    //console.log(data[0].BookName);
-                });
+            if (term == '') {
+                _this.shownearme = true;
+            }
+            else {
+                if (term != '' && term != undefined) {
+                    if (term.length >= 3) {
+                        _this.shownearme = false;
+                        _this._HotelsService.getRelaventSearch(term).subscribe(function (data) {
+                            _this.filteredOptions = data;
+                            //console.log(data[0].BookName);
+                        });
+                    }
+                }
             }
         });
     };
@@ -2004,7 +2352,7 @@ var SearchModelComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./search-model.component.html */ "./src/app/catagories/hotels/search-model/search-model.component.html"),
             styles: [__webpack_require__(/*! ./search-model.component.scss */ "./src/app/catagories/hotels/search-model/search-model.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavParams"], _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"], _hotels_service__WEBPACK_IMPORTED_MODULE_4__["HotelsService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavParams"], _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"], _services_hotels_service__WEBPACK_IMPORTED_MODULE_4__["HotelsService"]])
     ], SearchModelComponent);
     return SearchModelComponent;
 }());
@@ -2020,7 +2368,7 @@ var SearchModelComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar>\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\n      <ion-title>RESTAURANTS</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n   \n \n\n</ion-content>\n"
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\r\n      <ion-title>RESTAURANTS</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n   \r\n \r\n\r\n</ion-content>\r\n"
 
 /***/ }),
 
@@ -2081,7 +2429,7 @@ var RestraunrantsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar>\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\n      <ion-title>TRAINS</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n \n\n</ion-content>\n"
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n      <ion-icon name=\"close\" (click)=\"backClicked()\" slot=\"start\" class=\"ml-3 mediumicon\" ></ion-icon>\r\n      <ion-title>TRAINS</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n \r\n\r\n</ion-content>\r\n"
 
 /***/ }),
 
@@ -2142,7 +2490,7 @@ var TrainsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  forgotpassword works!\r\n</p>\r\n"
+module.exports = "<p>\n  forgotpassword works!\n</p>\n"
 
 /***/ }),
 
@@ -2184,6 +2532,144 @@ var ForgotpasswordComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], ForgotpasswordComponent);
     return ForgotpasswordComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/credencials.ts":
+/*!*****************************************!*\
+  !*** ./src/app/services/credencials.ts ***!
+  \*****************************************/
+/*! exports provided: AppGlobals */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppGlobals", function() { return AppGlobals; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var AppGlobals = /** @class */ (function () {
+    function AppGlobals() {
+        this.ApiLink = 'http://103.252.7.5:3800';
+    }
+    AppGlobals = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+    ], AppGlobals);
+    return AppGlobals;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/experiences.service.ts":
+/*!*************************************************!*\
+  !*** ./src/app/services/experiences.service.ts ***!
+  \*************************************************/
+/*! exports provided: ExperiencesService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExperiencesService", function() { return ExperiencesService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _credencials__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./credencials */ "./src/app/services/credencials.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+
+
+
+
+
+var ExperiencesService = /** @class */ (function () {
+    function ExperiencesService(http, _global) {
+        this.http = http;
+        this._global = _global;
+        this.apiUrl = this._global.ApiLink;
+    }
+    ExperiencesService.prototype.getExperiencesList = function (searchFilters) {
+        return this.http.post(this.apiUrl + '/api/mobile/unity/getExperiencesList/', searchFilters).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (data) {
+            return data;
+        }));
+    };
+    ExperiencesService.prototype.HtLikeForExp = function (expdetails) {
+        return this.http.post(this.apiUrl + '/api/mobile/unity/HtLikeForExp/', expdetails).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (data) {
+            return data;
+        }));
+    };
+    ExperiencesService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"], _credencials__WEBPACK_IMPORTED_MODULE_3__["AppGlobals"]])
+    ], ExperiencesService);
+    return ExperiencesService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/hotels.service.ts":
+/*!********************************************!*\
+  !*** ./src/app/services/hotels.service.ts ***!
+  \********************************************/
+/*! exports provided: HotelsService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HotelsService", function() { return HotelsService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _credencials__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./credencials */ "./src/app/services/credencials.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+
+
+
+
+
+var HotelsService = /** @class */ (function () {
+    function HotelsService(http, _global) {
+        this.http = http;
+        this._global = _global;
+        this.apiUrl = this._global.ApiLink;
+    }
+    HotelsService.prototype.getExistingLocationsList = function () {
+        return this.http.get(this.apiUrl + '/api/unity/getExistingLocations/').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (data) {
+            return data;
+        }));
+    };
+    ;
+    HotelsService.prototype.getRelaventSearch = function (filteredkey) {
+        var searchResult = this.http.get(this.apiUrl + '/api/mobile/unity/getRelaventSearch/' + filteredkey)
+            .pipe(
+        //debounceTime(500),  // WAIT FOR 500 MILISECONDS ATER EACH KEY STROKE.
+        Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (data) {
+            return (data.length != 0 ? data : [{ "serachresult": "No Record Found" }]);
+        }));
+        return searchResult;
+    };
+    ;
+    HotelsService.prototype.getHotelsList = function (filterquery) {
+        return this.http.post(this.apiUrl + '/api/mobile/unity/getHotelsList/', filterquery).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (data) {
+            return data;
+        }));
+    };
+    ;
+    HotelsService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"], _credencials__WEBPACK_IMPORTED_MODULE_3__["AppGlobals"]])
+    ], HotelsService);
+    return HotelsService;
 }());
 
 
@@ -2254,7 +2740,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\IONIC\2019\IonicH\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\Mayur 23-7-18\2019\IONIC\ionicH\src\main.ts */"./src/main.ts");
 
 
 /***/ })

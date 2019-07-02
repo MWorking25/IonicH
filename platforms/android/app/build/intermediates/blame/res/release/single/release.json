@@ -8,12 +8,12 @@
         "source": "D:\\Mayur 23-7-18\\2019\\IONIC\\ionicH\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxxhdpi\\screen.png"
     },
     {
-        "merged": "D:\\Mayur 23-7-18\\2019\\IONIC\\ionicH\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-xhdpi_screen.png.flat",
-        "source": "D:\\Mayur 23-7-18\\2019\\IONIC\\ionicH\\platforms\\android\\app\\src\\main\\res\\drawable-port-xhdpi\\screen.png"
-    },
-    {
         "merged": "D:\\IONIC\\2019\\IonicH\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_icon.png.flat",
         "source": "D:\\IONIC\\2019\\IonicH\\platforms\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\Mayur 23-7-18\\2019\\IONIC\\ionicH\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-xhdpi_screen.png.flat",
+        "source": "D:\\Mayur 23-7-18\\2019\\IONIC\\ionicH\\platforms\\android\\app\\src\\main\\res\\drawable-port-xhdpi\\screen.png"
     },
     {
         "merged": "D:\\Mayur 23-7-18\\2019\\IONIC\\ionicH\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-xxhdpi_screen.png.flat",
