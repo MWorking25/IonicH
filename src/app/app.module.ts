@@ -4,6 +4,7 @@ import { RouterModule, RouteReuseStrategy } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { HttpClientModule} from '@angular/common/http';
 import { IonicStorageModule } from '@ionic/storage';
@@ -86,6 +87,7 @@ import { TrainsComponent } from './catagories/trains/trains.component';
   providers: [
     AppGlobals,
     StatusBar,
+    Geolocation,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "310780315622",
+    "firebase_url": "https://unity-b57a3.firebaseio.com",
+    "project_id": "unity-b57a3",
+    "storage_bucket": "unity-b57a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310780315622:android:94209b0e8ad04ed0",
+        "android_client_info": {
+          "package_name": "com.ionic.lninfoteck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310780315622-ri5s8ol58ctcn6sebes9u9jguan13vb0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ionic.lninfoteck",
+            "certificate_hash": "e0afdbe4b495a658c54e572ca28ddacaaa7c5c82"
+          }
+        },
+        {
+          "client_id": "310780315622-ojndppujg8thnucol18irjle0i6ajmfb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBptYcrFJVtuxLADmLkQDbDZ3V8T7UTfGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310780315622-ojndppujg8thnucol18irjle0i6ajmfb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

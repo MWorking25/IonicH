@@ -13,7 +13,7 @@
 
 <ion-content>
   <ion-list *ngIf="shownearme">
-    <ion-item>
+    <ion-item (click)="setMyCurrentLocation()">
       <ion-icon color="primary" name="locate"></ion-icon> &nbsp;Near Me
     </ion-item>
   </ion-list>

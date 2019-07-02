@@ -18,6 +18,8 @@ import {
   startWith
 } from 'rxjs/operators';
 
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+
 import {
   HotelsService
 } from '../../../services/hotels.service';
@@ -46,7 +48,7 @@ export class SearchModelComponent implements OnInit {
     // "value" passed in componentProps
     @Input() value: number;
 
-  constructor(navParams: NavParams, public modalController: ModalController, public _HotelsService: HotelsService) {
+  constructor(navParams: NavParams, public modalController: ModalController, public _HotelsService: HotelsService, private geolocation: Geolocation) {
     // componentProps can also be accessed at construction time using NavParams
   }
 
@@ -105,4 +107,17 @@ export class SearchModelComponent implements OnInit {
   getSelectedValue(selectedvalue) {
     this.myDismiss(selectedvalue);
   }
+
+  setMyCurrentLocation()
+  {
+    this.geolocation.getCurrentPosition().then((resp) => {
+      // resp.coords.latitude
+      // resp.coords.longitude
+      this.getSelectedValue({location:resp.coords,serachresult:'Near Me',address:''});
+
+     }).catch((error) => {
+       console.log('Error getting location', error);
+     });
+  }
+
 }
