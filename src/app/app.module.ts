@@ -38,6 +38,7 @@ import { SearchModelComponent } from './catagories/hotels/search-model/search-mo
 import { GuestsComponent } from './catagories/hotels/guests/guests.component';
 //------- experiences ---------
 import { ExperiencesComponent } from './catagories/experiences/experiences.component';
+import { ExperiencesDetailsComponent } from './catagories/experiences/details/details.component';
 //------- buses ---------
 import { BusesComponent } from './catagories/buses/buses.component';
 //------- cars ---------
@@ -61,6 +62,7 @@ import { TrainsComponent } from './catagories/trains/trains.component';
     SearchModelComponent,
     GuestsComponent,
     ExperiencesComponent,
+    ExperiencesDetailsComponent,
     BusesComponent,
     CarsComponent,
     RestraunrantsComponent,
@@ -75,7 +77,8 @@ import { TrainsComponent } from './catagories/trains/trains.component';
     DirectionComponent,
     PhotosComponent,
     ReviewsComponent,
-    RoomsComponent
+    RoomsComponent,
+    ExperiencesDetailsComponent
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule,MatAutocompleteModule, MatBadgeModule, MatBottomSheetModule, MatButtonModule,
     MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule,

@@ -42,10 +42,17 @@ export class ExperiencesComponent implements OnInit {
 
  
 
-  redirectionToUrl(path, fieldid)
+  redirectionToUrl(path, fieldid,extrafield)
   {
     if(fieldid || fieldid != null)
-    this.router.navigate([path,fieldid]);
+    {
+      if(extrafield)
+      {
+        this.router.navigate([path,fieldid,extrafield]);
+      }
+      else
+      this.router.navigate([path,fieldid]);
+    }
     else
     this.router.navigate([path]);
   } 
@@ -86,6 +93,11 @@ export class ExperiencesComponent implements OnInit {
         }
       });
    
+  }
+
+  RedirectToDetails(expDetails)
+  {
+    this.redirectionToUrl('experiences_details',expDetails.id,expDetails.exp_type);
   }
 
 }

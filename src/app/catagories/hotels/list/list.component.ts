@@ -3,6 +3,7 @@ import { NavParams, ModalController, ToastController  } from '@ionic/angular';
 import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { HotelsService } from '../../../services/hotels.service';
+
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',

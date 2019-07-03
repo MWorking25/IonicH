@@ -14,7 +14,7 @@
     
                 <ion-card *ngFor="let obj of seachResult;let i = index;">
                       <div class="row">
-                          <img [src]="obj.bannerinage" class="img-fluid img-thumbnail" style="min-height:150px;max-height:150px;width: 100%;max-width: 100%;min-width: 100%;">
+                          <img [src]="obj.bannerinage" onError="this.src= '../../../../assets/images/placeholders/hotel.jpg'"  class="img-fluid img-thumbnail" style="min-height:200px;max-height:200px;width: 100%;max-width: 100%;min-width: 100%;">
                       </div>
                       
                     <ion-item>

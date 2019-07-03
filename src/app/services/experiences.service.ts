@@ -25,4 +25,11 @@ export class ExperiencesService {
       return data;
     }));
   }
+
+  getExperienceDetails(expidDetails): Observable<any>
+  {
+    return this.http.post(this.apiUrl+'/api/mobile/unity/getExperienceDetails/',expidDetails).pipe(map(data => {
+      return data;
+    }));
+  }
 }

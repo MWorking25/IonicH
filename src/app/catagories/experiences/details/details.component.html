@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar [class.show-background]="showToolbar">
+    <ion-icon name="arrow-back" (click)="redirectionToUrl('/home/main')" slot="start" class="ml-3 mediumicon">
+    </ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen [scrollEvents]="true" (ionScroll)="onScroll($event)">
+  <ion-grid>
+    <ion-row>
+      <img [src]="experienceDetails[0].bannerinage"
+        onError="this.src= '../../../../assets/images/placeholders/experiences.gif'" class="img-fluid img-thumbnail"
+        style="min-height:200px;max-height:200px;width: 100%;max-width: 100%;min-width: 100%;">
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+          <span [innerHTML]="experienceDetails[0].masterdesc"></span>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+
+  <div class="row">
+    <div class="col-6 col-md-6 col-lg-6">
+      <div class="col-12">
+        <sup class="text-danger crossedtext">{{experienceDetails[0].price | currency:"₹" }}</sup>
+        <ion-title color="primary">{{experienceDetails[0].discounted_price | currency:"₹" }}</ion-title>
+      </div>
+    </div>
+  </div>
+</ion-footer>

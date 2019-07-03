@@ -12,6 +12,7 @@ import { ReviewsComponent } from './catagories/hotels/reviews/reviews.component'
 import { RoomsComponent } from './catagories/hotels/rooms/rooms.component';
 //------- experiences ---------
 import { ExperiencesComponent } from './catagories/experiences/experiences.component';
+import { ExperiencesDetailsComponent } from './catagories/experiences/details/details.component';
 //------- buses ---------
 import { BusesComponent } from './catagories/buses/buses.component';
 //------- cars ---------
@@ -41,6 +42,7 @@ const routes: Routes = [
   { path: 'hotel_reviews', component: ReviewsComponent },
   { path: 'hotel_rooms', component: RoomsComponent },
   { path: 'experiences', component: ExperiencesComponent },
+  { path: 'experiences_details/:id/:type', component: ExperiencesDetailsComponent },
   { path: 'buses', component: BusesComponent },
   { path: 'cars', component: CarsComponent },
   { path: 'restraunrants', component: RestraunrantsComponent },
