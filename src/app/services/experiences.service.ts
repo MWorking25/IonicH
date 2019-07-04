@@ -32,4 +32,11 @@ export class ExperiencesService {
       return data;
     }));
   }
+
+  getExpServices(expid,exptype): Observable<any>
+  {
+    return this.http.get(this.apiUrl+'/api/mobile/unity/getExpServices/'+expid+'/'+exptype).pipe(map(data => {
+      return data;
+    }));
+  }
 }

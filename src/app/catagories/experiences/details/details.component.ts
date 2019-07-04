@@ -1,24 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, ElementRef, Renderer, ViewChild } from '@angular/core';
 import { Location } from '@angular/common';
 import { ExperiencesService } from '../../../services/experiences.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastController  } from '@ionic/angular';
 import { Storage } from '@ionic/storage';
 import { ScrollDetail } from '@ionic/core';
+
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.scss'],
 })
 export class ExperiencesDetailsComponent implements OnInit {
-  experienceDetails:any;
+
+
+  experienceDetails:any = [{bannerinage:''}];
   expid;
   exptype;
+  experienceServicesDetails:any = [];
   expFilters:any = [];
   showToolbar = false;
-  constructor(private _location: Location, private _ExperiencesService : ExperiencesService,private storage: Storage, private router: Router,private route: ActivatedRoute, public toastController: ToastController) { }
+  constructor(private _location: Location, private _ExperiencesService : ExperiencesService,private storage: Storage, private router: Router,private route: ActivatedRoute, public toastController: ToastController,public element: ElementRef, public renderer: Renderer) { }
 
   ngOnInit() {
+
+
     this.expid = this.route.snapshot.paramMap.get("id");
     this.exptype = this.route.snapshot.paramMap.get("type");
 
@@ -44,9 +50,31 @@ export class ExperiencesDetailsComponent implements OnInit {
   {
     this._ExperiencesService.getExperienceDetails(this.expFilters).subscribe(
       data => {
-        this.experienceDetails = data;
-        console.log(this.experienceDetails);
+        if(data.length > 0)
+          {
+            this.experienceDetails = data;
+            this.getExpServices(this.expid,this.exptype);
+          }
       })
+  }
+
+
+  getExpServices(expid,exptype)
+  {
+    this._ExperiencesService.getExpServices(expid,exptype).subscribe(
+      data => {
+        if(data.length > 0)
+          {
+            this.experienceServicesDetails = data;
+            console.log(this.experienceServicesDetails)
+            this.getExpTimeSlots(this.expid,this.exptype);
+          }
+      })
+  }
+
+  getExpTimeSlots(expid,exptype)
+  {
+
   }
 
   redirectionToUrl(path, fieldid)
@@ -58,9 +86,10 @@ export class ExperiencesDetailsComponent implements OnInit {
   } 
 
   onScroll($event: CustomEvent<ScrollDetail>) {
-    if ($event && $event.detail && $event.detail.scrollTop) {
-    const scrollTop = $event.detail.scrollTop;
-    this.showToolbar = scrollTop >= 225;
-    }
-    }
+     if ($event && $event.detail && $event.detail.scrollTop) {
+      const scrollTop = $event.detail.scrollTop;
+      this.showToolbar = scrollTop >= 100; 
+    } 
+  }
 }
+

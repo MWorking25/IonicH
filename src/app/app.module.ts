@@ -17,6 +17,11 @@ import {
   MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule,
   MatStepperModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, MatTreeModule
 } from '@angular/material';
+
+// Directives------------
+
+import { HideHeaderDirective } from './directives/hide-header';
+
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -66,7 +71,9 @@ import { TrainsComponent } from './catagories/trains/trains.component';
     BusesComponent,
     CarsComponent,
     RestraunrantsComponent,
-    TrainsComponent],
+    TrainsComponent,
+    HideHeaderDirective
+  ],
   entryComponents: [
     SearchModelComponent,
     GuestsComponent,

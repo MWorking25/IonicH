@@ -3,6 +3,14 @@
 
 /** Ionic CSS Variables **/
 :root {
+  /** CUSTOME **/
+  --ion-color-apptheme: linear-gradient(-90deg, #4cb8c4,#3cd3ad);
+  --ion-color-apptheme-rgb: 69,69,69;
+  --ion-color-apptheme-contrast: #FFFFFF;
+  --ion-color-apptheme-contrast-rgb: 255,255,255;
+  --ion-color-apptheme-shade: linear-gradient(-90deg, #4cb8c4,#3cd3ad);
+  --ion-color-apptheme-tint: linear-gradient(-90deg, #4cb8c4,#3cd3ad);
+  
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
