@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NavParams, ModalController, ToastController  } from '@ionic/angular';
 import { FormControl } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { HotelsService } from '../../../services/hotels.service';
 
@@ -15,7 +16,7 @@ export class ListComponent implements OnInit {
 
   seachResult:any;
 
-  constructor(public modalController: ModalController, public toastController: ToastController, public _HotelsService: HotelsService) { }
+  constructor(public modalController: ModalController, public toastController: ToastController,private router: Router, public _HotelsService: HotelsService) { }
 
   
 
@@ -27,19 +28,33 @@ export class ListComponent implements OnInit {
     await this.modalController.dismiss({});
   }
 
-
-
-
-
-
+  redirectionToUrl(path, fieldid,extrafield)
+  {
+    if(fieldid || fieldid != null)
+    {
+      if(extrafield)
+      {
+        this.router.navigate([path,fieldid,extrafield]);
+      }
+      else
+      this.router.navigate([path,fieldid]);
+    }
+    else
+    this.router.navigate([path]);
+  } 
 
   getHotelsList()
   {
     this._HotelsService.getHotelsList(this.searchFilter).subscribe(
       data => {
         this.seachResult = data;
-      })
-
+      });
   }
+
+  RedirectToDetails(hoteldetails)
+  {
+    this.redirectionToUrl('\hotel_description',hoteldetails.id,null);
+  }
+
 
 }

@@ -36,7 +36,7 @@ const routes: Routes = [
   { path: 'hotels', component: HotelsComponent },
   { path: 'hotel_aminities', component: AminitiesComponent },
   { path: 'hotel_booking', component: BookingComponent },
-  { path: 'hotel_description', component: DesricptionComponent },
+  { path: 'hotel_description/:id', component: DesricptionComponent },
   { path: 'hotel_direction', component: DirectionComponent },
   { path: 'hotel_photos', component: PhotosComponent },
   { path: 'hotel_reviews', component: ReviewsComponent },
