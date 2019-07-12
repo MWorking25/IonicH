@@ -1,3 +1,48 @@
-<p>
-  desricption works!
-</p>
+<ion-header  class="animated"  [class.fadeInDown]="showToolbar" [class.fadeOutUp]="!showToolbar">
+    <ion-toolbar>
+    <ion-icon name="close" (click)="myDismiss()" slot="start" class="mediumicon"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen [scrollEvents]="true" (ionScroll)="onScroll($event)">
+    <ion-grid>
+        <ion-row>
+          <img [src]="hotelDetails[0].bannerinage"
+            onError="this.src= '../../../../assets/images/placeholders/hotel.jpg'" class="img-fluid img-thumbnail"
+            style="min-height:200px;max-height:200px;width: 100%;max-width: 100%;min-width: 100%;margin-top: -55px;">
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-title>{{hotelDetails[0].name}}</ion-title>
+            <div class="col-12">
+                <p>
+                  {{hotelDetails[0].addressline1}} <span *ngIf="hotelDetails[0].addressline2 && hotelDetails[0].addressline2 !='' && hotelDetails[0].addressline2 != null">,</span>{{hotelDetails[0].addressline2}}
+                  <span *ngIf="hotelDetails[0].areaname && hotelDetails[0].areaname !='' && hotelDetails[0].areaname != null">,</span>{{hotelDetails[0].areaname}}
+                  <span *ngIf="hotelDetails[0].cityname && hotelDetails[0].cityname !='' && hotelDetails[0].cityname != null">,</span>{{hotelDetails[0].cityname}}
+                  <span *ngIf="hotelDetails[0].statename && hotelDetails[0].statename !='' && hotelDetails[0].statename != null">,</span>{{hotelDetails[0].statename}}
+                  <span *ngIf="hotelDetails[0].countryname && hotelDetails[0].countryname !='' && hotelDetails[0].countryname != null">,</span>{{hotelDetails[0].countryname}}
+                  <span *ngIf="hotelDetails[0].pincode && hotelDetails[0].pincode !='' && hotelDetails[0].pincode != null">,</span>{{hotelDetails[0].pincode}}
+                </p>
+            </div>
+          </ion-col>
+          <ion-col size="12">
+              <span [innerHTML]="hotelDetails[0].description"></span>
+          </ion-col>
+    
+    
+        </ion-row>
+      </ion-grid>
+    </ion-content>
+    <ion-footer>
+    
+      <div class="row" style="background: #fff">
+        <div class="col-6 col-md-6 col-lg-6">
+          <div class="col-12">
+            <sup class="text-danger crossedtext">{{hotelDetails[0].price | currency:"₹" }}</sup>
+            <ion-title color="primary">{{hotelDetails[0].discounted_price | currency:"₹" }}</ion-title>
+          </div>
+        </div>
+        <div class="col-6 col-md-6 col-lg-6 my-auto text-right">
+            <div class="col-12"><ion-button class="btn-prim">Book Now</ion-button></div>
+        </div>
+      </div>
+    </ion-footer>

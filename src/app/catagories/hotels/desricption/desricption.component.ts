@@ -1,5 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, Input, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { NavParams, ModalController, ToastController  } from '@ionic/angular';
+import { FormControl } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import { ScrollDetail } from '@ionic/core';
+import { HotelsService } from '../../../services/hotels.service';
 @Component({
   selector: 'app-desricption',
   templateUrl: './desricption.component.html',
@@ -7,8 +12,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DesricptionComponent implements OnInit {
 
-  constructor() { }
+  @Input() hotelid:Object;
+  // @ViewChild('box') box: ElementRef;
+  // @ViewChild("box", { read: ElementRef }) private box: ElementRef;
+  hotelDetails:any;
+  showToolbar = false;
 
-  ngOnInit() {}
+  constructor(public modalController: ModalController, public toastController: ToastController,private router: Router, public _HotelsService: HotelsService) { }
+
+  ngOnInit() {
+    this.getHotelsDeatils(this.hotelid);
+  }
+
+  getHotelsDeatils(hotelid)
+  {
+    this._HotelsService.getHotelsDeatils(hotelid).subscribe(
+      data => {
+        this.hotelDetails = data;
+      });
+  }
+
+  async myDismiss() {
+    await this.modalController.dismiss({});
+  }
+
+
+
+  onScroll($event: CustomEvent<ScrollDetail>) {
+    if ($event && $event.detail && $event.detail.scrollTop) {
+     const scrollTop = $event.detail.scrollTop;
+     this.showToolbar = scrollTop >= 100; 
+   } 
+ }
+
+ 
 
 }

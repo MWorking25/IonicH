@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar [class.show-background]="showToolbar">
+  <ion-toolbar  [class.fadeInDown]="showToolbar" [class.fadeOutUp]="!showToolbar">
     <ion-icon name="arrow-back" (click)="redirectionToUrl('/experiences')" slot="start" class="ml-3 mediumicon">
     </ion-icon>
     <ion-title>{{experienceDetails[0].name}}</ion-title>

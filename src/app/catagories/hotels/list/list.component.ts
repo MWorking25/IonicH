@@ -3,6 +3,7 @@ import { NavParams, ModalController, ToastController  } from '@ionic/angular';
 import { FormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
+import { DesricptionComponent } from '../desricption/desricption.component';
 import { HotelsService } from '../../../services/hotels.service';
 
 @Component({
@@ -51,9 +52,23 @@ export class ListComponent implements OnInit {
       });
   }
 
-  RedirectToDetails(hoteldetails)
-  {
-    this.redirectionToUrl('\hotel_description',hoteldetails.id,null);
+
+  async getHotelFullDescription(hoteldetails) {
+    const modal = await this.modalController.create({
+      component: DesricptionComponent,
+      componentProps: { hotelid: hoteldetails.id }
+    });
+
+    modal.onDidDismiss().then((details) => {
+      if (details !== null) {
+        if(details.data != undefined)
+        {
+          
+        }
+      }
+   });
+
+    return await modal.present();
   }
 
 

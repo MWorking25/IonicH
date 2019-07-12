@@ -1,0 +1,24 @@
+.crossedtext
+{
+    text-decoration: line-through;
+    position: static;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.shoTollbar {
+    margin:10px 0 20px 0;
+    padding:10px;
+    border:1px solid rgba(0,0,0,0.2);
+    background:#f00;
+    color:#fff;
+    border-radius:4px;
+  
+    -webkit-transition:all linear 0.5s;
+    transition:all linear 0.5s;
+  }
+  
+  .shoTollbar.ng-hide {
+    opacity:0;
+    /* transform: scale(0.8); */
+  }

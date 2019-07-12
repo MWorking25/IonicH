@@ -19,6 +19,12 @@ export class HotelsService {
 		}));
   };
 
+  getHotelsDeatils(hotelid): Observable<any>{
+    return this.http.get<any>(this.apiUrl+'/api/mobile/unity/getHotelsDeatils/'+hotelid).pipe(map(data => {
+			 				return data;
+		}));
+  };
+
   getRelaventSearch(filteredkey): Observable<any>{
     var searchResult = this.http.get<any>(this.apiUrl+'/api/mobile/unity/getRelaventSearch/'+filteredkey)
     .pipe(
