@@ -16,7 +16,8 @@ export class DesricptionComponent implements OnInit {
   // @ViewChild('box') box: ElementRef;
   // @ViewChild("box", { read: ElementRef }) private box: ElementRef;
   hotelDetails:any;
-  showToolbar = false;
+  hotelAminities:any;
+  showToolbar = true;
 
   constructor(public modalController: ModalController, public toastController: ToastController,private router: Router, public _HotelsService: HotelsService) { }
 
@@ -29,6 +30,7 @@ export class DesricptionComponent implements OnInit {
     this._HotelsService.getHotelsDeatils(hotelid).subscribe(
       data => {
         this.hotelDetails = data;
+        this.hotelAminities = JSON.parse(data[0].aminities);
       });
   }
 
@@ -41,7 +43,7 @@ export class DesricptionComponent implements OnInit {
   onScroll($event: CustomEvent<ScrollDetail>) {
     if ($event && $event.detail && $event.detail.scrollTop) {
      const scrollTop = $event.detail.scrollTop;
-     this.showToolbar = scrollTop >= 100; 
+     this.showToolbar != scrollTop >= 100; 
    } 
  }
 
