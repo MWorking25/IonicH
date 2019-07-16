@@ -22,3 +22,30 @@
     opacity:0;
     /* transform: scale(0.8); */
   }
+
+  .cardtitle {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 80px;
+  }
+
+  .hotel-details-pic
+  {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: 0%;
+    min-height:200px;
+    max-height:200px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin-top: -55px;
+  }
+
+  .ablout-hotel
+  {
+    height: 175px;
+  }

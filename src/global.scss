@@ -98,3 +98,18 @@ input[type=number]::-webkit-outer-spin-button {
     color: grey;
     font-size: 20px;
 }
+
+div::-webkit-scrollbar { width: 0 !important }
+div{ overflow: -moz-scrollbars-none; }
+div{ -ms-overflow-style: none;}
+.aminities-list
+{
+  background-color: whitesmoke;
+  height: 90px !important;
+  overflow-y: hidden !important;
+}
+.more-aminities
+{
+  margin-top: 50px !important;
+  margin-left: -15px !important;
+}
