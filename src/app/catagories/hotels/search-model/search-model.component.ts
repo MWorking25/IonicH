@@ -41,7 +41,7 @@ export class SearchModelComponent implements OnInit {
   Filters = [];
 
   shownearme:boolean = true;
-  serachfilter: Observable < SerachResult > ;
+  // serachfilter: Observable < SerachResult > ;
 
   filteredOptions: Observable < SerachResult[] >
 

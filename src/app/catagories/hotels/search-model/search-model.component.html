@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-icon name="arrow-back" (click)="myDismiss()" slot="start" class="mediumicon"></ion-icon>
     <form>
-      <ion-input [formControl]="myControl" [(ngModel)]="serachfilter" placeholder="Search Are/City/Hotel Name" autofocus>
+      <ion-input type="text" [formControl]="myControl" placeholder="Search Are/City/Hotel Name" required autofocus="true">
       </ion-input>
     </form>
 
