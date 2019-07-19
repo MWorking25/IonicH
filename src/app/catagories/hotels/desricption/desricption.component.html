@@ -5,7 +5,7 @@
 </ion-header>
 <ion-content fullscreen [scrollEvents]="true" (ionScroll)="onScroll($event)">
   <ion-grid>
-    <ion-row style="background-image: url('../../../../assets/images/placeholders/hotel.jpg')" class="hotel-details-pic">
+    <ion-row [ngStyle]="{background: 'url(' + hotelDetails[0].bannerinage+ ')', background-position:'center',background-repeat:'no-repeat',background-size:'400px',background-attachment: 'fixed'}" class="hotel-details-pic">
     <ion-col>
       <ion-icon name="close" (click)="myDismiss()" class="mediumicon closeicon"></ion-icon>
     </ion-col>
@@ -25,9 +25,9 @@
           <div class="col-4 text-right float-right">
             <strong class="text-success">4.3/5</strong>
           </div>
-          <div class="col-4 float-right">
+          <!-- <div class="col-4 float-right">
               <ion-label class="text-right ml-auto"><span *ngFor="let stars of [1,2,3,4,5]"><i class="fa fa-star" *ngIf="stars <= 3" style="color:goldenrod" aria-hidden="true"></i><i class="fa fa-star-o" *ngIf="stars > 3" aria-hidden="true"></i></span></ion-label>
-          </div>
+          </div> -->
           </div>
         </div>
         <div class="col-12">
